@@ -1,0 +1,6 @@
+Program 0x4B
+Bgm 188 188
+AreaSettings 16 -1
+	SetUnk05 0x1
+	SetJump Type 2 World DC Area 0 Entrance 0 LocalSet 67 FadeType 1
+	SetPartyMenu 0

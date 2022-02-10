@@ -1,0 +1,6 @@
+Program 0x43
+Bgm 67 67
+AreaSettings 16 -1
+	SetUnk05 0x3
+	SetJump Type 2 World EH Area 0 Entrance 0 LocalSet 87 FadeType 1
+	SetPartyMenu 1

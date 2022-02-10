@@ -1,0 +1,8 @@
+Program 0x39
+Bgm 185 185
+BattleLevel 50
+Layout "file/%s/b_ex140.2ld"
+AreaSettings 16 -1
+	SetUnk05 0x1
+	SetJump Type 2 World EH Area 0 Entrance 0 LocalSet 59 FadeType 1
+	SetPartyMenu 0

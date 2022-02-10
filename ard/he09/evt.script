@@ -1,0 +1,30 @@
+Program 0x7C
+Bgm 120 120
+BattleLevel 38
+AreaSettings 8 -1
+	SetProgressFlag 0x187E
+	SetUnk05 0x3
+	SetJump Type 1 World HE Area 3 Entrance 3 LocalSet 0 FadeType 1
+	SetPartyMenu 0
+
+AreaSettings 7 -1
+	SetProgressFlag 0x1837
+	SetUnk05 0x3
+	SetJump Type 2 World HE Area 0 Entrance 0 LocalSet 125 FadeType 1
+	SetPartyMenu 0
+
+Program 0x7D
+Bgm 120 120
+BattleLevel 38
+AreaSettings 8 -1
+	SetProgressFlag 0x187F
+	SetUnk05 0x3
+	SetJump Type 1 World HE Area 3 Entrance 3 LocalSet 0 FadeType 1
+	SetPartyMenu 0
+
+AreaSettings 7 -1
+	SetProgressFlag 0x183C
+	SetMember 3
+	SetUnk05 0x1
+	SetJump Type 2 World HE Area 0 Entrance 0 LocalSet 202 FadeType 1
+	SetPartyMenu 0

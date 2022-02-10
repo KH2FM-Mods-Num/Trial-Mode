@@ -1,0 +1,10 @@
+Program 0x34
+Party DEFAULT
+Bgm 117 117
+BattleLevel 19
+AreaSettings 16 -1
+	SetUnk05 0x3
+	SetJump Type 2 World WI Area 0 Entrance 0 LocalSet 53 FadeType 1
+	SetPartyMenu 0
+
+Spawn "e_02"

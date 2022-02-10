@@ -1,0 +1,16 @@
+Program 0x02
+AreaSettings 1 -1
+	SetJump Type 2 World TT Area 0 Entrance 0 LocalSet 157 FadeType 1
+	SetPartyMenu 0
+
+Spawn "e_50"
+
+Program 0x9A
+Bgm 51 51
+BattleLevel 2
+AreaSettings 15 -1
+	SetProgressFlag 0x84A
+	SetMenuFlag 0x71
+	SetUnk05 0x3
+	SetJump Type 1 World TT Area 32 Entrance 50 LocalSet 0 FadeType 1
+	SetPartyMenu 0

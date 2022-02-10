@@ -1,0 +1,10 @@
+Program 0x4B
+Bgm 145 145
+BattleLevel 10
+AreaSettings 16 -1
+	SetProgressFlag 0x1409
+	SetUnk05 0x1
+	SetEvent "0000" Type 3
+	SetJump Type 1 World BB Area 2 Entrance 50 LocalSet 0 FadeType 1
+	SetInventory 257
+	SetPartyMenu 0

@@ -1,0 +1,13 @@
+Program 0x8E
+Bgm 63 63
+AreaSettings 16 -1
+	SetUnk05 0x3
+	SetJump Type 2 World HB Area 0 Entrance 0 LocalSet 115 FadeType 1
+	SetPartyMenu 0
+
+Program 0x8F
+Bgm 63 63
+AreaSettings 16 -1
+	SetUnk05 0x3
+	SetJump Type 2 World HB Area 0 Entrance 0 LocalSet 145 FadeType 1
+	SetPartyMenu 0

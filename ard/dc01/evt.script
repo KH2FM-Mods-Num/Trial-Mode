@@ -1,0 +1,9 @@
+Program 0x16
+AreaSettings 1 -1
+	SetJump Type 2 World DC Area 0 Entrance 0 LocalSet 51 FadeType 1
+	SetPartyMenu 0
+
+Spawn "e_07"
+Spawn "e_50"
+Spawn "d00_"
+Spawn "z00s"

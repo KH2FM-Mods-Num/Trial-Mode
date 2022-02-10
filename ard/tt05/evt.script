@@ -1,0 +1,56 @@
+Program 0x55
+Bgm 119 119
+BattleLevel 2
+AreaSettings 8 -1
+	SetUnk05 0x3
+	SetJump Type 1 World TT Area 32 Entrance 99 LocalSet 0 FadeType 1
+	SetPartyMenu 0
+
+AreaSettings 7 -1
+	SetUnk05 0x3
+	SetJump Type 2 World TT Area 0 Entrance 0 LocalSet 87 FadeType 1
+	SetPartyMenu 0
+
+Spawn "800_"
+
+Program 0x57
+Bgm 151 151
+BattleLevel 2
+AreaSettings 16 -1
+	SetUnk05 0x3
+	SetJump Type 2 World TT Area 0 Entrance 0 LocalSet 88 FadeType 1
+	SetPartyMenu 0
+
+Spawn "801_"
+
+Program 0x58
+Bgm 119 119
+BattleLevel 2
+AreaSettings 8 -1
+	SetUnk05 0x3
+	SetJump Type 1 World TT Area 32 Entrance 99 LocalSet 0 FadeType 1
+	SetPartyMenu 0
+
+AreaSettings 7 -1
+	SetUnk05 0x3
+	SetEvent "0000" Type 19
+	SetJump Type 2 World TT Area 0 Entrance 0 LocalSet 121 FadeType 1
+	SetInventory 389 390
+	SetPartyMenu 0
+
+Spawn "800_"
+
+Program 0x54
+Bgm 119 119
+BattleLevel 2
+AreaSettings 8 -1
+	SetUnk05 0x3
+	SetJump Type 1 World TT Area 32 Entrance 99 LocalSet 0 FadeType 1
+	SetPartyMenu 0
+
+AreaSettings 7 -1
+	SetUnk05 0x3
+	SetJump Type 2 World TT Area 0 Entrance 0 LocalSet 85 FadeType 1
+	SetPartyMenu 0
+
+Spawn "800_"

@@ -1,0 +1,98 @@
+#Chests
+#Bamboo Grove
+245:
+  ItemId: 0x113 #High Drive Recovery
+497:
+  ItemId: 0x003 #Ether
+498:
+  ItemId: 0x002 #Hi-Potion
+#Checkpoint
+21:
+  ItemId: 0x004 #Elixir
+121:
+  ItemId: 0x002 #Hi-Potion
+#Mountain Trail
+22:
+  ItemId: 0x004 #Elixir
+23:
+  ItemId: 0x002 #Hi-Potion
+122:
+  ItemId: 0x004 #Elixir
+123:
+  ItemId: 0x002 #Hi-Potion
+#Belle's Room
+46:
+  ItemId: 0x113 #High Drive Recovery
+240:
+  ItemId: 0x003 #Ether
+#Disney Castle Library
+91:
+  ItemId: 0x113 #High Drive Recovery
+#Pier
+81:
+  ItemId: 0x004 #Elixir
+82:
+  ItemId: 0x002 #Hi-Potion
+#Waterway
+83:
+  ItemId: 0x113 #High Drive Recovery
+84:
+  ItemId: 0x003 #Ether
+85:
+  ItemId: 0x002 #Hi-Potion
+#Cave Mouth
+74:
+  ItemId: 0x004 #Elixir
+223:
+  ItemId: 0x002 #Hi-Potion
+#The Gorge
+492:
+  ItemId: 0x113 #High Drive Recovery
+404:
+  ItemId: 0x003 #Ether
+405:
+  ItemId: 0x002 #Hi-Potion
+#Crystal Fissure
+179:
+  ItemId: 0x113 #High Drive Recovery
+489:
+  ItemId: 0x003 #Ether
+180:
+  ItemId: 0x002 #Hi-Potion
+181:
+  ItemId: 0x003 #Ether
+#Halloween Town Square
+209:
+  ItemId: 0x004 #Elixir
+210:
+  ItemId: 0x002 #Hi-Potion
+#Elephant Graveyard
+401:
+  ItemId: 0x004 #Elixir
+402:
+  ItemId: 0x002 #Hi-Potion
+403:
+  ItemId: 0x004 #Elixir
+508:
+  ItemId: 0x002 #Hi-Potion
+509:
+  ItemId: 0x004 #Elixir
+#Pit Cell
+316:
+  ItemId: 0x113 #High Drive Recovery
+64:
+  ItemId: 0x003 #Ether
+
+#Popups
+256: #Membership Card -> Ukulele Charm
+  ItemId: 0x019
+296: #Cursed Medallion -> Feather Charm
+  ItemId: 0x0A0
+331: #Ship Graveyard Map -> Meteor Staff
+  ItemId: 0x096
+539: #100AW Orichalcum+ -> Cosmic Ring
+  ItemId: 0x034
+511: #Picture -> Cosmic Chain
+  ItemId: 0x134
+269: #Ice Cream -> Ultima Weapon
+  ItemId: 0x1F4

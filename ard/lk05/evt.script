@@ -1,0 +1,15 @@
+Program 0x38
+Bgm 187 187
+BattleLevel 26
+AreaSettings 7 -1
+	SetUnk05 0x3
+	SetJump Type 2 World LK Area 0 Entrance 0 LocalSet 51 FadeType 1
+	SetPartyMenu 0
+
+Program 0x39
+Bgm 117 117
+BattleLevel 43
+AreaSettings 7 -1
+	SetUnk05 0x3
+	SetJump Type 2 World LK Area 0 Entrance 0 LocalSet 59 FadeType 1
+	SetPartyMenu 0

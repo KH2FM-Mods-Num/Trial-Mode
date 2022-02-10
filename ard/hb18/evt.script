@@ -1,0 +1,7 @@
+Program 0x49
+Bgm 153 153
+BattleLevel 30
+AreaSettings 7 -1
+	SetUnk05 0x3
+	SetJump Type 2 World HB Area 0 Entrance 0 LocalSet 55 FadeType 1
+	SetPartyMenu 0

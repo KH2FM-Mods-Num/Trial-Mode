@@ -1,0 +1,1151 @@
+title: Trial Mode
+description: It's like FFXII's trial mode. Originally made by Sonic.
+assets:
+- name: 00battle.bin
+  method: binarc
+  source:
+  - name: bons
+    type: list
+    method: listpatch
+    source:
+    - name: bons.yml
+      type: bons
+  - name: plrp
+    type: list
+    method: listpatch
+    source:
+    - name: plrp.yml
+      type: plrp
+  - name: fmlv
+    type: list
+    method: copy
+    source:
+    - name: fmlv.bin
+- name: 03system.bin
+  method: binarc
+  source:
+  - name: trsr
+    type: list
+    method: listpatch
+    source:
+    - name: trsr.yml
+      type: trsr
+- name: 00progress.bin
+  method: binarc
+  source:
+  - name: wlds
+    type: list
+    method: copy
+    source:
+    - name: wlds.bin
+- name: msg/jp/sys.bar
+  multi:
+  - name: msg/us/sys.bar
+  method: binarc
+  source:
+  - name: sys
+    type: list
+    method: kh2msg
+    source:
+    - name: sys.yml
+      language: en
+- name: ard/al03.ard #The Palace
+  multi:
+  - name: ard/us/al03.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/al03/evt.script
+- name: ard/al05.ard #Above Agrabah
+  multi:
+  - name: ard/us/al05.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/al05/evt.script
+- name: ard/al09.ard #Stone Guardians
+  multi:
+  - name: ard/us/al09.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/al09/evt.script
+  - name: 0000 #Follow the Wind, Party
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/al10.ard #Treasure Room
+  multi:
+  - name: ard/us/al10.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/al10/evt.script
+- name: ard/al13.ard #Chasm of Challenges
+  multi:
+  - name: ard/us/al13.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/al13/evt.script
+- name: ard/al14.ard #Sandswept Ruins
+  multi:
+  - name: ard/us/al14.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/al14/evt.script
+  - name: 0000 #Mysterious Abyss, Cure, Cosmic Ring
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/bb00.ard #Entrance Hall
+  multi:
+  - name: ard/us/bb00.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/bb00/evt.script
+- name: ard/bb02.ard #Belle's Room
+  multi:
+  - name: ard/us/bb02.ard
+  method: binarc
+  source:
+  - name: m_20
+    type: areadataspawn
+    method: spawnpoint
+    source:
+    - name: ard/bb02/m_20.yml
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/bb02/evt.script
+- name: ard/bb03.ard #Beast's Room
+  multi:
+  - name: ard/us/bb03.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/bb03/evt.script
+- name: ard/bb05.ard #Ballroom (Dark)
+  multi:
+  - name: ard/us/bb05.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/bb05/evt.script
+- name: ard/bb11.ard #Undercroft
+  multi:
+  - name: ard/us/bb11.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/bb11/evt.script
+- name: ard/bb15.ard #Bridge (Xaldin)
+  multi:
+  - name: ard/us/bb15.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/bb15/evt.script
+- name: ard/ca01.ard #Harbor
+  multi:
+  - name: ard/us/ca01.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/ca01/evt.script
+- name: ard/ca03.ard #The Interceptor
+  multi:
+  - name: ard/us/ca03.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/ca03/evt.script
+- name: ard/ca07.ard #The Interceptor
+  multi:
+  - name: ard/us/ca07.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/ca07/evt.script
+- name: ard/ca08.ard #Rock Face (The Interceptor)
+  multi:
+  - name: ard/us/ca08.ard
+  method: binarc
+  source:
+  - name: m_20
+    type: areadataspawn
+    method: spawnpoint
+    source:
+    - name: ard/ca08/m_20.yml
+  - name: b_80
+    type: areadataspawn
+    method: spawnpoint
+    source:
+    - name: ard/ca08/b_80.yml
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/ca08/evt.script
+- name: ard/ca09.ard #Cave Mouth
+  multi:
+  - name: ard/us/ca09.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/ca09/evt.script
+- name: ard/ca10.ard #Treasure Heap
+  multi:
+  - name: ard/us/ca10.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/ca10/evt.script
+- name: ard/ca16.ard #Rock Face (The Black Pearl)
+  multi:
+  - name: ard/us/ca16.ard
+  method: binarc
+  source:
+  - name: m_20
+    type: areadataspawn
+    method: spawnpoint
+    source:
+    - name: ard/ca16/m_20.yml
+  - name: b_80
+    type: areadataspawn
+    method: spawnpoint
+    source:
+    - name: ard/ca16/b_80.yml
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/ca16/evt.script
+  - name: e_50
+    type: areadataspawn
+    method: spawnpoint
+    source:
+    - name: ard/ca16/e_50.yml
+- name: ard/dc00.ard #Audience Chamber
+  multi:
+  - name: ard/us/dc00.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/dc00/evt.script
+- name: ard/dc01.ard #Library
+  multi:
+  - name: ard/us/dc01.ard
+  method: binarc
+  source:
+  - name: m_20
+    type: areadataspawn
+    method: spawnpoint
+    source:
+    - name: ard/dc01/m_20.yml
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/dc01/evt.script
+- name: ard/dc07.ard #Gathering Place
+  multi:
+  - name: ard/us/dc07.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/dc07/evt.script
+- name: ard/es00.ard #Alley to Between
+  multi:
+  - name: ard/us/es00.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/es00/evt.script
+- name: ard/eh01.ard #Alley to Between
+  multi:
+  - name: ard/us/eh01.ard
+  method: binarc
+  source:
+  - name: m_20
+    type: areadataspawn
+    method: spawnpoint
+    source:
+    - name: ard/eh01/m_20.yml
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/eh01/evt.script
+- name: ard/eh10.ard #Hall of Empty Melodies (Lower)
+  multi:
+  - name: ard/us/eh10.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/eh10/evt.script
+- name: ard/eh14.ard #Havoc's Divide
+  multi:
+  - name: ard/us/eh14.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/eh14/evt.script
+- name: ard/eh15.ard #Addled Impasse
+  multi:
+  - name: ard/us/eh15.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/eh15/evt.script
+- name: ard/eh19.ard #Memory's Contortion
+  multi:
+  - name: ard/us/eh19.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/eh19/evt.script
+  - name: 0000 #Fatal Crest, Fenrir, Ultima Weapon
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/eh20.ard #The World of Nothing (Xemnas II)
+  multi:
+  - name: ard/us/eh24.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/eh20/evt.script
+- name: ard/eh21.ard #Station of Awakening (Roxas)
+  multi:
+  - name: ard/us/eh21.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/eh21/evt.script
+  - name: 0000 #Two Become One, Oblivion
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/eh23.ard #The World of Nothing (Armor II)
+  multi:
+  - name: ard/us/eh23.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/eh23/evt.script
+- name: ard/eh24.ard #The World of Nothing (Armor I)
+  multi:
+  - name: ard/us/eh24.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/eh24/evt.script
+- name: ard/eh25.ard #The World of Nothing (Core)
+  multi:
+  - name: ard/us/eh25.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/eh25/evt.script
+- name: ard/hb01.ard #The Dark Depths
+  multi:
+  - name: ard/us/hb01.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/hb01/evt.script
+- name: ard/hb03.ard #Crystal Fissure
+  multi:
+  - name: ard/us/hb03.ard
+  method: binarc
+  source:
+  - name: m_20
+    type: areadataspawn
+    method: spawnpoint
+    source:
+    - name: ard/hb03/m_20.yml
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/hb03/evt.script
+  - name: 0000 #Photon Debugger, Cure
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/hb04.ard #Castle Gate
+  multi:
+  - name: ard/us/hb04.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/hb04/evt.script
+- name: ard/hb08.ard #Bailey (Intact)
+  multi:
+  - name: ard/us/hb08.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/hb08/evt.script
+- name: ard/hb16.ard #Ravine Trail
+  multi:
+  - name: ard/us/hb17.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/hb16/evt.script
+- name: ard/hb17.ard #The Great Maw (1000 Heartless)
+  multi:
+  - name: ard/us/hb17.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/hb17/evt.script
+- name: ard/hb18.ard #Restoration Site (Destroyed)
+  multi:
+  - name: ard/us/hb18.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/hb18/evt.script
+- name: ard/hb20.ard #Corridors (Fight)
+  multi:
+  - name: ard/us/hb20.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/hb20/evt.script
+- name: ard/hb32.ard #The Old Mansion (Vexen)
+  multi:
+  - name: ard/us/hb32.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/hb32/evt.script
+- name: ard/hb33.ard #Station of Remembrance
+  multi:
+  - name: ard/us/hb33.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/hb33/evt.script
+- name: ard/hb34.ard #Destiny Island (Zexion)
+  multi:
+  - name: ard/us/hb34.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/hb34/evt.script
+- name: ard/hb38.ard #Station of Oblivion
+  multi:
+  - name: ard/us/hb38.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/hb38/evt.script
+- name: ard/he05.ard #Valley of the Dead
+  multi:
+  - name: ard/us/he05.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/he05/evt.script
+  - name: 0000 #Cure
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/he07.ard #Cave of the Dead: Entrance
+  multi:
+  - name: ard/us/he07.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/he07/evt.script
+- name: ard/he08.ard #Well of Captivity
+  multi:
+  - name: ard/us/he08.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/he08/evt.script
+- name: ard/he09.ard #Underdrome
+  multi:
+  - name: ard/us/he09.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/he09/evt.script
+- name: ard/he18.ard #Coliseum Gates (Hydra)
+  multi:
+  - name: ard/us/he18.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/he18/evt.script
+  - name: 0000 #Hero's Crest
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/he19.ard #Underdrome (Hades)
+  multi:
+  - name: ard/us/he19.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/he19/evt.script
+  - name: 0000 #Sweet Memories, Rumbling Rose, Guardian Soul, Genji Shield, Feather Charm, Meteor Staff
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/lk02.ard #The King's Den
+  multi:
+  - name: ard/us/lk02.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/lk02/evt.script
+- name: ard/lk05.ard #Elephant Graveyard
+  multi:
+  - name: ard/us/lk05.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/lk05/evt.script
+- name: ard/lk06.ard #The Gorge
+  multi:
+  - name: ard/us/lk06.ard
+  method: binarc
+  source:
+  - name: m_20
+    type: areadataspawn
+    method: spawnpoint
+    source:
+    - name: ard/lk06/m_20.yml
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/lk06/evt.script
+- name: ard/lk14.ard #Scar's Darkness
+  multi:
+  - name: ard/us/lk14.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/lk14/evt.script
+  - name: 0000 #Fire, Rising Dragon
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/lk15.ard #Savannah (Groundshaker)
+  multi:
+  - name: ard/us/lk15.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/lk15/evt.script
+  - name: 0000 #Wishing Lamp, Decisive Pumpkin, Sleeping Lion, Cosmic Chain
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/mu00.ard #Bamboo Grove
+  multi:
+  - name: ard/us/mu00.ard
+  method: binarc
+  source:
+  - name: m_20
+    type: areadataspawn
+    method: spawnpoint
+    source:
+    - name: ard/mu00/m_20.yml
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/mu00/evt.script
+- name: ard/mu01.ard #Encampment
+  multi:
+  - name: ard/us/mu01.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/mu01/evt.script
+- name: ard/mu02.ard #Checkpoint
+  multi:
+  - name: ard/us/mu02.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/mu02/evt.script
+- name: ard/mu03.ard #Mountain Trail
+  multi:
+  - name: ard/us/mu03.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/mu03/evt.script
+- name: ard/mu05.ard #Village Cave
+  multi:
+  - name: ard/us/mu05.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/mu05/evt.script
+- name: ard/mu07.ard #Summit
+  multi:
+  - name: ard/us/mu07.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/mu07/evt.script
+  - name: mu_g
+    type: bdx
+    method: copy
+    source:
+    - name: ard/mu07/mu_g.bin
+- name: ard/mu08.ard #Imperial Square
+  multi:
+  - name: ard/us/mu08.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/mu08/evt.script
+- name: ard/mu09.ard #Palace Gate
+  multi:
+  - name: ard/us/mu09.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/mu09/evt.script
+  - name: 0000 #Hidden Dragon
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/mu10.ard #Antechamber
+  multi:
+  - name: ard/us/mu10.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/mu10/evt.script
+- name: ard/nm00.ard #Halloween Town Square
+  multi:
+  - name: ard/us/nm00.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/nm00/evt.script
+- name: ard/nm03.ard #Curly Hill
+  multi:
+  - name: ard/us/nm03.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/nm03/evt.script
+- name: ard/nm06.ard #Candy Cane Lane
+  multi:
+  - name: ard/us/nm06.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/nm06/evt.script
+  - name: 0000 #Lamp Charm, Party
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/nm07.ard #Christmas Tree Plaza
+  multi:
+  - name: ard/us/nm07.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/nm07/evt.script
+- name: ard/nm09.ard #Shipping and Receiving
+  multi:
+  - name: ard/us/nm09.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/nm09/evt.script
+- name: ard/nm10.ard #Wrapping Room
+  multi:
+  - name: ard/us/nm10.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/nm10/evt.script
+- name: ard/tr00.ard #Pit Cell
+  multi:
+  - name: ard/us/tr00.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/tr00/evt.script
+- name: ard/tr02.ard #Game Grid
+  multi:
+  - name: ard/us/tr02.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/tr02/evt.script
+- name: ard/tr03.ard #Dataspace
+  multi:
+  - name: ard/us/tr03.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/tr03/evt.script
+  - name: 0000 #Rising Dragon, Limit Form, Oathkeeper, Ukulele Charm, Master Form
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: tr_g
+    type: bdx
+    method: copy
+    source:
+    - name: ard/tr03/tr_g.bin
+- name: ard/tr04.ard #Hallway
+  multi:
+  - name: ard/us/tr04.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/tr04/evt.script
+- name: ard/tr07.ard #Solar Sailer
+  multi:
+  - name: ard/us/tr07.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/tr07/evt.script
+- name: ard/tr09.ard #Central Computer Mesa
+  multi:
+  - name: ard/us/tr09.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/tr09/evt.script
+- name: ard/tt04.ard #Sandlot
+  multi:
+  - name: ard/us/tt04.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/tt04/evt.script
+- name: ard/tt05.ard #Sandlot (Day 4)
+  multi:
+  - name: ard/us/tt05.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/tt05/evt.script
+  - name: 0000 #Medal, Champion Belt
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/tt10.ard #Sunset Hill
+  multi:
+  - name: ard/us/tt10.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/tt10/evt.script
+- name: ard/tt19.ard #Basement Hall
+  multi:
+  - name: ard/us/tt19.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/tt19/evt.script
+- name: ard/tt20.ard #Basement Hall (Axel II)
+  multi:
+  - name: ard/us/tt20.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/tt20/evt.script
+- name: ard/tt29.ard #Star Chamber
+  multi:
+  - name: ard/us/tt29.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/tt29/evt.script
+- name: ard/tt30.ard #Moon Chamber
+  multi:
+  - name: ard/us/tt30.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/tt30/evt.script
+  - name: 0000 #Star Seeker, Valor Form, Blizzard
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/tt32.ard #Station of Serenity
+  multi:
+  - name: ard/us/tt32.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/tt32/evt.script
+- name: ard/tt34.ard #Station of Awakening
+  multi:
+  - name: ard/us/tt34.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/tt34/evt.script
+- name: ard/tt40.ard #Betwixt and Between
+  multi:
+  - name: ard/us/tt40.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/tt40/evt.script
+  - name: 0000 #Winner's Proof, Bond of Flame
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/tt41.ard #The Old Mansion (Nobodies)
+  multi:
+  - name: ard/us/tt41.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/tt41/evt.script
+- name: ard/wi01.ard #Pier
+  multi:
+  - name: ard/us/wi01.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/wi01/evt.script
+- name: ard/wi02.ard #Waterway
+  multi:
+  - name: ard/us/wi02.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/wi02/evt.script
+- name: ard/wi03.ard #Wharf
+  multi:
+  - name: ard/us/wi03.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/wi03/evt.script
+  - name: 0000 #Monochrome, Wisdom Form, Protect Belt
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/wi04.ard #Lilliput
+  multi:
+  - name: ard/us/wi04.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/wi04/evt.script
+- name: ard/wi05.ard #Building Site
+  multi:
+  - name: ard/us/wi05.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/wi05/evt.script
+- name: ard/wi06.ard #Scene of the Fire
+  multi:
+  - name: ard/us/wi06.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/wi06/evt.script
+- name: ard/wi07.ard #Mickey's House
+  multi:
+  - name: ard/us/wi07.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/wi07/evt.script

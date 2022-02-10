@@ -1,0 +1,318 @@
+5: #Cerberus (Add Aerial Dive)
+  Sora:
+    RewardId: 5
+    CharacterId: 1
+    HpIncrease: 0
+    MpIncrease: 0
+    DriveGaugeUpgrade: 0
+    ItemSlotUpgrade: 0
+    AccessorySlotUpgrade: 0
+    ArmorSlotUpgrade: 0
+    BonusItem1: 268
+    BonusItem2: 0x230
+    Padding: 0
+6: #Pete I (Add HP Increase, Donald's MP Rage, Goofy's HP Up)
+  Sora:
+    RewardId: 6
+    CharacterId: 1
+    HpIncrease: 5
+    MpIncrease: 0
+    DriveGaugeUpgrade: 0
+    ItemSlotUpgrade: 0
+    AccessorySlotUpgrade: 0
+    ArmorSlotUpgrade: 0
+    BonusItem1: 198
+    BonusItem2: 0
+    Padding: 0
+  Donald:
+    RewardId: 6
+    CharacterId: 2
+    HpIncrease: 3
+    MpIncrease: 0
+    DriveGaugeUpgrade: 0
+    ItemSlotUpgrade: 0
+    AccessorySlotUpgrade: 0
+    ArmorSlotUpgrade: 0
+    BonusItem1: 0x19C
+    BonusItem2: 0
+    Padding: 0
+  Goofy:
+    RewardId: 6
+    CharacterId: 3
+    HpIncrease: 4
+    MpIncrease: 0
+    DriveGaugeUpgrade: 0
+    ItemSlotUpgrade: 0
+    AccessorySlotUpgrade: 0
+    ArmorSlotUpgrade: 0
+    BonusItem1: 419
+    BonusItem2: 0
+    Padding: 0
+10: #Storm Rider (Add Ogre Shield)
+  Sora:
+    RewardId: 10
+    CharacterId: 1
+    HpIncrease: 0
+    MpIncrease: 0
+    DriveGaugeUpgrade: 0
+    ItemSlotUpgrade: 0
+    AccessorySlotUpgrade: 0
+    ArmorSlotUpgrade: 0
+    BonusItem1: 23
+    BonusItem2: 0x08D
+    Padding: 0
+19: #Oogie Boogie (Add Magnet)
+  Sora:
+    RewardId: 19
+    CharacterId: 1
+    HpIncrease: 0
+    MpIncrease: 0
+    DriveGaugeUpgrade: 0
+    ItemSlotUpgrade: 1
+    AccessorySlotUpgrade: 0
+    ArmorSlotUpgrade: 0
+    BonusItem1: 0x057
+    BonusItem2: 0
+    Padding: 0
+22: #Grim Reaper II (Add Horizontal Slash, Donald HP Up, Goofy Draw, Jack HP Up)
+  Sora:
+    RewardId: 22
+    CharacterId: 1
+    HpIncrease: 0
+    MpIncrease: 0
+    DriveGaugeUpgrade: 0
+    ItemSlotUpgrade: 0
+    AccessorySlotUpgrade: 0
+    ArmorSlotUpgrade: 0
+    BonusItem1: 87
+    BonusItem2: 0x10F
+    Padding: 0
+  Donald:
+    RewardId: 22
+    CharacterId: 2
+    HpIncrease: 3
+    MpIncrease: 0
+    DriveGaugeUpgrade: 0
+    ItemSlotUpgrade: 0
+    AccessorySlotUpgrade: 0
+    ArmorSlotUpgrade: 0
+    BonusItem1: 200
+    BonusItem2: 0
+    Padding: 0
+  Goofy:
+    RewardId: 22
+    CharacterId: 3
+    HpIncrease: 4
+    MpIncrease: 0
+    DriveGaugeUpgrade: 0
+    ItemSlotUpgrade: 0
+    AccessorySlotUpgrade: 0
+    ArmorSlotUpgrade: 0
+    BonusItem1: 0x195
+    BonusItem2: 0
+    Padding: 0
+  Sparrow:
+    RewardId: 22
+    CharacterId: 8
+    HpIncrease: 25
+    MpIncrease: 0
+    DriveGaugeUpgrade: 0
+    ItemSlotUpgrade: 0
+    AccessorySlotUpgrade: 0
+    ArmorSlotUpgrade: 0
+    BonusItem1: 0
+    BonusItem2: 0
+    Padding: 0
+23: #Xigbar (Add Save the King+)
+  Sora:
+    RewardId: 23
+    CharacterId: 1
+    HpIncrease: 0
+    MpIncrease: 10
+    DriveGaugeUpgrade: 0
+    ItemSlotUpgrade: 0
+    AccessorySlotUpgrade: 0
+    ArmorSlotUpgrade: 0
+    BonusItem1: 0x1F8
+    BonusItem2: 0
+    Padding: 0
+25: #Saix (Add Save the Queen+)
+  Sora:
+    RewardId: 25
+    CharacterId: 1
+    HpIncrease: 5
+    MpIncrease: 0
+    DriveGaugeUpgrade: 0
+    ItemSlotUpgrade: 0
+    AccessorySlotUpgrade: 0
+    ArmorSlotUpgrade: 0
+    BonusItem1: 0x1F7
+    BonusItem2: 0
+    Padding: 0
+29: #Scar (Add Fire)
+  Sora:
+    RewardId: 29
+    CharacterId: 1
+    HpIncrease: 0
+    MpIncrease: 10
+    DriveGaugeUpgrade: 0
+    ItemSlotUpgrade: 0
+    AccessorySlotUpgrade: 0
+    ArmorSlotUpgrade: 0
+    BonusItem1: 0x015
+    BonusItem2: 0
+    Padding: 0
+34: #Axel II (Add Combo Master)
+  Roxas:
+    RewardId: 34
+    CharacterId: 14
+    HpIncrease: 5
+    MpIncrease: 0
+    DriveGaugeUpgrade: 0
+    ItemSlotUpgrade: 0
+    AccessorySlotUpgrade: 0
+    ArmorSlotUpgrade: 0
+    BonusItem1: 0x21B
+    BonusItem2: 0
+    Padding: 0
+49: #Hyenas I (Add Circle of Life)
+  Sora:
+    RewardId: 49
+    CharacterId: 1
+    HpIncrease: 5
+    MpIncrease: 0
+    DriveGaugeUpgrade: 0
+    ItemSlotUpgrade: 0
+    AccessorySlotUpgrade: 0
+    ArmorSlotUpgrade: 0
+    BonusItem1: 0x1E7
+    BonusItem2: 0
+    Padding: 0
+60: #1000 Heartless (Add Gull Wing)
+  Sora:
+    RewardId: 60
+    CharacterId: 1
+    HpIncrease: 0
+    MpIncrease: 0
+    DriveGaugeUpgrade: 0
+    ItemSlotUpgrade: 0
+    AccessorySlotUpgrade: 0
+    ArmorSlotUpgrade: 0
+    BonusItem1: 265
+    BonusItem2: 0x1E9
+    Padding: 0
+64: #Vexen (Add Frozen Pride+)
+  Sora:
+    RewardId: 64
+    CharacterId: 1
+    HpIncrease: 0
+    MpIncrease: 0
+    DriveGaugeUpgrade: 0
+    ItemSlotUpgrade: 0
+    AccessorySlotUpgrade: 0
+    ArmorSlotUpgrade: 1
+    BonusItem1: 0x229
+    BonusItem2: 0
+    Padding: 0
+65: #Lexaeus (Add Centurion+)
+  Sora:
+    RewardId: 65
+    CharacterId: 1
+    HpIncrease: 0
+    MpIncrease: 0
+    DriveGaugeUpgrade: 0
+    ItemSlotUpgrade: 0
+    AccessorySlotUpgrade: 1
+    ArmorSlotUpgrade: 0
+    BonusItem1: 0x222
+    BonusItem2: 0
+    Padding: 0
+66: #Zexion (Add Shade Archive+)
+  Sora:
+    RewardId: 66
+    CharacterId: 1
+    HpIncrease: 0
+    MpIncrease: 0
+    DriveGaugeUpgrade: 0
+    ItemSlotUpgrade: 1
+    AccessorySlotUpgrade: 0
+    ArmorSlotUpgrade: 0
+    BonusItem1: 0x03A
+    BonusItem2: 0
+    Padding: 0
+67: #Marluxia (Add Full Bloom+)
+  Sora:
+    RewardId: 67
+    CharacterId: 1
+    HpIncrease: 0
+    MpIncrease: 0
+    DriveGaugeUpgrade: 1
+    ItemSlotUpgrade: 0
+    AccessorySlotUpgrade: 0
+    ArmorSlotUpgrade: 0
+    BonusItem1: 0x042
+    BonusItem2: 0
+    Padding: 0
+68: #Larxene (Add Shock Charm+)
+  Sora:
+    RewardId: 68
+    CharacterId: 1
+    HpIncrease: 0
+    MpIncrease: 10
+    DriveGaugeUpgrade: 0
+    ItemSlotUpgrade: 0
+    AccessorySlotUpgrade: 0
+    ArmorSlotUpgrade: 0
+    BonusItem1: 0x085
+    BonusItem2: 0
+    Padding: 0
+69: #Roxas (Remove Combo Master, Add Final Form)
+  Sora:
+    RewardId: 69
+    CharacterId: 1
+    HpIncrease: 5
+    MpIncrease: 0
+    DriveGaugeUpgrade: 0
+    ItemSlotUpgrade: 0
+    AccessorySlotUpgrade: 0
+    ArmorSlotUpgrade: 0
+    BonusItem1: 0x01D
+    BonusItem2: 0
+    Padding: 0
+70: #Terra (Add Item Slot, Donald HP Up)
+  Sora:
+    RewardId: 70
+    CharacterId: 1
+    HpIncrease: 0
+    MpIncrease: 0
+    DriveGaugeUpgrade: 1
+    ItemSlotUpgrade: 1
+    AccessorySlotUpgrade: 0
+    ArmorSlotUpgrade: 0
+    BonusItem1: 0
+    BonusItem2: 0
+    Padding: 0
+  Donald:
+    RewardId: 70
+    CharacterId: 2
+    HpIncrease: 6
+    MpIncrease: 0
+    DriveGaugeUpgrade: 0
+    ItemSlotUpgrade: 0
+    AccessorySlotUpgrade: 0
+    ArmorSlotUpgrade: 0
+    BonusItem1: 0
+    BonusItem2: 0
+    Padding: 0
+  Goofy:
+    RewardId: 70
+    CharacterId: 3
+    HpIncrease: 8
+    MpIncrease: 0
+    DriveGaugeUpgrade: 0
+    ItemSlotUpgrade: 0
+    AccessorySlotUpgrade: 0
+    ArmorSlotUpgrade: 0
+    BonusItem1: 0
+    BonusItem2: 0
+    Padding: 0

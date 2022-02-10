@@ -1,0 +1,59 @@
+Program 0x4C
+Bgm 119 119
+BattleLevel 1
+AreaSettings 9 -1
+	SetEvent "110a" Type 129
+	SetPartyMenu 0
+
+AreaSettings 10 -1
+	SetEvent "110b" Type 129
+	SetPartyMenu 0
+
+AreaSettings 11 -1
+	SetEvent "110c" Type 129
+	SetPartyMenu 0
+
+AreaSettings 76 -1
+	SetUnk05 0x3
+	SetJump Type 2 World TT Area 0 Entrance 0 LocalSet 78 FadeType 1
+	SetPartyMenu 0
+
+Spawn "a10_"
+Spawn "b10_"
+Spawn "c10_"
+Spawn "d10_"
+Spawn "e10_"
+Spawn "f10_"
+Spawn "h10_"
+Spawn "900y"
+
+Program 0x4E
+Bgm 119 119
+BattleLevel 1
+AreaSettings 7 -1
+	SetProgressFlag 0x82B
+	SetUnk05 0x3
+	SetJump Type 2 World TT Area 0 Entrance 0 LocalSet 154 FadeType 1
+	SetPartyMenu 0
+
+AreaSettings 15 -1
+	SetUnk05 0x3
+	SetJump Type 2 World TT Area 0 Entrance 0 LocalSet 78 FadeType 1
+	SetPartyMenu 0
+
+Spawn "a11_"
+Spawn "b11_"
+Spawn "c11_"
+Spawn "e11_"
+Spawn "f11_"
+Spawn "h11_"
+
+Program 0x50
+Bgm 121 121
+BattleLevel 28
+AreaSettings 7 -1
+	SetProgressFlag 0x440C
+	SetUnk05 0x1
+	SetJump Type 1 World TR Area 3 Entrance 0 LocalSet 0 FadeType 1
+	SetPartyMenu 0
+
