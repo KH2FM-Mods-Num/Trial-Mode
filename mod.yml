@@ -491,7 +491,7 @@ assets:
     - name: ard/hb08/evt.script
 - name: ard/hb16.ard #Ravine Trail
   multi:
-  - name: ard/us/hb17.ard
+  - name: ard/us/hb16.ard
   method: binarc
   source:
   - name: evt
