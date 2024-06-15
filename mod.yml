@@ -386,7 +386,7 @@ assets:
     - name: 0000.bin
 - name: ard/eh20.ard #The World of Nothing (Xemnas II)
   multi:
-  - name: ard/us/eh24.ard
+  - name: ard/us/eh20.ard
   method: binarc
   source:
   - name: evt
