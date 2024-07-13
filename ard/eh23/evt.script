@@ -2,6 +2,7 @@ Program 0x49
 Bgm 61 61
 BattleLevel 50
 AreaSettings 16 -1
+	SetProgressFlag 0x876
 	SetUnk05 0x3
-	SetJump Type 2 World EH Area 0 Entrance 0 LocalSet 74 FadeType 1
+	SetJump Type 1 World TT Area 32 Entrance 50 LocalSet 0 FadeType 1
 	SetPartyMenu 0

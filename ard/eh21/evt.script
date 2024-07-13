@@ -2,9 +2,7 @@ Program 0x41
 Bgm 66 66
 BattleLevel 50
 AreaSettings 16 -1
-	SetMember 1
-	SetUnk05 0x1
-	SetEvent "0000" Type 2
-	SetJump Type 2 World HB Area 0 Entrance 0 LocalSet 143 FadeType 1
-	SetInventory 277 278
-	SetPartyMenu 1
+	SetProgressFlag 0x86D
+	SetUnk05 0x3
+	SetJump Type 1 World TT Area 32 Entrance 50 LocalSet 0 FadeType 1
+	SetPartyMenu 0

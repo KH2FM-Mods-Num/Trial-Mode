@@ -3,8 +3,9 @@ Party W_FRIEND
 Bgm 111 111
 BattleLevel 36
 AreaSettings 7 -1
+	SetProgressFlag 0x853
 	SetUnk05 0x3
-	SetJump Type 2 World BB Area 0 Entrance 0 LocalSet 82 FadeType 1
+	SetJump Type 1 World TT Area 32 Entrance 50 LocalSet 0 FadeType 1
 	SetPartyMenu 0
 
 Spawn "e_06"

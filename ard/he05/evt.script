@@ -1,20 +1,17 @@
-Program 0x03
-Party W_FRIEND_FIX
+Program 0x00
 Bgm Default Default
 AreaSettings 0 -1
 	SetMember 4
 	SetEvent "0000" Type 2
 	SetJump Type 2 World HE Area 0 Entrance 0 LocalSet 111 FadeType 1
-	SetInventory 299
 	SetPartyMenu 1
-
-Spawn "e_50"
 
 Program 0x6F
 Party W_FRIEND_FIX
 Bgm 117 117
 BattleLevel 16
 AreaSettings 1 -1
-	SetUnk05 0x3
-	SetJump Type 2 World HE Area 0 Entrance 0 LocalSet 114 FadeType 1
+	SetProgressFlag 0x823
+	SetUnk05 0x1
+	SetJump Type 1 World TT Area 32 Entrance 50 LocalSet 0 FadeType 1
 	SetPartyMenu 0

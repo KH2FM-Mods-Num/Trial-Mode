@@ -1,0 +1,149 @@
+5: #Cerberus (+ Urns)
+  Sora:
+    RewardId: 5
+    CharacterId: 1
+    HpIncrease: 0
+    MpIncrease: 0
+    DriveGaugeUpgrade: 0
+    ItemSlotUpgrade: 0
+    AccessorySlotUpgrade: 0
+    ArmorSlotUpgrade: 0
+    BonusItem1: 268
+    BonusItem2: 560
+    Padding: 0
+  Auron:
+    RewardId: 5
+    CharacterId: 5
+    HpIncrease: 40
+    MpIncrease: 0
+    DriveGaugeUpgrade: 0
+    ItemSlotUpgrade: 0
+    AccessorySlotUpgrade: 0
+    ArmorSlotUpgrade: 0
+    BonusItem1: 0
+    BonusItem2: 0
+    Padding: 0
+6: #Pete I (+ Demyx I)
+  Sora:
+    RewardId: 6
+    CharacterId: 1
+    HpIncrease: 5
+    MpIncrease: 0
+    DriveGaugeUpgrade: 0
+    ItemSlotUpgrade: 0
+    AccessorySlotUpgrade: 0
+    ArmorSlotUpgrade: 0
+    BonusItem1: 198
+    BonusItem2: 0
+    Padding: 0
+  Donald:
+    RewardId: 6
+    CharacterId: 2
+    HpIncrease: 3
+    MpIncrease: 0
+    DriveGaugeUpgrade: 0
+    ItemSlotUpgrade: 0
+    AccessorySlotUpgrade: 0
+    ArmorSlotUpgrade: 0
+    BonusItem1: 412
+    BonusItem2: 0
+    Padding: 0
+  Goofy:
+    RewardId: 6
+    CharacterId: 3
+    HpIncrease: 4
+    MpIncrease: 0
+    DriveGaugeUpgrade: 0
+    ItemSlotUpgrade: 0
+    AccessorySlotUpgrade: 0
+    ArmorSlotUpgrade: 0
+    BonusItem1: 419
+    BonusItem2: 0
+    Padding: 0
+20: #The Experiment (+ Hyenas II (Sora, Donald, Goofy))
+  Sora:
+    RewardId: 20
+    CharacterId: 1
+    HpIncrease: 5
+    MpIncrease: 0
+    DriveGaugeUpgrade: 0
+    ItemSlotUpgrade: 0
+    AccessorySlotUpgrade: 1
+    ArmorSlotUpgrade: 0
+    BonusItem1: 0
+    BonusItem2: 0
+    Padding: 0
+  Donald:
+    RewardId: 20
+    CharacterId: 2
+    HpIncrease: 3
+    MpIncrease: 0
+    DriveGaugeUpgrade: 0
+    ItemSlotUpgrade: 0
+    AccessorySlotUpgrade: 0
+    ArmorSlotUpgrade: 0
+    BonusItem1: 406
+    BonusItem2: 0
+    Padding: 0
+  Goofy:
+    RewardId: 20
+    CharacterId: 3
+    HpIncrease: 4
+    MpIncrease: 0
+    DriveGaugeUpgrade: 0
+    ItemSlotUpgrade: 0
+    AccessorySlotUpgrade: 0
+    ArmorSlotUpgrade: 0
+    BonusItem1: 412
+    BonusItem2: 0
+    Padding: 0
+  Jack:
+    RewardId: 20
+    CharacterId: 10
+    HpIncrease: 10
+    MpIncrease: 0
+    DriveGaugeUpgrade: 0
+    ItemSlotUpgrade: 0
+    AccessorySlotUpgrade: 0
+    ArmorSlotUpgrade: 0
+    BonusItem1: 0
+    BonusItem2: 0
+    Padding: 0
+30: #Groundshaker (+ Hyenas II (Simba))
+  Sora:
+    RewardId: 30
+    CharacterId: 1
+    HpIncrease: 5
+    MpIncrease: 0
+    DriveGaugeUpgrade: 0
+    ItemSlotUpgrade: 0
+    AccessorySlotUpgrade: 0
+    ArmorSlotUpgrade: 0
+    BonusItem1: 23
+    BonusItem2: 0
+    Padding: 0
+  Simba:
+    RewardId: 30
+    CharacterId: 11
+    HpIncrease: 10
+    MpIncrease: 0
+    DriveGaugeUpgrade: 0
+    ItemSlotUpgrade: 0
+    AccessorySlotUpgrade: 0
+    ArmorSlotUpgrade: 0
+    BonusItem1: 0
+    BonusItem2: 0
+    Padding: 0
+69: #Roxas (- Combo Master + Final Form
+  Sora:
+    RewardId: 69
+    CharacterId: 1
+    HpIncrease: 5
+    MpIncrease: 0
+    DriveGaugeUpgrade: 0
+    ItemSlotUpgrade: 0
+    AccessorySlotUpgrade: 0
+    ArmorSlotUpgrade: 0
+    BonusItem1: 0x1D
+    BonusItem2: 0
+    Padding: 0

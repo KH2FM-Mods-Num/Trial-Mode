@@ -1,6 +1,14 @@
+Program 0x78
+Bgm Default Default
+AreaSettings 0 -1
+	SetMember 1
+	SetJump Type 2 World HB Area 0 Entrance 0 LocalSet 115 FadeType 1
+	SetPartyMenu 1
+
 Program 0x73
 Bgm 63 63
 AreaSettings 16 -1
-	SetUnk05 0x1
-	SetJump Type 2 World EH Area 0 Entrance 0 LocalSet 57 FadeType 1
+	SetProgressFlag 0x878
+	SetUnk05 0x3
+	SetJump Type 1 World TT Area 32 Entrance 50 LocalSet 0 FadeType 1
 	SetPartyMenu 0

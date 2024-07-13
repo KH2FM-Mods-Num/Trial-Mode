@@ -1,7 +1,16 @@
+Program 0x00
+Bgm Default Default
+AreaSettings 0 -1
+	SetMember 3
+	SetEvent "0000" Type 2
+	SetJump Type 2 World EH Area 0 Entrance 0 LocalSet 70 FadeType 1
+	SetPartyMenu 1
+
 Program 0x46
 Bgm 59 59
 BattleLevel 50
 AreaSettings 82 -1
+	SetProgressFlag 0x873
 	SetUnk05 0x3
-	SetJump Type 2 World EH Area 0 Entrance 0 LocalSet 71 FadeType 1
+	SetJump Type 1 World TT Area 32 Entrance 50 LocalSet 0 FadeType 1
 	SetPartyMenu 0

@@ -1,0 +1,8 @@
+Program 0x48
+Bgm 60 60
+BattleLevel 50
+AreaSettings 16 -1
+	SetProgressFlag 0x875
+	SetUnk05 0x3
+	SetJump Type 1 World TT Area 32 Entrance 50 LocalSet 0 FadeType 1
+	SetPartyMenu 0

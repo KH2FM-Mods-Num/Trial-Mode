@@ -1,8 +1,0 @@
-Program 0x13
-Party DEFAULT
-AreaSettings 1 -1
-	SetJump Type 2 World LK Area 0 Entrance 0 LocalSet 56 FadeType 1
-	SetPartyMenu 0
-
-Spawn "e_50"
-Spawn "j03_"

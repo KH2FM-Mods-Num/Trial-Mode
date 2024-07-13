@@ -2,10 +2,7 @@ Program 0xCA
 Bgm 110 110
 BattleLevel 38
 AreaSettings 16 -1
+	SetProgressFlag 0x85B
 	SetUnk05 0x1
-	SetEvent "0000" Type 2
-	SetJump Type 1 World CA Area 16 Entrance 50 LocalSet 0 FadeType 1
-	SetInventory 284 270 272 514 296 331
+	SetJump Type 1 World TT Area 32 Entrance 50 LocalSet 0 FadeType 1
 	SetPartyMenu 0
-
-Spawn "e_50"

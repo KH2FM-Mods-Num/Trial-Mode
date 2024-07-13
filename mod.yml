@@ -1,57 +1,80 @@
-title: Trial Mode
-description: It's like FFXII's trial mode. Originally made by Sonic.
+title: Trial Mode v1.0
+description: Balanced (hopefully) Trial Mode
 assets:
+#Progression
+- name: 00progress.bin
+  method: binarc
+  source:
+  - name: tt
+    type: list
+    method: copy
+    source:
+    - name: 00progress.bin/tt.bin
+  - name: wlds
+    type: list
+    method: copy
+    source:
+    - name: 00progress.bin/wlds.bin
 - name: 00battle.bin
   method: binarc
   source:
+  - name: lvup
+    type: list
+    method: listpatch
+    source:
+    - name: 00battle.bin/LvupList.yml
+      type: lvup
   - name: bons
     type: list
     method: listpatch
     source:
-    - name: bons.yml
+    - name: 00battle.bin/BonsList.yml
       type: bons
   - name: plrp
     type: list
     method: listpatch
     source:
-    - name: plrp.yml
+    - name: 00battle.bin/PlrpList.yml
       type: plrp
   - name: fmlv
     type: list
     method: copy
     source:
-    - name: fmlv.bin
+    - name: 00battle.bin/fmlv.bin
 - name: 03system.bin
   method: binarc
   source:
+  - name: item
+    type: list
+    method: listpatch
+    source:
+    - name: 03system.bin/ItemList.yml
+      type: item
   - name: trsr
     type: list
     method: listpatch
     source:
-    - name: trsr.yml
+    - name: 03system.bin/TrsrList.yml
       type: trsr
-- name: 00progress.bin
-  method: binarc
-  source:
-  - name: wlds
+  - name: memt
     type: list
     method: copy
     source:
-    - name: wlds.bin
-- name: msg/jp/sys.bar
-  multi:
-  - name: msg/us/sys.bar
-  method: binarc
-  source:
-  - name: sys
-    type: list
-    method: kh2msg
+    - name: 03system.bin/memt.bin
+  - name: shop
+    type: unknown41
+    method: copy
     source:
-    - name: sys.yml
-      language: en
+      - name: 03system.bin/shop.bin
+#ARD
 - name: ard/al03.ard #The Palace
   multi:
+  - name: ard/jp/al03.ard
   - name: ard/us/al03.ard
+  - name: ard/fr/al03.ard
+  - name: ard/gr/al03.ard
+  - name: ard/it/al03.ard
+  - name: ard/sp/al03.ard
   method: binarc
   source:
   - name: evt
@@ -61,7 +84,12 @@ assets:
     - name: ard/al03/evt.script
 - name: ard/al05.ard #Above Agrabah
   multi:
+  - name: ard/jp/al05.ard
   - name: ard/us/al05.ard
+  - name: ard/fr/al05.ard
+  - name: ard/gr/al05.ard
+  - name: ard/it/al05.ard
+  - name: ard/sp/al05.ard
   method: binarc
   source:
   - name: evt
@@ -69,24 +97,14 @@ assets:
     method: areadatascript
     source:
     - name: ard/al05/evt.script
-- name: ard/al09.ard #Stone Guardians
+- name: ard/al10.ard #The Cave of Wonders: Treasure Room
   multi:
-  - name: ard/us/al09.ard
-  method: binarc
-  source:
-  - name: evt
-    type: areadatascript
-    method: areadatascript
-    source:
-    - name: ard/al09/evt.script
-  - name: 0000 #Follow the Wind, Party
-    type: event
-    method: copy
-    source:
-    - name: 0000.bin
-- name: ard/al10.ard #Treasure Room
-  multi:
+  - name: ard/jp/al10.ard
   - name: ard/us/al10.ard
+  - name: ard/fr/al10.ard
+  - name: ard/gr/al10.ard
+  - name: ard/it/al10.ard
+  - name: ard/sp/al10.ard
   method: binarc
   source:
   - name: evt
@@ -94,9 +112,14 @@ assets:
     method: areadatascript
     source:
     - name: ard/al10/evt.script
-- name: ard/al13.ard #Chasm of Challenges
+- name: ard/al13.ard #The Cave of Wonders: Chasm of Challenges
   multi:
+  - name: ard/jp/al13.ard
   - name: ard/us/al13.ard
+  - name: ard/fr/al13.ard
+  - name: ard/gr/al13.ard
+  - name: ard/it/al13.ard
+  - name: ard/sp/al13.ard
   method: binarc
   source:
   - name: evt
@@ -104,9 +127,19 @@ assets:
     method: areadatascript
     source:
     - name: ard/al13/evt.script
+  - name: 0000
+    type: event
+    method: copy
+    source:
+    - name: ard/0000.bin
 - name: ard/al14.ard #Sandswept Ruins
   multi:
+  - name: ard/jp/al14.ard
   - name: ard/us/al14.ard
+  - name: ard/fr/al14.ard
+  - name: ard/gr/al14.ard
+  - name: ard/it/al14.ard
+  - name: ard/sp/al14.ard
   method: binarc
   source:
   - name: evt
@@ -114,14 +147,14 @@ assets:
     method: areadatascript
     source:
     - name: ard/al14/evt.script
-  - name: 0000 #Mysterious Abyss, Cure, Cosmic Ring
-    type: event
-    method: copy
-    source:
-    - name: 0000.bin
 - name: ard/bb00.ard #Entrance Hall
   multi:
+  - name: ard/jp/bb00.ard
   - name: ard/us/bb00.ard
+  - name: ard/fr/bb00.ard
+  - name: ard/gr/bb00.ard
+  - name: ard/it/bb00.ard
+  - name: ard/sp/bb00.ard
   method: binarc
   source:
   - name: evt
@@ -129,24 +162,14 @@ assets:
     method: areadatascript
     source:
     - name: ard/bb00/evt.script
-- name: ard/bb02.ard #Belle's Room
-  multi:
-  - name: ard/us/bb02.ard
-  method: binarc
-  source:
-  - name: m_20
-    type: areadataspawn
-    method: spawnpoint
-    source:
-    - name: ard/bb02/m_20.yml
-  - name: evt
-    type: areadatascript
-    method: areadatascript
-    source:
-    - name: ard/bb02/evt.script
 - name: ard/bb03.ard #Beast's Room
   multi:
+  - name: ard/jp/bb03.ard
   - name: ard/us/bb03.ard
+  - name: ard/fr/bb03.ard
+  - name: ard/gr/bb03.ard
+  - name: ard/it/bb03.ard
+  - name: ard/sp/bb03.ard
   method: binarc
   source:
   - name: evt
@@ -154,9 +177,29 @@ assets:
     method: areadatascript
     source:
     - name: ard/bb03/evt.script
+- name: ard/bb04.ard #Ballroom (Light)
+  multi:
+  - name: ard/jp/bb04.ard
+  - name: ard/us/bb04.ard
+  - name: ard/fr/bb04.ard
+  - name: ard/gr/bb04.ard
+  - name: ard/it/bb04.ard
+  - name: ard/sp/bb04.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/bb04/evt.script
 - name: ard/bb05.ard #Ballroom (Dark)
   multi:
+  - name: ard/jp/bb05.ard
   - name: ard/us/bb05.ard
+  - name: ard/fr/bb05.ard
+  - name: ard/gr/bb05.ard
+  - name: ard/it/bb05.ard
+  - name: ard/sp/bb05.ard
   method: binarc
   source:
   - name: evt
@@ -164,9 +207,19 @@ assets:
     method: areadatascript
     source:
     - name: ard/bb05/evt.script
+  - name: 0000
+    type: event
+    method: copy
+    source:
+    - name: ard/0000.bin
 - name: ard/bb11.ard #Undercroft
   multi:
+  - name: ard/jp/bb11.ard
   - name: ard/us/bb11.ard
+  - name: ard/fr/bb11.ard
+  - name: ard/gr/bb11.ard
+  - name: ard/it/bb11.ard
+  - name: ard/sp/bb11.ard
   method: binarc
   source:
   - name: evt
@@ -176,7 +229,12 @@ assets:
     - name: ard/bb11/evt.script
 - name: ard/bb15.ard #Bridge (Xaldin)
   multi:
+  - name: ard/jp/bb15.ard
   - name: ard/us/bb15.ard
+  - name: ard/fr/bb15.ard
+  - name: ard/gr/bb15.ard
+  - name: ard/it/bb15.ard
+  - name: ard/sp/bb15.ard
   method: binarc
   source:
   - name: evt
@@ -186,7 +244,12 @@ assets:
     - name: ard/bb15/evt.script
 - name: ard/ca01.ard #Harbor
   multi:
+  - name: ard/jp/ca01.ard
   - name: ard/us/ca01.ard
+  - name: ard/fr/ca01.ard
+  - name: ard/gr/ca01.ard
+  - name: ard/it/ca01.ard
+  - name: ard/sp/ca01.ard
   method: binarc
   source:
   - name: evt
@@ -194,9 +257,29 @@ assets:
     method: areadatascript
     source:
     - name: ard/ca01/evt.script
+- name: ard/ca02.ard #Town
+  multi:
+  - name: ard/jp/ca02.ard
+  - name: ard/us/ca02.ard
+  - name: ard/fr/ca02.ard
+  - name: ard/gr/ca02.ard
+  - name: ard/it/ca02.ard
+  - name: ard/sp/ca02.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/ca02/evt.script
 - name: ard/ca03.ard #The Interceptor
   multi:
+  - name: ard/jp/ca03.ard
   - name: ard/us/ca03.ard
+  - name: ard/fr/ca03.ard
+  - name: ard/gr/ca03.ard
+  - name: ard/it/ca03.ard
+  - name: ard/sp/ca03.ard
   method: binarc
   source:
   - name: evt
@@ -204,9 +287,19 @@ assets:
     method: areadatascript
     source:
     - name: ard/ca03/evt.script
+  - name: 0000
+    type: event
+    method: copy
+    source:
+    - name: ard/0000.bin
 - name: ard/ca07.ard #The Interceptor
   multi:
+  - name: ard/jp/ca07.ard
   - name: ard/us/ca07.ard
+  - name: ard/fr/ca07.ard
+  - name: ard/gr/ca07.ard
+  - name: ard/it/ca07.ard
+  - name: ard/sp/ca07.ard
   method: binarc
   source:
   - name: evt
@@ -214,29 +307,14 @@ assets:
     method: areadatascript
     source:
     - name: ard/ca07/evt.script
-- name: ard/ca08.ard #Rock Face (The Interceptor)
+- name: ard/ca09.ard #Isla de Muerta: Cave Mouth
   multi:
-  - name: ard/us/ca08.ard
-  method: binarc
-  source:
-  - name: m_20
-    type: areadataspawn
-    method: spawnpoint
-    source:
-    - name: ard/ca08/m_20.yml
-  - name: b_80
-    type: areadataspawn
-    method: spawnpoint
-    source:
-    - name: ard/ca08/b_80.yml
-  - name: evt
-    type: areadatascript
-    method: areadatascript
-    source:
-    - name: ard/ca08/evt.script
-- name: ard/ca09.ard #Cave Mouth
-  multi:
+  - name: ard/jp/ca09.ard
   - name: ard/us/ca09.ard
+  - name: ard/fr/ca09.ard
+  - name: ard/gr/ca09.ard
+  - name: ard/it/ca09.ard
+  - name: ard/sp/ca09.ard
   method: binarc
   source:
   - name: evt
@@ -244,9 +322,14 @@ assets:
     method: areadatascript
     source:
     - name: ard/ca09/evt.script
-- name: ard/ca10.ard #Treasure Heap
+- name: ard/ca10.ard #Isla de Muerta: Treasure Heap
   multi:
+  - name: ard/jp/ca10.ard
   - name: ard/us/ca10.ard
+  - name: ard/fr/ca10.ard
+  - name: ard/gr/ca10.ard
+  - name: ard/it/ca10.ard
+  - name: ard/sp/ca10.ard
   method: binarc
   source:
   - name: evt
@@ -254,34 +337,29 @@ assets:
     method: areadatascript
     source:
     - name: ard/ca10/evt.script
-- name: ard/ca16.ard #Rock Face (The Black Pearl)
+- name: ard/ca18.ard #The Black Pearl
   multi:
-  - name: ard/us/ca16.ard
+  - name: ard/jp/ca18.ard
+  - name: ard/us/ca18.ard
+  - name: ard/fr/ca18.ard
+  - name: ard/gr/ca18.ard
+  - name: ard/it/ca18.ard
+  - name: ard/sp/ca18.ard
   method: binarc
   source:
-  - name: m_20
-    type: areadataspawn
-    method: spawnpoint
-    source:
-    - name: ard/ca16/m_20.yml
-  - name: b_80
-    type: areadataspawn
-    method: spawnpoint
-    source:
-    - name: ard/ca16/b_80.yml
   - name: evt
     type: areadatascript
     method: areadatascript
     source:
-    - name: ard/ca16/evt.script
-  - name: e_50
-    type: areadataspawn
-    method: spawnpoint
-    source:
-    - name: ard/ca16/e_50.yml
+    - name: ard/ca18/evt.script
 - name: ard/dc00.ard #Audience Chamber
   multi:
+  - name: ard/jp/dc00.ard
   - name: ard/us/dc00.ard
+  - name: ard/fr/dc00.ard
+  - name: ard/gr/dc00.ard
+  - name: ard/it/dc00.ard
+  - name: ard/sp/dc00.ard
   method: binarc
   source:
   - name: evt
@@ -289,24 +367,14 @@ assets:
     method: areadatascript
     source:
     - name: ard/dc00/evt.script
-- name: ard/dc01.ard #Library
-  multi:
-  - name: ard/us/dc01.ard
-  method: binarc
-  source:
-  - name: m_20
-    type: areadataspawn
-    method: spawnpoint
-    source:
-    - name: ard/dc01/m_20.yml
-  - name: evt
-    type: areadatascript
-    method: areadatascript
-    source:
-    - name: ard/dc01/evt.script
 - name: ard/dc07.ard #Gathering Place
   multi:
+  - name: ard/jp/dc07.ard
   - name: ard/us/dc07.ard
+  - name: ard/fr/dc07.ard
+  - name: ard/gr/dc07.ard
+  - name: ard/it/dc07.ard
+  - name: ard/sp/dc07.ard
   method: binarc
   source:
   - name: evt
@@ -314,34 +382,14 @@ assets:
     method: areadatascript
     source:
     - name: ard/dc07/evt.script
-- name: ard/es00.ard #Alley to Between
+- name: ard/eh10.ard #Hall of Empty Melodies (Lower Level)
   multi:
-  - name: ard/us/es00.ard
-  method: binarc
-  source:
-  - name: evt
-    type: areadatascript
-    method: areadatascript
-    source:
-    - name: ard/es00/evt.script
-- name: ard/eh01.ard #Alley to Between
-  multi:
-  - name: ard/us/eh01.ard
-  method: binarc
-  source:
-  - name: m_20
-    type: areadataspawn
-    method: spawnpoint
-    source:
-    - name: ard/eh01/m_20.yml
-  - name: evt
-    type: areadatascript
-    method: areadatascript
-    source:
-    - name: ard/eh01/evt.script
-- name: ard/eh10.ard #Hall of Empty Melodies (Lower)
-  multi:
+  - name: ard/jp/eh10.ard
   - name: ard/us/eh10.ard
+  - name: ard/fr/eh10.ard
+  - name: ard/gr/eh10.ard
+  - name: ard/it/eh10.ard
+  - name: ard/sp/eh10.ard
   method: binarc
   source:
   - name: evt
@@ -351,7 +399,12 @@ assets:
     - name: ard/eh10/evt.script
 - name: ard/eh14.ard #Havoc's Divide
   multi:
+  - name: ard/jp/eh14.ard
   - name: ard/us/eh14.ard
+  - name: ard/fr/eh14.ard
+  - name: ard/gr/eh14.ard
+  - name: ard/it/eh14.ard
+  - name: ard/sp/eh14.ard
   method: binarc
   source:
   - name: evt
@@ -361,7 +414,12 @@ assets:
     - name: ard/eh14/evt.script
 - name: ard/eh15.ard #Addled Impasse
   multi:
+  - name: ard/jp/eh15.ard
   - name: ard/us/eh15.ard
+  - name: ard/fr/eh15.ard
+  - name: ard/gr/eh15.ard
+  - name: ard/it/eh15.ard
+  - name: ard/sp/eh15.ard
   method: binarc
   source:
   - name: evt
@@ -371,7 +429,12 @@ assets:
     - name: ard/eh15/evt.script
 - name: ard/eh19.ard #Memory's Contortion
   multi:
+  - name: ard/jp/eh19.ard
   - name: ard/us/eh19.ard
+  - name: ard/fr/eh19.ard
+  - name: ard/gr/eh19.ard
+  - name: ard/it/eh19.ard
+  - name: ard/sp/eh19.ard
   method: binarc
   source:
   - name: evt
@@ -379,14 +442,14 @@ assets:
     method: areadatascript
     source:
     - name: ard/eh19/evt.script
-  - name: 0000 #Fatal Crest, Fenrir, Ultima Weapon
-    type: event
-    method: copy
-    source:
-    - name: 0000.bin
 - name: ard/eh20.ard #The World of Nothing (Xemnas II)
   multi:
+  - name: ard/jp/eh20.ard
   - name: ard/us/eh20.ard
+  - name: ard/fr/eh20.ard
+  - name: ard/gr/eh20.ard
+  - name: ard/it/eh20.ard
+  - name: ard/sp/eh20.ard
   method: binarc
   source:
   - name: evt
@@ -396,7 +459,12 @@ assets:
     - name: ard/eh20/evt.script
 - name: ard/eh21.ard #Station of Awakening (Roxas)
   multi:
+  - name: ard/jp/eh21.ard
   - name: ard/us/eh21.ard
+  - name: ard/fr/eh21.ard
+  - name: ard/gr/eh21.ard
+  - name: ard/it/eh21.ard
+  - name: ard/sp/eh21.ard
   method: binarc
   source:
   - name: evt
@@ -404,14 +472,29 @@ assets:
     method: areadatascript
     source:
     - name: ard/eh21/evt.script
-  - name: 0000 #Two Become One, Oblivion
-    type: event
-    method: copy
-    source:
-    - name: 0000.bin
-- name: ard/eh23.ard #The World of Nothing (Armor II)
+- name: ard/eh22.ard #The World of Nothing (Dragon Xemnas)
   multi:
+  - name: ard/jp/eh22.ard
+  - name: ard/us/eh22.ard
+  - name: ard/fr/eh22.ard
+  - name: ard/gr/eh22.ard
+  - name: ard/it/eh22.ard
+  - name: ard/sp/eh22.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/eh22/evt.script
+- name: ard/eh23.ard #The World of Nothing (Armor Xemnas II)
+  multi:
+  - name: ard/jp/eh23.ard
   - name: ard/us/eh23.ard
+  - name: ard/fr/eh23.ard
+  - name: ard/gr/eh23.ard
+  - name: ard/it/eh23.ard
+  - name: ard/sp/eh23.ard
   method: binarc
   source:
   - name: evt
@@ -419,9 +502,14 @@ assets:
     method: areadatascript
     source:
     - name: ard/eh23/evt.script
-- name: ard/eh24.ard #The World of Nothing (Armor I)
+- name: ard/eh24.ard #The World of Nothing (Armor Xemnas I)
   multi:
+  - name: ard/jp/eh24.ard
   - name: ard/us/eh24.ard
+  - name: ard/fr/eh24.ard
+  - name: ard/gr/eh24.ard
+  - name: ard/it/eh24.ard
+  - name: ard/sp/eh24.ard
   method: binarc
   source:
   - name: evt
@@ -431,7 +519,12 @@ assets:
     - name: ard/eh24/evt.script
 - name: ard/eh25.ard #The World of Nothing (Core)
   multi:
+  - name: ard/jp/eh25.ard
   - name: ard/us/eh25.ard
+  - name: ard/fr/eh25.ard
+  - name: ard/gr/eh25.ard
+  - name: ard/it/eh25.ard
+  - name: ard/sp/eh25.ard
   method: binarc
   source:
   - name: evt
@@ -439,9 +532,19 @@ assets:
     method: areadatascript
     source:
     - name: ard/eh25/evt.script
+  - name: 0000
+    type: event
+    method: copy
+    source:
+    - name: ard/0000.bin
 - name: ard/hb01.ard #The Dark Depths
   multi:
+  - name: ard/jp/hb01.ard
   - name: ard/us/hb01.ard
+  - name: ard/fr/hb01.ard
+  - name: ard/gr/hb01.ard
+  - name: ard/it/hb01.ard
+  - name: ard/sp/hb01.ard
   method: binarc
   source:
   - name: evt
@@ -449,29 +552,14 @@ assets:
     method: areadatascript
     source:
     - name: ard/hb01/evt.script
-- name: ard/hb03.ard #Crystal Fissure
-  multi:
-  - name: ard/us/hb03.ard
-  method: binarc
-  source:
-  - name: m_20
-    type: areadataspawn
-    method: spawnpoint
-    source:
-    - name: ard/hb03/m_20.yml
-  - name: evt
-    type: areadatascript
-    method: areadatascript
-    source:
-    - name: ard/hb03/evt.script
-  - name: 0000 #Photon Debugger, Cure
-    type: event
-    method: copy
-    source:
-    - name: 0000.bin
 - name: ard/hb04.ard #Castle Gate
   multi:
+  - name: ard/jp/hb04.ard
   - name: ard/us/hb04.ard
+  - name: ard/fr/hb04.ard
+  - name: ard/gr/hb04.ard
+  - name: ard/it/hb04.ard
+  - name: ard/sp/hb04.ard
   method: binarc
   source:
   - name: evt
@@ -481,7 +569,12 @@ assets:
     - name: ard/hb04/evt.script
 - name: ard/hb08.ard #Bailey (Intact)
   multi:
+  - name: ard/jp/hb08.ard
   - name: ard/us/hb08.ard
+  - name: ard/fr/hb08.ard
+  - name: ard/gr/hb08.ard
+  - name: ard/it/hb08.ard
+  - name: ard/sp/hb08.ard
   method: binarc
   source:
   - name: evt
@@ -489,9 +582,29 @@ assets:
     method: areadatascript
     source:
     - name: ard/hb08/evt.script
+- name: ard/hb09.ard #Borough
+  multi:
+  - name: ard/jp/hb09.ard
+  - name: ard/us/hb09.ard
+  - name: ard/fr/hb09.ard
+  - name: ard/gr/hb09.ard
+  - name: ard/it/hb09.ard
+  - name: ard/sp/hb09.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/hb09/evt.script
 - name: ard/hb16.ard #Ravine Trail
   multi:
+  - name: ard/jp/hb16.ard
   - name: ard/us/hb16.ard
+  - name: ard/fr/hb16.ard
+  - name: ard/gr/hb16.ard
+  - name: ard/it/hb16.ard
+  - name: ard/sp/hb16.ard
   method: binarc
   source:
   - name: evt
@@ -501,7 +614,12 @@ assets:
     - name: ard/hb16/evt.script
 - name: ard/hb17.ard #The Great Maw (1000 Heartless)
   multi:
+  - name: ard/jp/hb17.ard
   - name: ard/us/hb17.ard
+  - name: ard/fr/hb17.ard
+  - name: ard/gr/hb17.ard
+  - name: ard/it/hb17.ard
+  - name: ard/sp/hb17.ard
   method: binarc
   source:
   - name: evt
@@ -511,7 +629,12 @@ assets:
     - name: ard/hb17/evt.script
 - name: ard/hb18.ard #Restoration Site (Destroyed)
   multi:
+  - name: ard/jp/hb18.ard
   - name: ard/us/hb18.ard
+  - name: ard/fr/hb18.ard
+  - name: ard/gr/hb18.ard
+  - name: ard/it/hb18.ard
+  - name: ard/sp/hb18.ard
   method: binarc
   source:
   - name: evt
@@ -519,9 +642,14 @@ assets:
     method: areadatascript
     source:
     - name: ard/hb18/evt.script
-- name: ard/hb20.ard #Corridors (Fight)
+- name: ard/hb20.ard #Corridors (Heartless & Nobodies Fight)
   multi:
+  - name: ard/jp/hb20.ard
   - name: ard/us/hb20.ard
+  - name: ard/fr/hb20.ard
+  - name: ard/gr/hb20.ard
+  - name: ard/it/hb20.ard
+  - name: ard/sp/hb20.ard
   method: binarc
   source:
   - name: evt
@@ -529,9 +657,64 @@ assets:
     method: areadatascript
     source:
     - name: ard/hb20/evt.script
+- name: ard/hb24.ard #Cavern of Remembrance: Mineshaft
+  multi:
+  - name: ard/jp/hb24.ard
+  - name: ard/us/hb24.ard
+  - name: ard/fr/hb24.ard
+  - name: ard/gr/hb24.ard
+  - name: ard/it/hb24.ard
+  - name: ard/sp/hb24.ard
+  method: binarc
+  source:
+  - name: map
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/hb24/map.script
+  - name: m_10
+    type: areadataspawn
+    method: spawnpoint
+    source:
+    - name: ard/hb24/m_10.yml
+  - name: m_11
+    type: areadataspawn
+    method: spawnpoint
+    source:
+    - name: ard/hb24/m_11.yml
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/hb24/evt.script
+- name: ard/hb25.ard #Transport to Remembrance
+  multi:
+  - name: ard/jp/hb25.ard
+  - name: ard/us/hb25.ard
+  - name: ard/fr/hb25.ard
+  - name: ard/gr/hb25.ard
+  - name: ard/it/hb25.ard
+  - name: ard/sp/hb25.ard
+  method: binarc
+  source:
+  - name: map
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/hb25/map.script
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/hb25/evt.script
 - name: ard/hb32.ard #The Old Mansion (Vexen)
   multi:
+  - name: ard/jp/hb32.ard
   - name: ard/us/hb32.ard
+  - name: ard/fr/hb32.ard
+  - name: ard/gr/hb32.ard
+  - name: ard/it/hb32.ard
+  - name: ard/sp/hb32.ard
   method: binarc
   source:
   - name: evt
@@ -541,7 +724,12 @@ assets:
     - name: ard/hb32/evt.script
 - name: ard/hb33.ard #Station of Remembrance
   multi:
+  - name: ard/jp/hb33.ard
   - name: ard/us/hb33.ard
+  - name: ard/fr/hb33.ard
+  - name: ard/gr/hb33.ard
+  - name: ard/it/hb33.ard
+  - name: ard/sp/hb33.ard
   method: binarc
   source:
   - name: evt
@@ -549,9 +737,14 @@ assets:
     method: areadatascript
     source:
     - name: ard/hb33/evt.script
-- name: ard/hb34.ard #Destiny Island (Zexion)
+- name: ard/hb34.ard #Destiny Islands
   multi:
+  - name: ard/jp/hb34.ard
   - name: ard/us/hb34.ard
+  - name: ard/fr/hb34.ard
+  - name: ard/gr/hb34.ard
+  - name: ard/it/hb34.ard
+  - name: ard/sp/hb34.ard
   method: binarc
   source:
   - name: evt
@@ -561,7 +754,12 @@ assets:
     - name: ard/hb34/evt.script
 - name: ard/hb38.ard #Station of Oblivion
   multi:
+  - name: ard/jp/hb38.ard
   - name: ard/us/hb38.ard
+  - name: ard/fr/hb38.ard
+  - name: ard/gr/hb38.ard
+  - name: ard/it/hb38.ard
+  - name: ard/sp/hb38.ard
   method: binarc
   source:
   - name: evt
@@ -571,7 +769,12 @@ assets:
     - name: ard/hb38/evt.script
 - name: ard/he05.ard #Valley of the Dead
   multi:
+  - name: ard/jp/he05.ard
   - name: ard/us/he05.ard
+  - name: ard/fr/he05.ard
+  - name: ard/gr/he05.ard
+  - name: ard/it/he05.ard
+  - name: ard/sp/he05.ard
   method: binarc
   source:
   - name: evt
@@ -579,14 +782,34 @@ assets:
     method: areadatascript
     source:
     - name: ard/he05/evt.script
-  - name: 0000 #Cure
+  - name: 0000
     type: event
     method: copy
     source:
-    - name: 0000.bin
+    - name: ard/0000.bin
+- name: ard/he06.ard #Hades' Chamber
+  multi:
+  - name: ard/jp/he06.ard
+  - name: ard/us/he06.ard
+  - name: ard/fr/he06.ard
+  - name: ard/gr/he06.ard
+  - name: ard/it/he06.ard
+  - name: ard/sp/he06.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/he06/evt.script
 - name: ard/he07.ard #Cave of the Dead: Entrance
   multi:
+  - name: ard/jp/he07.ard
   - name: ard/us/he07.ard
+  - name: ard/fr/he07.ard
+  - name: ard/gr/he07.ard
+  - name: ard/it/he07.ard
+  - name: ard/sp/he07.ard
   method: binarc
   source:
   - name: evt
@@ -596,7 +819,12 @@ assets:
     - name: ard/he07/evt.script
 - name: ard/he08.ard #Well of Captivity
   multi:
+  - name: ard/jp/he08.ard
   - name: ard/us/he08.ard
+  - name: ard/fr/he08.ard
+  - name: ard/gr/he08.ard
+  - name: ard/it/he08.ard
+  - name: ard/sp/he08.ard
   method: binarc
   source:
   - name: evt
@@ -604,9 +832,14 @@ assets:
     method: areadatascript
     source:
     - name: ard/he08/evt.script
-- name: ard/he09.ard #Underdrome
+- name: ard/he09.ard #The Underdrome
   multi:
+  - name: ard/jp/he09.ard
   - name: ard/us/he09.ard
+  - name: ard/fr/he09.ard
+  - name: ard/gr/he09.ard
+  - name: ard/it/he09.ard
+  - name: ard/sp/he09.ard
   method: binarc
   source:
   - name: evt
@@ -616,7 +849,12 @@ assets:
     - name: ard/he09/evt.script
 - name: ard/he18.ard #Coliseum Gates (Hydra)
   multi:
+  - name: ard/jp/he18.ard
   - name: ard/us/he18.ard
+  - name: ard/fr/he18.ard
+  - name: ard/gr/he18.ard
+  - name: ard/it/he18.ard
+  - name: ard/sp/he18.ard
   method: binarc
   source:
   - name: evt
@@ -624,14 +862,14 @@ assets:
     method: areadatascript
     source:
     - name: ard/he18/evt.script
-  - name: 0000 #Hero's Crest
-    type: event
-    method: copy
-    source:
-    - name: 0000.bin
-- name: ard/he19.ard #Underdrome (Hades)
+- name: ard/he19.ard #The Underdrome (Hades)
   multi:
+  - name: ard/jp/he19.ard
   - name: ard/us/he19.ard
+  - name: ard/fr/he19.ard
+  - name: ard/gr/he19.ard
+  - name: ard/it/he19.ard
+  - name: ard/sp/he19.ard
   method: binarc
   source:
   - name: evt
@@ -639,14 +877,14 @@ assets:
     method: areadatascript
     source:
     - name: ard/he19/evt.script
-  - name: 0000 #Sweet Memories, Rumbling Rose, Guardian Soul, Genji Shield, Feather Charm, Meteor Staff
-    type: event
-    method: copy
-    source:
-    - name: 0000.bin
 - name: ard/lk02.ard #The King's Den
   multi:
+  - name: ard/jp/lk02.ard
   - name: ard/us/lk02.ard
+  - name: ard/fr/lk02.ard
+  - name: ard/gr/lk02.ard
+  - name: ard/it/lk02.ard
+  - name: ard/sp/lk02.ard
   method: binarc
   source:
   - name: evt
@@ -656,7 +894,12 @@ assets:
     - name: ard/lk02/evt.script
 - name: ard/lk05.ard #Elephant Graveyard
   multi:
+  - name: ard/jp/lk05.ard
   - name: ard/us/lk05.ard
+  - name: ard/fr/lk05.ard
+  - name: ard/gr/lk05.ard
+  - name: ard/it/lk05.ard
+  - name: ard/sp/lk05.ard
   method: binarc
   source:
   - name: evt
@@ -664,24 +907,14 @@ assets:
     method: areadatascript
     source:
     - name: ard/lk05/evt.script
-- name: ard/lk06.ard #The Gorge
-  multi:
-  - name: ard/us/lk06.ard
-  method: binarc
-  source:
-  - name: m_20
-    type: areadataspawn
-    method: spawnpoint
-    source:
-    - name: ard/lk06/m_20.yml
-  - name: evt
-    type: areadatascript
-    method: areadatascript
-    source:
-    - name: ard/lk06/evt.script
 - name: ard/lk14.ard #Scar's Darkness
   multi:
+  - name: ard/jp/lk14.ard
   - name: ard/us/lk14.ard
+  - name: ard/fr/lk14.ard
+  - name: ard/gr/lk14.ard
+  - name: ard/it/lk14.ard
+  - name: ard/sp/lk14.ard
   method: binarc
   source:
   - name: evt
@@ -689,14 +922,19 @@ assets:
     method: areadatascript
     source:
     - name: ard/lk14/evt.script
-  - name: 0000 #Fire, Rising Dragon
+  - name: 0000
     type: event
     method: copy
     source:
-    - name: 0000.bin
+    - name: ard/0000.bin
 - name: ard/lk15.ard #Savannah (Groundshaker)
   multi:
+  - name: ard/jp/lk15.ard
   - name: ard/us/lk15.ard
+  - name: ard/fr/lk15.ard
+  - name: ard/gr/lk15.ard
+  - name: ard/it/lk15.ard
+  - name: ard/sp/lk15.ard
   method: binarc
   source:
   - name: evt
@@ -704,29 +942,14 @@ assets:
     method: areadatascript
     source:
     - name: ard/lk15/evt.script
-  - name: 0000 #Wishing Lamp, Decisive Pumpkin, Sleeping Lion, Cosmic Chain
-    type: event
-    method: copy
-    source:
-    - name: 0000.bin
-- name: ard/mu00.ard #Bamboo Grove
-  multi:
-  - name: ard/us/mu00.ard
-  method: binarc
-  source:
-  - name: m_20
-    type: areadataspawn
-    method: spawnpoint
-    source:
-    - name: ard/mu00/m_20.yml
-  - name: evt
-    type: areadatascript
-    method: areadatascript
-    source:
-    - name: ard/mu00/evt.script
 - name: ard/mu01.ard #Encampment
   multi:
+  - name: ard/jp/mu01.ard
   - name: ard/us/mu01.ard
+  - name: ard/fr/mu01.ard
+  - name: ard/gr/mu01.ard
+  - name: ard/it/mu01.ard
+  - name: ard/sp/mu01.ard
   method: binarc
   source:
   - name: evt
@@ -734,9 +957,19 @@ assets:
     method: areadatascript
     source:
     - name: ard/mu01/evt.script
+  - name: 0000
+    type: event
+    method: copy
+    source:
+    - name: ard/0000.bin
 - name: ard/mu02.ard #Checkpoint
   multi:
+  - name: ard/jp/mu02.ard
   - name: ard/us/mu02.ard
+  - name: ard/fr/mu02.ard
+  - name: ard/gr/mu02.ard
+  - name: ard/it/mu02.ard
+  - name: ard/sp/mu02.ard
   method: binarc
   source:
   - name: evt
@@ -746,7 +979,12 @@ assets:
     - name: ard/mu02/evt.script
 - name: ard/mu03.ard #Mountain Trail
   multi:
+  - name: ard/jp/mu03.ard
   - name: ard/us/mu03.ard
+  - name: ard/fr/mu03.ard
+  - name: ard/gr/mu03.ard
+  - name: ard/it/mu03.ard
+  - name: ard/sp/mu03.ard
   method: binarc
   source:
   - name: evt
@@ -756,7 +994,12 @@ assets:
     - name: ard/mu03/evt.script
 - name: ard/mu05.ard #Village Cave
   multi:
+  - name: ard/jp/mu05.ard
   - name: ard/us/mu05.ard
+  - name: ard/fr/mu05.ard
+  - name: ard/gr/mu05.ard
+  - name: ard/it/mu05.ard
+  - name: ard/sp/mu05.ard
   method: binarc
   source:
   - name: evt
@@ -766,7 +1009,12 @@ assets:
     - name: ard/mu05/evt.script
 - name: ard/mu07.ard #Summit
   multi:
+  - name: ard/jp/mu07.ard
   - name: ard/us/mu07.ard
+  - name: ard/fr/mu07.ard
+  - name: ard/gr/mu07.ard
+  - name: ard/it/mu07.ard
+  - name: ard/sp/mu07.ard
   method: binarc
   source:
   - name: evt
@@ -776,12 +1024,17 @@ assets:
     - name: ard/mu07/evt.script
   - name: mu_g
     type: bdx
-    method: copy
+    method: bdscript
     source:
-    - name: ard/mu07/mu_g.bin
+    - name: ard/mu07/mu_g.bdscript
 - name: ard/mu08.ard #Imperial Square
   multi:
+  - name: ard/jp/mu08.ard
   - name: ard/us/mu08.ard
+  - name: ard/fr/mu08.ard
+  - name: ard/gr/mu08.ard
+  - name: ard/it/mu08.ard
+  - name: ard/sp/mu08.ard
   method: binarc
   source:
   - name: evt
@@ -791,7 +1044,12 @@ assets:
     - name: ard/mu08/evt.script
 - name: ard/mu09.ard #Palace Gate
   multi:
+  - name: ard/jp/mu09.ard
   - name: ard/us/mu09.ard
+  - name: ard/fr/mu09.ard
+  - name: ard/gr/mu09.ard
+  - name: ard/it/mu09.ard
+  - name: ard/sp/mu09.ard
   method: binarc
   source:
   - name: evt
@@ -799,14 +1057,14 @@ assets:
     method: areadatascript
     source:
     - name: ard/mu09/evt.script
-  - name: 0000 #Hidden Dragon
-    type: event
-    method: copy
-    source:
-    - name: 0000.bin
 - name: ard/mu10.ard #Antechamber
   multi:
+  - name: ard/jp/mu10.ard
   - name: ard/us/mu10.ard
+  - name: ard/fr/mu10.ard
+  - name: ard/gr/mu10.ard
+  - name: ard/it/mu10.ard
+  - name: ard/sp/mu10.ard
   method: binarc
   source:
   - name: evt
@@ -816,7 +1074,12 @@ assets:
     - name: ard/mu10/evt.script
 - name: ard/nm00.ard #Halloween Town Square
   multi:
+  - name: ard/jp/nm00.ard
   - name: ard/us/nm00.ard
+  - name: ard/fr/nm00.ard
+  - name: ard/gr/nm00.ard
+  - name: ard/it/nm00.ard
+  - name: ard/sp/nm00.ard
   method: binarc
   source:
   - name: evt
@@ -824,9 +1087,19 @@ assets:
     method: areadatascript
     source:
     - name: ard/nm00/evt.script
+  - name: 0000
+    type: event
+    method: copy
+    source:
+    - name: ard/0000.bin
 - name: ard/nm03.ard #Curly Hill
   multi:
+  - name: ard/jp/nm03.ard
   - name: ard/us/nm03.ard
+  - name: ard/fr/nm03.ard
+  - name: ard/gr/nm03.ard
+  - name: ard/it/nm03.ard
+  - name: ard/sp/nm03.ard
   method: binarc
   source:
   - name: evt
@@ -836,7 +1109,12 @@ assets:
     - name: ard/nm03/evt.script
 - name: ard/nm06.ard #Candy Cane Lane
   multi:
+  - name: ard/jp/nm06.ard
   - name: ard/us/nm06.ard
+  - name: ard/fr/nm06.ard
+  - name: ard/gr/nm06.ard
+  - name: ard/it/nm06.ard
+  - name: ard/sp/nm06.ard
   method: binarc
   source:
   - name: evt
@@ -844,14 +1122,14 @@ assets:
     method: areadatascript
     source:
     - name: ard/nm06/evt.script
-  - name: 0000 #Lamp Charm, Party
-    type: event
-    method: copy
-    source:
-    - name: 0000.bin
 - name: ard/nm07.ard #Christmas Tree Plaza
   multi:
+  - name: ard/jp/nm07.ard
   - name: ard/us/nm07.ard
+  - name: ard/fr/nm07.ard
+  - name: ard/gr/nm07.ard
+  - name: ard/it/nm07.ard
+  - name: ard/sp/nm07.ard
   method: binarc
   source:
   - name: evt
@@ -859,9 +1137,14 @@ assets:
     method: areadatascript
     source:
     - name: ard/nm07/evt.script
-- name: ard/nm09.ard #Shipping and Receiving
+- name: ard/nm09.ard #Toy Factory: Shipping and Receiving
   multi:
+  - name: ard/jp/nm09.ard
   - name: ard/us/nm09.ard
+  - name: ard/fr/nm09.ard
+  - name: ard/gr/nm09.ard
+  - name: ard/it/nm09.ard
+  - name: ard/sp/nm09.ard
   method: binarc
   source:
   - name: evt
@@ -869,9 +1152,14 @@ assets:
     method: areadatascript
     source:
     - name: ard/nm09/evt.script
-- name: ard/nm10.ard #Wrapping Room
+- name: ard/nm10.ard #Toy Factory: The Wrapping Room
   multi:
+  - name: ard/jp/nm10.ard
   - name: ard/us/nm10.ard
+  - name: ard/fr/nm10.ard
+  - name: ard/gr/nm10.ard
+  - name: ard/it/nm10.ard
+  - name: ard/sp/nm10.ard
   method: binarc
   source:
   - name: evt
@@ -879,19 +1167,14 @@ assets:
     method: areadatascript
     source:
     - name: ard/nm10/evt.script
-- name: ard/tr00.ard #Pit Cell
-  multi:
-  - name: ard/us/tr00.ard
-  method: binarc
-  source:
-  - name: evt
-    type: areadatascript
-    method: areadatascript
-    source:
-    - name: ard/tr00/evt.script
 - name: ard/tr02.ard #Game Grid
   multi:
+  - name: ard/jp/tr02.ard
   - name: ard/us/tr02.ard
+  - name: ard/fr/tr02.ard
+  - name: ard/gr/tr02.ard
+  - name: ard/it/tr02.ard
+  - name: ard/sp/tr02.ard
   method: binarc
   source:
   - name: evt
@@ -901,7 +1184,12 @@ assets:
     - name: ard/tr02/evt.script
 - name: ard/tr03.ard #Dataspace
   multi:
+  - name: ard/jp/tr03.ard
   - name: ard/us/tr03.ard
+  - name: ard/fr/tr03.ard
+  - name: ard/gr/tr03.ard
+  - name: ard/it/tr03.ard
+  - name: ard/sp/tr03.ard
   method: binarc
   source:
   - name: evt
@@ -909,19 +1197,19 @@ assets:
     method: areadatascript
     source:
     - name: ard/tr03/evt.script
-  - name: 0000 #Rising Dragon, Limit Form, Oathkeeper, Ukulele Charm, Master Form
+  - name: 0000
     type: event
     method: copy
     source:
-    - name: 0000.bin
-  - name: tr_g
-    type: bdx
-    method: copy
-    source:
-    - name: ard/tr03/tr_g.bin
-- name: ard/tr04.ard #Hallway
+    - name: ard/0000.bin
+- name: ard/tr04.ard #I/O Tower: Hallway
   multi:
+  - name: ard/jp/tr04.ard
   - name: ard/us/tr04.ard
+  - name: ard/fr/tr04.ard
+  - name: ard/gr/tr04.ard
+  - name: ard/it/tr04.ard
+  - name: ard/sp/tr04.ard
   method: binarc
   source:
   - name: evt
@@ -929,9 +1217,24 @@ assets:
     method: areadatascript
     source:
     - name: ard/tr04/evt.script
-- name: ard/tr07.ard #Solar Sailer
+  - name: 112a
+    type: event
+    method: copy
+    source:
+    - name: ard/tr04/112a.bin
+  - name: tr_g
+    type: bdx
+    method: bdscript
+    source:
+    - name: ard/tr04/tr_g.bdscript
+- name: ard/tr07.ard #Solar Sailer Simulation
   multi:
+  - name: ard/jp/tr07.ard
   - name: ard/us/tr07.ard
+  - name: ard/fr/tr07.ard
+  - name: ard/gr/tr07.ard
+  - name: ard/it/tr07.ard
+  - name: ard/sp/tr07.ard
   method: binarc
   source:
   - name: evt
@@ -939,9 +1242,14 @@ assets:
     method: areadatascript
     source:
     - name: ard/tr07/evt.script
-- name: ard/tr09.ard #Central Computer Mesa
+- name: ard/tr09.ard #Central Computer Core
   multi:
+  - name: ard/jp/tr09.ard
   - name: ard/us/tr09.ard
+  - name: ard/fr/tr09.ard
+  - name: ard/gr/tr09.ard
+  - name: ard/it/tr09.ard
+  - name: ard/sp/tr09.ard
   method: binarc
   source:
   - name: evt
@@ -949,9 +1257,29 @@ assets:
     method: areadatascript
     source:
     - name: ard/tr09/evt.script
+- name: ard/tt03.ard #Back Alley
+  multi:
+  - name: ard/jp/tt03.ard
+  - name: ard/us/tt03.ard
+  - name: ard/fr/tt03.ard
+  - name: ard/gr/tt03.ard
+  - name: ard/it/tt03.ard
+  - name: ard/sp/tt03.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/tt03/evt.script
 - name: ard/tt04.ard #Sandlot
   multi:
+  - name: ard/jp/tt04.ard
   - name: ard/us/tt04.ard
+  - name: ard/fr/tt04.ard
+  - name: ard/gr/tt04.ard
+  - name: ard/it/tt04.ard
+  - name: ard/sp/tt04.ard
   method: binarc
   source:
   - name: evt
@@ -959,9 +1287,14 @@ assets:
     method: areadatascript
     source:
     - name: ard/tt04/evt.script
-- name: ard/tt05.ard #Sandlot (Day 4)
+- name: ard/tt05.ard #Sandlot (Day 5)
   multi:
+  - name: ard/jp/tt05.ard
   - name: ard/us/tt05.ard
+  - name: ard/fr/tt05.ard
+  - name: ard/gr/tt05.ard
+  - name: ard/it/tt05.ard
+  - name: ard/sp/tt05.ard
   method: binarc
   source:
   - name: evt
@@ -969,14 +1302,14 @@ assets:
     method: areadatascript
     source:
     - name: ard/tt05/evt.script
-  - name: 0000 #Medal, Champion Belt
-    type: event
-    method: copy
-    source:
-    - name: 0000.bin
-- name: ard/tt10.ard #Sunset Hill
+- name: ard/tt10.ard #Sunset Terrace
   multi:
+  - name: ard/jp/tt10.ard
   - name: ard/us/tt10.ard
+  - name: ard/fr/tt10.ard
+  - name: ard/gr/tt10.ard
+  - name: ard/it/tt10.ard
+  - name: ard/sp/tt10.ard
   method: binarc
   source:
   - name: evt
@@ -984,9 +1317,14 @@ assets:
     method: areadatascript
     source:
     - name: ard/tt10/evt.script
-- name: ard/tt19.ard #Basement Hall
+- name: ard/tt19.ard #Mansion: Basement Hall
   multi:
+  - name: ard/jp/tt19.ard
   - name: ard/us/tt19.ard
+  - name: ard/fr/tt19.ard
+  - name: ard/gr/tt19.ard
+  - name: ard/it/tt19.ard
+  - name: ard/sp/tt19.ard
   method: binarc
   source:
   - name: evt
@@ -994,9 +1332,14 @@ assets:
     method: areadatascript
     source:
     - name: ard/tt19/evt.script
-- name: ard/tt20.ard #Basement Hall (Axel II)
+- name: ard/tt20.ard #Mansion: Basement Hall (Axel II)
   multi:
+  - name: ard/jp/tt20.ard
   - name: ard/us/tt20.ard
+  - name: ard/fr/tt20.ard
+  - name: ard/gr/tt20.ard
+  - name: ard/it/tt20.ard
+  - name: ard/sp/tt20.ard
   method: binarc
   source:
   - name: evt
@@ -1004,9 +1347,34 @@ assets:
     method: areadatascript
     source:
     - name: ard/tt20/evt.script
+- name: ard/tt25.ard #The Tower
+  multi:
+  - name: ard/jp/tt25.ard
+  - name: ard/us/tt25.ard
+  - name: ard/fr/tt25.ard
+  - name: ard/gr/tt25.ard
+  - name: ard/it/tt25.ard
+  - name: ard/sp/tt25.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/tt25/evt.script
+  - name: 0000
+    type: event
+    method: copy
+    source:
+    - name: ard/0000.bin
 - name: ard/tt29.ard #Star Chamber
   multi:
+  - name: ard/jp/tt29.ard
   - name: ard/us/tt29.ard
+  - name: ard/fr/tt29.ard
+  - name: ard/gr/tt29.ard
+  - name: ard/it/tt29.ard
+  - name: ard/sp/tt29.ard
   method: binarc
   source:
   - name: evt
@@ -1016,7 +1384,12 @@ assets:
     - name: ard/tt29/evt.script
 - name: ard/tt30.ard #Moon Chamber
   multi:
+  - name: ard/jp/tt30.ard
   - name: ard/us/tt30.ard
+  - name: ard/fr/tt30.ard
+  - name: ard/gr/tt30.ard
+  - name: ard/it/tt30.ard
+  - name: ard/sp/tt30.ard
   method: binarc
   source:
   - name: evt
@@ -1024,24 +1397,44 @@ assets:
     method: areadatascript
     source:
     - name: ard/tt30/evt.script
-  - name: 0000 #Star Seeker, Valor Form, Blizzard
-    type: event
-    method: copy
-    source:
-    - name: 0000.bin
 - name: ard/tt32.ard #Station of Serenity
   multi:
+  - name: ard/jp/tt32.ard
   - name: ard/us/tt32.ard
+  - name: ard/fr/tt32.ard
+  - name: ard/gr/tt32.ard
+  - name: ard/it/tt32.ard
+  - name: ard/sp/tt32.ard
   method: binarc
   source:
+  - name: m_20
+    type: areadataspawn
+    method: spawnpoint
+    source:
+    - name: ard/tt32/m_20.yml
   - name: evt
     type: areadatascript
     method: areadatascript
     source:
     - name: ard/tt32/evt.script
+  - name: 0000
+    type: event
+    method: copy
+    source:
+    - name: ard/0000.bin
+  - name: e_50
+    type: areadataspawn
+    method: spawnpoint
+    source:
+    - name: ard/tt32/e_50.yml
 - name: ard/tt34.ard #Station of Awakening
   multi:
+  - name: ard/jp/tt34.ard
   - name: ard/us/tt34.ard
+  - name: ard/fr/tt34.ard
+  - name: ard/gr/tt34.ard
+  - name: ard/it/tt34.ard
+  - name: ard/sp/tt34.ard
   method: binarc
   source:
   - name: evt
@@ -1049,9 +1442,29 @@ assets:
     method: areadatascript
     source:
     - name: ard/tt34/evt.script
+- name: ard/tt36.ard #Tunnelway
+  multi:
+  - name: ard/jp/tt36.ard
+  - name: ard/us/tt36.ard
+  - name: ard/fr/tt36.ard
+  - name: ard/gr/tt36.ard
+  - name: ard/it/tt36.ard
+  - name: ard/sp/tt36.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/tt36/evt.script
 - name: ard/tt40.ard #Betwixt and Between
   multi:
+  - name: ard/jp/tt40.ard
   - name: ard/us/tt40.ard
+  - name: ard/fr/tt40.ard
+  - name: ard/gr/tt40.ard
+  - name: ard/it/tt40.ard
+  - name: ard/sp/tt40.ard
   method: binarc
   source:
   - name: evt
@@ -1059,14 +1472,14 @@ assets:
     method: areadatascript
     source:
     - name: ard/tt40/evt.script
-  - name: 0000 #Winner's Proof, Bond of Flame
-    type: event
-    method: copy
-    source:
-    - name: 0000.bin
-- name: ard/tt41.ard #The Old Mansion (Nobodies)
+- name: ard/tt41.ard #The Old Mansion (Nobodies Fight)
   multi:
+  - name: ard/jp/tt41.ard
   - name: ard/us/tt41.ard
+  - name: ard/fr/tt41.ard
+  - name: ard/gr/tt41.ard
+  - name: ard/it/tt41.ard
+  - name: ard/sp/tt41.ard
   method: binarc
   source:
   - name: evt
@@ -1076,7 +1489,12 @@ assets:
     - name: ard/tt41/evt.script
 - name: ard/wi01.ard #Pier
   multi:
+  - name: ard/jp/wi01.ard
   - name: ard/us/wi01.ard
+  - name: ard/fr/wi01.ard
+  - name: ard/gr/wi01.ard
+  - name: ard/it/wi01.ard
+  - name: ard/sp/wi01.ard
   method: binarc
   source:
   - name: evt
@@ -1086,7 +1504,12 @@ assets:
     - name: ard/wi01/evt.script
 - name: ard/wi02.ard #Waterway
   multi:
+  - name: ard/jp/wi02.ard
   - name: ard/us/wi02.ard
+  - name: ard/fr/wi02.ard
+  - name: ard/gr/wi02.ard
+  - name: ard/it/wi02.ard
+  - name: ard/sp/wi02.ard
   method: binarc
   source:
   - name: evt
@@ -1096,7 +1519,12 @@ assets:
     - name: ard/wi02/evt.script
 - name: ard/wi03.ard #Wharf
   multi:
+  - name: ard/jp/wi03.ard
   - name: ard/us/wi03.ard
+  - name: ard/fr/wi03.ard
+  - name: ard/gr/wi03.ard
+  - name: ard/it/wi03.ard
+  - name: ard/sp/wi03.ard
   method: binarc
   source:
   - name: evt
@@ -1104,14 +1532,14 @@ assets:
     method: areadatascript
     source:
     - name: ard/wi03/evt.script
-  - name: 0000 #Monochrome, Wisdom Form, Protect Belt
-    type: event
-    method: copy
-    source:
-    - name: 0000.bin
-- name: ard/wi04.ard #Lilliput
+- name: ard/wi04.ard #Liliput
   multi:
+  - name: ard/jp/wi04.ard
   - name: ard/us/wi04.ard
+  - name: ard/fr/wi04.ard
+  - name: ard/gr/wi04.ard
+  - name: ard/it/wi04.ard
+  - name: ard/sp/wi04.ard
   method: binarc
   source:
   - name: evt
@@ -1121,7 +1549,12 @@ assets:
     - name: ard/wi04/evt.script
 - name: ard/wi05.ard #Building Site
   multi:
+  - name: ard/jp/wi05.ard
   - name: ard/us/wi05.ard
+  - name: ard/fr/wi05.ard
+  - name: ard/gr/wi05.ard
+  - name: ard/it/wi05.ard
+  - name: ard/sp/wi05.ard
   method: binarc
   source:
   - name: evt
@@ -1131,7 +1564,12 @@ assets:
     - name: ard/wi05/evt.script
 - name: ard/wi06.ard #Scene of the Fire
   multi:
+  - name: ard/jp/wi06.ard
   - name: ard/us/wi06.ard
+  - name: ard/fr/wi06.ard
+  - name: ard/gr/wi06.ard
+  - name: ard/it/wi06.ard
+  - name: ard/sp/wi06.ard
   method: binarc
   source:
   - name: evt
@@ -1141,7 +1579,12 @@ assets:
     - name: ard/wi06/evt.script
 - name: ard/wi07.ard #Mickey's House
   multi:
+  - name: ard/jp/wi07.ard
   - name: ard/us/wi07.ard
+  - name: ard/fr/wi07.ard
+  - name: ard/gr/wi07.ard
+  - name: ard/it/wi07.ard
+  - name: ard/sp/wi07.ard
   method: binarc
   source:
   - name: evt
@@ -1149,3 +1592,1595 @@ assets:
     method: areadatascript
     source:
     - name: ard/wi07/evt.script
+#MSN
+- name: msn/jp/TT04_MS108.bar #Seifer
+  method: binarc
+  source:
+  - name: tt04
+    type: bdx
+    method: bdscript
+    source:
+    - name: ard/tt04/TT04_MS108.bdscript
+- name: msn/us/TT04_MS108.bar
+  multi:
+  - name: msn/fr/TT04_MS108.bar
+  - name: msn/gr/TT04_MS108.bar
+  - name: msn/it/TT04_MS108.bar
+  - name: msn/sp/TT04_MS108.bar
+  platform: pc
+  method: binarc
+  source:
+  - name: tt04
+    type: bdx
+    method: bdscript
+    source:
+    - name: ard/tt04/TT04_MS108.bdscript
+- name: msn/jp/TT32_MS302.bar #Station of Serenity Nobodies
+  method: binarc
+  source:
+  - name: TT32
+    type: list
+    method: copy
+    source:
+    - name: ard/tt32/TT32_MS302.bin
+  - name: tt32
+    type: bdx
+    method: bdscript
+    source:
+    - name: ard/tt32/TT32_MS302.bdscript
+- name: msn/us/TT32_MS302.bar
+  multi:
+  - name: msn/fr/TT32_MS302.bar
+  - name: msn/gr/TT32_MS302.bar
+  - name: msn/it/TT32_MS302.bar
+  - name: msn/sp/TT32_MS302.bar
+  platform: pc
+  method: binarc
+  source:
+  - name: TT32
+    type: list
+    method: copy
+    source:
+    - name: ard/tt32/TT32_MS302.bin
+  - name: tt32
+    type: bdx
+    method: bdscript
+    source:
+    - name: ard/tt32/TT32_MS302.bdscript
+- name: msn/jp/TT05_MS401.bar #Hayner
+  method: binarc
+  source:
+  - name: TT05
+    type: list
+    method: copy
+    source:
+    - name: ard/tt05/TT05_MS401.bin
+  - name: ms_s
+    type: bdx
+    method: bdscript
+    source:
+    - name: ard/tt05/TT05_STRUGGLE.bdscript
+  - name: over
+    type: event
+    method: copy
+    source:
+    - name: ard/GAMEOVER.bin
+- name: msn/us/TT05_MS401.bar
+  multi:
+  - name: msn/fr/TT05_MS401.bar
+  - name: msn/gr/TT05_MS401.bar
+  - name: msn/it/TT05_MS401.bar
+  - name: msn/sp/TT05_MS401.bar
+  platform: pc
+  method: binarc
+  source:
+  - name: ms_s
+    type: bdx
+    method: bdscript
+    source:
+    - name: ard/tt05/TT05_STRUGGLE.bdscript
+  - name: over
+    type: event
+    method: copy
+    source:
+    - name: ard/GAMEOVER.bin
+- name: remastered/msn/jp/TT05_MS401.bar/JP_TT05_MS401_bar0.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/jp/TT05_MS401.bar/JP_TT05_MS401_bar0.png
+    type: internal
+- name: remastered/msn/jp/TT05_MS401.bar/JP_TT05_MS401_bar1.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/jp/TT05_MS401.bar/JP_TT05_MS401_bar1.png
+    type: internal
+- name: remastered/msn/jp/TT05_MS401.bar/JP_TT05_MS401_bar2.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/jp/TT05_MS401.bar/JP_TT05_MS401_bar2.png
+    type: internal
+- name: remastered/msn/jp/TT05_MS401.bar/JP_TT05_MS401_bar3.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/jp/TT05_MS401.bar/JP_TT05_MS401_bar3.png
+    type: internal
+- name: remastered/msn/jp/TT05_MS401.bar/JP_TT05_MS401_bar4.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/jp/TT05_MS401.bar/JP_TT05_MS401_bar4.png
+    type: internal
+- name: remastered/msn/jp/TT05_MS401.bar/JP_TT05_MS401_bar5.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/jp/TT05_MS401.bar/JP_TT05_MS401_bar5.png
+    type: internal
+- name: remastered/msn/jp/TT05_MS401.bar/JP_TT05_MS401_bar6.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/jp/TT05_MS401.bar/JP_TT05_MS401_bar6.png
+    type: internal
+- name: remastered/msn/us/TT05_MS401.bar/US_TT05_MS401_bar0.png
+  multi:
+  - name: remastered/msn/fr/TT05_MS401.bar/FR_TT05_MS401_bar0.png
+  - name: remastered/msn/gr/TT05_MS401.bar/GR_TT05_MS401_bar0.png
+  - name: remastered/msn/it/TT05_MS401.bar/IT_TT05_MS401_bar0.png
+  - name: remastered/msn/sp/TT05_MS401.bar/SP_TT05_MS401_bar0.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/us/TT05_MS401.bar/US_TT05_MS401_bar0.png
+    type: internal
+- name: remastered/msn/us/TT05_MS401.bar/US_TT05_MS401_bar1.png
+  multi:
+  - name: remastered/msn/fr/TT05_MS401.bar/FR_TT05_MS401_bar1.png
+  - name: remastered/msn/gr/TT05_MS401.bar/GR_TT05_MS401_bar1.png
+  - name: remastered/msn/it/TT05_MS401.bar/IT_TT05_MS401_bar1.png
+  - name: remastered/msn/sp/TT05_MS401.bar/SP_TT05_MS401_bar1.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/us/TT05_MS401.bar/US_TT05_MS401_bar1.png
+    type: internal
+- name: remastered/msn/us/TT05_MS401.bar/US_TT05_MS401_bar2.png
+  multi:
+  - name: remastered/msn/fr/TT05_MS401.bar/FR_TT05_MS401_bar2.png
+  - name: remastered/msn/gr/TT05_MS401.bar/GR_TT05_MS401_bar2.png
+  - name: remastered/msn/it/TT05_MS401.bar/IT_TT05_MS401_bar2.png
+  - name: remastered/msn/sp/TT05_MS401.bar/SP_TT05_MS401_bar2.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/us/TT05_MS401.bar/US_TT05_MS401_bar2.png
+    type: internal
+- name: remastered/msn/us/TT05_MS401.bar/US_TT05_MS401_bar3.png
+  multi:
+  - name: remastered/msn/fr/TT05_MS401.bar/FR_TT05_MS401_bar3.png
+  - name: remastered/msn/gr/TT05_MS401.bar/GR_TT05_MS401_bar3.png
+  - name: remastered/msn/it/TT05_MS401.bar/IT_TT05_MS401_bar3.png
+  - name: remastered/msn/sp/TT05_MS401.bar/SP_TT05_MS401_bar3.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/us/TT05_MS401.bar/US_TT05_MS401_bar3.png
+    type: internal
+- name: remastered/msn/us/TT05_MS401.bar/US_TT05_MS401_bar4.png
+  multi:
+  - name: remastered/msn/fr/TT05_MS401.bar/FR_TT05_MS401_bar4.png
+  - name: remastered/msn/gr/TT05_MS401.bar/GR_TT05_MS401_bar4.png
+  - name: remastered/msn/it/TT05_MS401.bar/IT_TT05_MS401_bar4.png
+  - name: remastered/msn/sp/TT05_MS401.bar/SP_TT05_MS401_bar4.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/us/TT05_MS401.bar/US_TT05_MS401_bar4.png
+    type: internal
+- name: remastered/msn/us/TT05_MS401.bar/US_TT05_MS401_bar5.png
+  multi:
+  - name: remastered/msn/fr/TT05_MS401.bar/FR_TT05_MS401_bar5.png
+  - name: remastered/msn/gr/TT05_MS401.bar/GR_TT05_MS401_bar5.png
+  - name: remastered/msn/it/TT05_MS401.bar/IT_TT05_MS401_bar5.png
+  - name: remastered/msn/sp/TT05_MS401.bar/SP_TT05_MS401_bar5.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/us/TT05_MS401.bar/US_TT05_MS401_bar5.png
+    type: internal
+- name: remastered/msn/us/TT05_MS401.bar/US_TT05_MS401_bar6.png
+  multi:
+  - name: remastered/msn/fr/TT05_MS401.bar/FR_TT05_MS401_bar6.png
+  - name: remastered/msn/gr/TT05_MS401.bar/GR_TT05_MS401_bar6.png
+  - name: remastered/msn/it/TT05_MS401.bar/IT_TT05_MS401_bar6.png
+  - name: remastered/msn/sp/TT05_MS401.bar/SP_TT05_MS401_bar6.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/us/TT05_MS401.bar/US_TT05_MS401_bar6.png
+    type: internal
+- name: msn/jp/TT05_MS402.bar #Vivi
+  method: binarc
+  source:
+  - name: TT05
+    type: list
+    method: copy
+    source:
+    - name: ard/tt05/TT05_MS402.bin
+  - name: ms_s
+    type: bdx
+    method: bdscript
+    source:
+    - name: ard/tt05/TT05_STRUGGLE.bdscript
+  - name: over
+    type: event
+    method: copy
+    source:
+    - name: ard/GAMEOVER.bin
+- name: msn/us/TT05_MS402.bar
+  multi:
+  - name: msn/fr/TT05_MS402.bar
+  - name: msn/gr/TT05_MS402.bar
+  - name: msn/it/TT05_MS402.bar
+  - name: msn/sp/TT05_MS402.bar
+  platform: pc
+  method: binarc
+  source:
+  - name: ms_s
+    type: bdx
+    method: bdscript
+    source:
+    - name: ard/tt05/TT05_STRUGGLE.bdscript
+  - name: over
+    type: event
+    method: copy
+    source:
+    - name: ard/GAMEOVER.bin
+- name: remastered/msn/jp/TT05_MS402.bar/JP_TT05_MS402_bar0.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/jp/TT05_MS402.bar/JP_TT05_MS402_bar0.png
+    type: internal
+- name: remastered/msn/jp/TT05_MS402.bar/JP_TT05_MS402_bar1.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/jp/TT05_MS402.bar/JP_TT05_MS402_bar1.png
+    type: internal
+- name: remastered/msn/jp/TT05_MS402.bar/JP_TT05_MS402_bar2.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/jp/TT05_MS402.bar/JP_TT05_MS402_bar2.png
+    type: internal
+- name: remastered/msn/jp/TT05_MS402.bar/JP_TT05_MS402_bar3.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/jp/TT05_MS402.bar/JP_TT05_MS402_bar3.png
+    type: internal
+- name: remastered/msn/jp/TT05_MS402.bar/JP_TT05_MS402_bar4.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/jp/TT05_MS402.bar/JP_TT05_MS402_bar4.png
+    type: internal
+- name: remastered/msn/jp/TT05_MS402.bar/JP_TT05_MS402_bar5.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/jp/TT05_MS402.bar/JP_TT05_MS402_bar5.png
+    type: internal
+- name: remastered/msn/jp/TT05_MS402.bar/JP_TT05_MS402_bar6.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/jp/TT05_MS402.bar/JP_TT05_MS402_bar6.png
+    type: internal
+- name: remastered/msn/us/TT05_MS402.bar/US_TT05_MS402_bar0.png
+  multi:
+  - name: remastered/msn/fr/TT05_MS402.bar/FR_TT05_MS402_bar0.png
+  - name: remastered/msn/gr/TT05_MS402.bar/GR_TT05_MS402_bar0.png
+  - name: remastered/msn/it/TT05_MS402.bar/IT_TT05_MS402_bar0.png
+  - name: remastered/msn/sp/TT05_MS402.bar/SP_TT05_MS402_bar0.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/us/TT05_MS402.bar/US_TT05_MS402_bar0.png
+    type: internal
+- name: remastered/msn/us/TT05_MS402.bar/US_TT05_MS402_bar1.png
+  multi:
+  - name: remastered/msn/fr/TT05_MS402.bar/FR_TT05_MS402_bar1.png
+  - name: remastered/msn/gr/TT05_MS402.bar/GR_TT05_MS402_bar1.png
+  - name: remastered/msn/it/TT05_MS402.bar/IT_TT05_MS402_bar1.png
+  - name: remastered/msn/sp/TT05_MS402.bar/SP_TT05_MS402_bar1.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/us/TT05_MS402.bar/US_TT05_MS402_bar1.png
+    type: internal
+- name: remastered/msn/us/TT05_MS402.bar/US_TT05_MS402_bar2.png
+  multi:
+  - name: remastered/msn/fr/TT05_MS402.bar/FR_TT05_MS402_bar2.png
+  - name: remastered/msn/gr/TT05_MS402.bar/GR_TT05_MS402_bar2.png
+  - name: remastered/msn/it/TT05_MS402.bar/IT_TT05_MS402_bar2.png
+  - name: remastered/msn/sp/TT05_MS402.bar/SP_TT05_MS402_bar2.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/us/TT05_MS402.bar/US_TT05_MS402_bar2.png
+    type: internal
+- name: remastered/msn/us/TT05_MS402.bar/US_TT05_MS402_bar3.png
+  multi:
+  - name: remastered/msn/fr/TT05_MS402.bar/FR_TT05_MS402_bar3.png
+  - name: remastered/msn/gr/TT05_MS402.bar/GR_TT05_MS402_bar3.png
+  - name: remastered/msn/it/TT05_MS402.bar/IT_TT05_MS402_bar3.png
+  - name: remastered/msn/sp/TT05_MS402.bar/SP_TT05_MS402_bar3.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/us/TT05_MS402.bar/US_TT05_MS402_bar3.png
+    type: internal
+- name: remastered/msn/us/TT05_MS402.bar/US_TT05_MS402_bar4.png
+  multi:
+  - name: remastered/msn/fr/TT05_MS402.bar/FR_TT05_MS402_bar4.png
+  - name: remastered/msn/gr/TT05_MS402.bar/GR_TT05_MS402_bar4.png
+  - name: remastered/msn/it/TT05_MS402.bar/IT_TT05_MS402_bar4.png
+  - name: remastered/msn/sp/TT05_MS402.bar/SP_TT05_MS402_bar4.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/us/TT05_MS402.bar/US_TT05_MS402_bar4.png
+    type: internal
+- name: remastered/msn/us/TT05_MS402.bar/US_TT05_MS402_bar5.png
+  multi:
+  - name: remastered/msn/fr/TT05_MS402.bar/FR_TT05_MS402_bar5.png
+  - name: remastered/msn/gr/TT05_MS402.bar/GR_TT05_MS402_bar5.png
+  - name: remastered/msn/it/TT05_MS402.bar/IT_TT05_MS402_bar5.png
+  - name: remastered/msn/sp/TT05_MS402.bar/SP_TT05_MS402_bar5.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/us/TT05_MS402.bar/US_TT05_MS402_bar5.png
+    type: internal
+- name: remastered/msn/us/TT05_MS402.bar/US_TT05_MS402_bar6.png
+  multi:
+  - name: remastered/msn/fr/TT05_MS402.bar/FR_TT05_MS402_bar6.png
+  - name: remastered/msn/gr/TT05_MS402.bar/GR_TT05_MS402_bar6.png
+  - name: remastered/msn/it/TT05_MS402.bar/IT_TT05_MS402_bar6.png
+  - name: remastered/msn/sp/TT05_MS402.bar/SP_TT05_MS402_bar6.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/us/TT05_MS402.bar/US_TT05_MS402_bar6.png
+    type: internal
+- name: msn/jp/TT05_MS405.bar #Setzer
+  method: binarc
+  source:
+  - name: TT05
+    type: list
+    method: copy
+    source:
+    - name: ard/tt05/TT05_MS405.bin
+  - name: ms_s
+    type: bdx
+    method: bdscript
+    source:
+    - name: ard/tt05/TT05_STRUGGLE.bdscript
+  - name: over
+    type: event
+    method: copy
+    source:
+    - name: ard/GAMEOVER.bin
+- name: msn/us/TT05_MS405.bar
+  multi:
+  - name: msn/fr/TT05_MS405.bar
+  - name: msn/gr/TT05_MS405.bar
+  - name: msn/it/TT05_MS405.bar
+  - name: msn/sp/TT05_MS405.bar
+  platform: pc
+  method: binarc
+  source:
+  - name: ms_s
+    type: bdx
+    method: bdscript
+    source:
+    - name: ard/tt05/TT05_STRUGGLE.bdscript
+  - name: over
+    type: event
+    method: copy
+    source:
+    - name: ard/GAMEOVER.bin
+- name: remastered/msn/jp/TT05_MS405.bar/JP_TT05_MS405_bar0.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/jp/TT05_MS405.bar/JP_TT05_MS405_bar0.png
+    type: internal
+- name: remastered/msn/jp/TT05_MS405.bar/JP_TT05_MS405_bar1.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/jp/TT05_MS405.bar/JP_TT05_MS405_bar1.png
+    type: internal
+- name: remastered/msn/jp/TT05_MS405.bar/JP_TT05_MS405_bar2.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/jp/TT05_MS405.bar/JP_TT05_MS405_bar2.png
+    type: internal
+- name: remastered/msn/jp/TT05_MS405.bar/JP_TT05_MS405_bar3.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/jp/TT05_MS405.bar/JP_TT05_MS405_bar3.png
+    type: internal
+- name: remastered/msn/jp/TT05_MS405.bar/JP_TT05_MS405_bar4.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/jp/TT05_MS405.bar/JP_TT05_MS405_bar4.png
+    type: internal
+- name: remastered/msn/jp/TT05_MS405.bar/JP_TT05_MS405_bar5.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/jp/TT05_MS405.bar/JP_TT05_MS405_bar5.png
+    type: internal
+- name: remastered/msn/jp/TT05_MS405.bar/JP_TT05_MS405_bar6.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/jp/TT05_MS405.bar/JP_TT05_MS405_bar6.png
+    type: internal
+- name: remastered/msn/us/TT05_MS405.bar/US_TT05_MS405_bar0.png
+  multi:
+  - name: remastered/msn/fr/TT05_MS405.bar/FR_TT05_MS405_bar0.png
+  - name: remastered/msn/gr/TT05_MS405.bar/GR_TT05_MS405_bar0.png
+  - name: remastered/msn/it/TT05_MS405.bar/IT_TT05_MS405_bar0.png
+  - name: remastered/msn/sp/TT05_MS405.bar/SP_TT05_MS405_bar0.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/us/TT05_MS405.bar/US_TT05_MS405_bar0.png
+    type: internal
+- name: remastered/msn/us/TT05_MS405.bar/US_TT05_MS405_bar1.png
+  multi:
+  - name: remastered/msn/fr/TT05_MS405.bar/FR_TT05_MS405_bar1.png
+  - name: remastered/msn/gr/TT05_MS405.bar/GR_TT05_MS405_bar1.png
+  - name: remastered/msn/it/TT05_MS405.bar/IT_TT05_MS405_bar1.png
+  - name: remastered/msn/sp/TT05_MS405.bar/SP_TT05_MS405_bar1.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/us/TT05_MS405.bar/US_TT05_MS405_bar1.png
+    type: internal
+- name: remastered/msn/us/TT05_MS405.bar/US_TT05_MS405_bar2.png
+  multi:
+  - name: remastered/msn/fr/TT05_MS405.bar/FR_TT05_MS405_bar2.png
+  - name: remastered/msn/gr/TT05_MS405.bar/GR_TT05_MS405_bar2.png
+  - name: remastered/msn/it/TT05_MS405.bar/IT_TT05_MS405_bar2.png
+  - name: remastered/msn/sp/TT05_MS405.bar/SP_TT05_MS405_bar2.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/us/TT05_MS405.bar/US_TT05_MS405_bar2.png
+    type: internal
+- name: remastered/msn/us/TT05_MS405.bar/US_TT05_MS405_bar3.png
+  multi:
+  - name: remastered/msn/fr/TT05_MS405.bar/FR_TT05_MS405_bar3.png
+  - name: remastered/msn/gr/TT05_MS405.bar/GR_TT05_MS405_bar3.png
+  - name: remastered/msn/it/TT05_MS405.bar/IT_TT05_MS405_bar3.png
+  - name: remastered/msn/sp/TT05_MS405.bar/SP_TT05_MS405_bar3.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/us/TT05_MS405.bar/US_TT05_MS405_bar3.png
+    type: internal
+- name: remastered/msn/us/TT05_MS405.bar/US_TT05_MS405_bar4.png
+  multi:
+  - name: remastered/msn/fr/TT05_MS405.bar/FR_TT05_MS405_bar4.png
+  - name: remastered/msn/gr/TT05_MS405.bar/GR_TT05_MS405_bar4.png
+  - name: remastered/msn/it/TT05_MS405.bar/IT_TT05_MS405_bar4.png
+  - name: remastered/msn/sp/TT05_MS405.bar/SP_TT05_MS405_bar4.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/us/TT05_MS405.bar/US_TT05_MS405_bar4.png
+    type: internal
+- name: remastered/msn/us/TT05_MS405.bar/US_TT05_MS405_bar5.png
+  multi:
+  - name: remastered/msn/fr/TT05_MS405.bar/FR_TT05_MS405_bar5.png
+  - name: remastered/msn/gr/TT05_MS405.bar/GR_TT05_MS405_bar5.png
+  - name: remastered/msn/it/TT05_MS405.bar/IT_TT05_MS405_bar5.png
+  - name: remastered/msn/sp/TT05_MS405.bar/SP_TT05_MS405_bar5.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/us/TT05_MS405.bar/US_TT05_MS405_bar5.png
+    type: internal
+- name: remastered/msn/us/TT05_MS405.bar/US_TT05_MS405_bar6.png
+  multi:
+  - name: remastered/msn/fr/TT05_MS405.bar/FR_TT05_MS405_bar6.png
+  - name: remastered/msn/gr/TT05_MS405.bar/GR_TT05_MS405_bar6.png
+  - name: remastered/msn/it/TT05_MS405.bar/IT_TT05_MS405_bar6.png
+  - name: remastered/msn/sp/TT05_MS405.bar/SP_TT05_MS405_bar6.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/us/TT05_MS405.bar/US_TT05_MS405_bar6.png
+    type: internal
+- name: msn/jp/TT10_WORK_MIRROR.bar #Shadow Roxas
+  method: binarc
+  source:
+  - name: tt10
+    type: bdx
+    method: bdscript
+    source:
+    - name: ard/tt10/TT10_WORK_MIRROR.bdscript
+- name: msn/us/TT10_WORK_MIRROR.bar
+  multi:
+  - name: msn/fr/TT10_WORK_MIRROR.bar
+  - name: msn/gr/TT10_WORK_MIRROR.bar
+  - name: msn/it/TT10_WORK_MIRROR.bar
+  - name: msn/sp/TT10_WORK_MIRROR.bar
+  platform: pc
+  method: binarc
+  source:
+  - name: tt10
+    type: bdx
+    method: bdscript
+    source:
+    - name: ard/tt10/TT10_WORK_MIRROR.bdscript
+- name: remastered/msn/jp/TT10_WORK_MIRROR.bar/JP_TT10_WORK_MIRROR_bar0.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/jp/TT10_WORK_MIRROR.bar/JP_TT10_WORK_MIRROR_bar0.png
+    type: internal
+- name: remastered/msn/jp/TT10_WORK_MIRROR.bar/JP_TT10_WORK_MIRROR_bar1.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/jp/TT10_WORK_MIRROR.bar/JP_TT10_WORK_MIRROR_bar1.png
+    type: internal
+- name: remastered/msn/jp/TT10_WORK_MIRROR.bar/JP_TT10_WORK_MIRROR_bar2.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/jp/TT10_WORK_MIRROR.bar/JP_TT10_WORK_MIRROR_bar2.png
+    type: internal
+- name: remastered/msn/us/TT10_WORK_MIRROR.bar/US_TT10_WORK_MIRROR_bar0.png
+  multi:
+  - name: remastered/msn/fr/TT10_WORK_MIRROR.bar/FR_TT10_WORK_MIRROR_bar0.png
+  - name: remastered/msn/gr/TT10_WORK_MIRROR.bar/GR_TT10_WORK_MIRROR_bar0.png
+  - name: remastered/msn/it/TT10_WORK_MIRROR.bar/IT_TT10_WORK_MIRROR_bar0.png
+  - name: remastered/msn/sp/TT10_WORK_MIRROR.bar/SP_TT10_WORK_MIRROR_bar0.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/us/TT10_WORK_MIRROR.bar/US_TT10_WORK_MIRROR_bar0.png
+    type: internal
+- name: remastered/msn/us/TT10_WORK_MIRROR.bar/US_TT10_WORK_MIRROR_bar1.png
+  multi:
+  - name: remastered/msn/fr/TT10_WORK_MIRROR.bar/FR_TT10_WORK_MIRROR_bar1.png
+  - name: remastered/msn/gr/TT10_WORK_MIRROR.bar/GR_TT10_WORK_MIRROR_bar1.png
+  - name: remastered/msn/it/TT10_WORK_MIRROR.bar/IT_TT10_WORK_MIRROR_bar1.png
+  - name: remastered/msn/sp/TT10_WORK_MIRROR.bar/SP_TT10_WORK_MIRROR_bar1.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/us/TT10_WORK_MIRROR.bar/US_TT10_WORK_MIRROR_bar1.png
+    type: internal
+- name: remastered/msn/us/TT10_WORK_MIRROR.bar/US_TT10_WORK_MIRROR_bar2.png
+  multi:
+  - name: remastered/msn/fr/TT10_WORK_MIRROR.bar/FR_TT10_WORK_MIRROR_bar2.png
+  - name: remastered/msn/gr/TT10_WORK_MIRROR.bar/GR_TT10_WORK_MIRROR_bar2.png
+  - name: remastered/msn/it/TT10_WORK_MIRROR.bar/IT_TT10_WORK_MIRROR_bar2.png
+  - name: remastered/msn/sp/TT10_WORK_MIRROR.bar/SP_TT10_WORK_MIRROR_bar2.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/us/TT10_WORK_MIRROR.bar/US_TT10_WORK_MIRROR_bar2.png
+    type: internal
+- name: msn/jp/TT36_WORK_FIGURE.bar #Vivi Clones
+  method: binarc
+  source:
+  - name: tt36
+    type: bdx
+    method: bdscript
+    source:
+    - name: ard/tt36/TT36_WORK_FIGURE.bdscript
+- name: msn/us/TT36_WORK_FIGURE.bar
+  multi:
+  - name: msn/fr/TT36_WORK_FIGURE.bar
+  - name: msn/gr/TT36_WORK_FIGURE.bar
+  - name: msn/it/TT36_WORK_FIGURE.bar
+  - name: msn/sp/TT36_WORK_FIGURE.bar
+  platform: pc
+  method: binarc
+  source:
+  - name: tt36
+    type: bdx
+    method: bdscript
+    source:
+    - name: ard/tt36/TT36_WORK_FIGURE.bdscript
+- name: remastered/msn/jp/TT36_WORK_FIGURE.bar/JP_TT36_WORK_FIGURE_bar0.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/jp/TT36_WORK_FIGURE.bar/JP_TT36_WORK_FIGURE_bar0.png
+    type: internal
+- name: remastered/msn/jp/TT36_WORK_FIGURE.bar/JP_TT36_WORK_FIGURE_bar1.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/jp/TT36_WORK_FIGURE.bar/JP_TT36_WORK_FIGURE_bar1.png
+    type: internal
+- name: remastered/msn/jp/TT36_WORK_FIGURE.bar/JP_TT36_WORK_FIGURE_bar2.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/jp/TT36_WORK_FIGURE.bar/JP_TT36_WORK_FIGURE_bar2.png
+    type: internal
+- name: remastered/msn/us/TT36_WORK_FIGURE.bar/US_TT36_WORK_FIGURE_bar0.png
+  multi:
+  - name: remastered/msn/fr/TT36_WORK_FIGURE.bar/FR_TT36_WORK_FIGURE_bar0.png
+  - name: remastered/msn/gr/TT36_WORK_FIGURE.bar/GR_TT36_WORK_FIGURE_bar0.png
+  - name: remastered/msn/it/TT36_WORK_FIGURE.bar/IT_TT36_WORK_FIGURE_bar0.png
+  - name: remastered/msn/sp/TT36_WORK_FIGURE.bar/SP_TT36_WORK_FIGURE_bar0.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/us/TT36_WORK_FIGURE.bar/US_TT36_WORK_FIGURE_bar0.png
+    type: internal
+- name: remastered/msn/us/TT36_WORK_FIGURE.bar/US_TT36_WORK_FIGURE_bar1.png
+  multi:
+  - name: remastered/msn/fr/TT36_WORK_FIGURE.bar/FR_TT36_WORK_FIGURE_bar1.png
+  - name: remastered/msn/gr/TT36_WORK_FIGURE.bar/GR_TT36_WORK_FIGURE_bar1.png
+  - name: remastered/msn/it/TT36_WORK_FIGURE.bar/IT_TT36_WORK_FIGURE_bar1.png
+  - name: remastered/msn/sp/TT36_WORK_FIGURE.bar/SP_TT36_WORK_FIGURE_bar1.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/us/TT36_WORK_FIGURE.bar/US_TT36_WORK_FIGURE_bar1.png
+    type: internal
+- name: remastered/msn/us/TT36_WORK_FIGURE.bar/US_TT36_WORK_FIGURE_bar2.png
+  multi:
+  - name: remastered/msn/fr/TT36_WORK_FIGURE.bar/FR_TT36_WORK_FIGURE_bar2.png
+  - name: remastered/msn/gr/TT36_WORK_FIGURE.bar/GR_TT36_WORK_FIGURE_bar2.png
+  - name: remastered/msn/it/TT36_WORK_FIGURE.bar/IT_TT36_WORK_FIGURE_bar2.png
+  - name: remastered/msn/sp/TT36_WORK_FIGURE.bar/SP_TT36_WORK_FIGURE_bar2.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/us/TT36_WORK_FIGURE.bar/US_TT36_WORK_FIGURE_bar2.png
+    type: internal
+- name: msn/jp/TT03_MS601.bar #Back Alley Nobodies
+  method: binarc
+  source:
+  - name: ms_d
+    type: bdx
+    method: bdscript
+    source:
+    - name: ard/MISSION_DEADALL.bdscript
+- name: msn/us/TT03_MS601.bar
+  multi:
+  - name: msn/fr/TT03_MS601.bar
+  - name: msn/gr/TT03_MS601.bar
+  - name: msn/it/TT03_MS601.bar
+  - name: msn/sp/TT03_MS601.bar
+  platform: pc
+  method: binarc
+  source:
+  - name: ms_d
+    type: bdx
+    method: bdscript
+    source:
+    - name: ard/MISSION_DEADALL.bdscript
+- name: msn/jp/TT25_MS801.bar #The Tower Heartless
+  method: binarc
+  source:
+  - name: ms_d
+    type: bdx
+    method: bdscript
+    source:
+    - name: ard/MISSION_DEADALL.bdscript
+- name: msn/us/TT25_MS801.bar
+  multi:
+  - name: msn/fr/TT25_MS801.bar
+  - name: msn/gr/TT25_MS801.bar
+  - name: msn/it/TT25_MS801.bar
+  - name: msn/sp/TT25_MS801.bar
+  platform: pc
+  method: binarc
+  source:
+  - name: ms_d
+    type: bdx
+    method: bdscript
+    source:
+    - name: ard/MISSION_DEADALL.bdscript
+- name: msn/jp/HB09_MS101.bar #Borough Nobodies
+  method: binarc
+  source:
+  - name: ms_d
+    type: bdx
+    method: bdscript
+    source:
+    - name: ard/MISSION_DEADALL.bdscript
+- name: msn/us/HB09_MS101.bar
+  multi:
+  - name: msn/fr/HB09_MS101.bar
+  - name: msn/gr/HB09_MS101.bar
+  - name: msn/it/HB09_MS101.bar
+  - name: msn/sp/HB09_MS101.bar
+  platform: pc
+  method: binarc
+  source:
+  - name: ms_d
+    type: bdx
+    method: bdscript
+    source:
+    - name: ard/MISSION_DEADALL.bdscript
+- name: msn/jp/HB09_MS901.bar #Borough Heartless I
+  method: binarc
+  source:
+  - name: ms_d
+    type: bdx
+    method: bdscript
+    source:
+    - name: ard/MISSION_DEADALL.bdscript
+- name: msn/us/HB09_MS901.bar
+  multi:
+  - name: msn/fr/HB09_MS901.bar
+  - name: msn/gr/HB09_MS901.bar
+  - name: msn/it/HB09_MS901.bar
+  - name: msn/sp/HB09_MS901.bar
+  platform: pc
+  method: binarc
+  source:
+  - name: ms_d
+    type: bdx
+    method: bdscript
+    source:
+    - name: ard/MISSION_DEADALL.bdscript
+- name: msn/jp/CA01_MS102.bar #Town Pirates I
+  method: binarc
+  source:
+  - name: ms_d
+    type: bdx
+    method: bdscript
+    source:
+    - name: ard/MISSION_DEADALL.bdscript
+- name: msn/us/CA01_MS102.bar
+  multi:
+  - name: msn/fr/CA01_MS102.bar
+  - name: msn/gr/CA01_MS102.bar
+  - name: msn/it/CA01_MS102.bar
+  - name: msn/sp/CA01_MS102.bar
+  platform: pc
+  method: binarc
+  source:
+  - name: ms_d
+    type: bdx
+    method: bdscript
+    source:
+    - name: ard/MISSION_DEADALL.bdscript
+- name: msn/jp/AL13_TRAP.bar #Chasm of Challenges
+  method: binarc
+  source:
+  - name: AL13
+    type: list
+    method: copy
+    source:
+    - name: ard/al13/AL13_TRAP.bin
+  - name: al13
+    type: bdx
+    method: bdscript
+    source:
+    - name: ard/al13/AL13_TRAP.bdscript
+  - name: over
+    type: event
+    method: copy
+    source:
+    - name: ard/GAMEOVER.bin
+- name: msn/us/AL13_TRAP.bar
+  multi:
+  - name: msn/fr/AL13_TRAP.bar
+  - name: msn/gr/AL13_TRAP.bar
+  - name: msn/it/AL13_TRAP.bar
+  - name: msn/sp/AL13_TRAP.bar
+  platform: pc
+  method: binarc
+  source:
+  - name: al13
+    type: bdx
+    method: bdscript
+    source:
+    - name: ard/al13/AL13_TRAP.bdscript
+- name: remastered/msn/jp/AL13_TRAP.bar/JP_AL13_TRAP_bar0.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/jp/AL13_TRAP.bar/JP_AL13_TRAP_bar0.png
+    type: internal
+- name: remastered/msn/us/AL13_TRAP.bar/US_AL13_TRAP_bar0.png
+  multi:
+  - name: remastered/msn/fr/AL13_TRAP.bar/FR_AL13_TRAP_bar0.png
+  - name: remastered/msn/gr/AL13_TRAP.bar/GR_AL13_TRAP_bar0.png
+  - name: remastered/msn/it/AL13_TRAP.bar/IT_AL13_TRAP_bar0.png
+  - name: remastered/msn/sp/AL13_TRAP.bar/SP_AL13_TRAP_bar0.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/us/AL13_TRAP.bar/US_AL13_TRAP_bar0.png
+    type: internal
+- name: msn/jp/NM00_MS101.bar #Halloween Town Square Heartless
+  method: binarc
+  source:
+  - name: ms_d
+    type: bdx
+    method: bdscript
+    source:
+    - name: ard/MISSION_DEADALL.bdscript
+- name: msn/us/NM00_MS101.bar
+  multi:
+  - name: msn/fr/NM00_MS101.bar
+  - name: msn/gr/NM00_MS101.bar
+  - name: msn/it/NM00_MS101.bar
+  - name: msn/sp/NM00_MS101.bar
+  platform: pc
+  method: binarc
+  source:
+  - name: ms_d
+    type: bdx
+    method: bdscript
+    source:
+    - name: ard/MISSION_DEADALL.bdscript
+- name: msn/jp/HB24_CONFINE.bar #Mineshaft Heartless I
+  method: binarc
+  source:
+  - name: HB24
+    type: list
+    method: copy
+    source:
+    - name: ard/hb24/HB24_CONFINE.bin
+- name: msn/us/HB24_CONFINE.bar
+  multi:
+  - name: msn/fr/HB24_CONFINE.bar
+  - name: msn/gr/HB24_CONFINE.bar
+  - name: msn/it/HB24_CONFINE.bar
+  - name: msn/sp/HB24_CONFINE.bar
+  platform: pc
+  method: binarc
+  source:
+  - name: HB24
+    type: list
+    method: copy
+    source:
+    - name: ard/hb24/HB24_CONFINE.bin
+- name: msn/jp/HB09_MS501.bar #Borough Heartless II
+  method: binarc
+  source:
+  - name: ms_d
+    type: bdx
+    method: bdscript
+    source:
+    - name: ard/MISSION_DEADALL.bdscript
+- name: msn/us/HB09_MS501.bar
+  multi:
+  - name: msn/fr/HB09_MS501.bar
+  - name: msn/gr/HB09_MS501.bar
+  - name: msn/it/HB09_MS501.bar
+  - name: msn/sp/HB09_MS501.bar
+  platform: pc
+  method: binarc
+  source:
+  - name: ms_d
+    type: bdx
+    method: bdscript
+    source:
+    - name: ard/MISSION_DEADALL.bdscript
+- name: msn/jp/EH25_MS109.bar #Core
+  method: binarc
+  source:
+  - name: EH25
+    type: list
+    method: copy
+    source:
+    - name: ard/eh25/EH25_MS109.bin
+- name: msn/us/EH25_MS109.bar
+  multi:
+  - name: msn/fr/EH25_MS109.bar
+  - name: msn/gr/EH25_MS109.bar
+  - name: msn/it/EH25_MS109.bar
+  - name: msn/sp/EH25_MS109.bar
+  platform: pc
+  method: binarc
+  source:
+  - name: EH25
+    type: list
+    method: copy
+    source:
+    - name: ard/eh25/EH25_MS109.bin
+- name: msn/jp/EH24_MS110.bar #Armor Xemnas I
+  method: binarc
+  source:
+  - name: EH24
+    type: list
+    method: copy
+    source:
+    - name: ard/eh24/EH24_MS110.bin
+- name: msn/us/EH24_MS110.bar
+  multi:
+  - name: msn/fr/EH24_MS110.bar
+  - name: msn/gr/EH24_MS110.bar
+  - name: msn/it/EH24_MS110.bar
+  - name: msn/sp/EH24_MS110.bar
+  platform: pc
+  method: binarc
+  source:
+  - name: EH24
+    type: list
+    method: copy
+    source:
+    - name: ard/eh24/EH24_MS110.bin
+- name: msn/jp/EH22_MS111.bar #Dragon Xemnas
+  method: binarc
+  source:
+  - name: EH22
+    type: list
+    method: copy
+    source:
+    - name: ard/eh22/EH22_MS111.bin
+- name: msn/us/EH22_MS111.bar
+  multi:
+  - name: msn/fr/EH22_MS111.bar
+  - name: msn/gr/EH22_MS111.bar
+  - name: msn/it/EH22_MS111.bar
+  - name: msn/sp/EH22_MS111.bar
+  platform: pc
+  method: binarc
+  source:
+  - name: EH22
+    type: list
+    method: copy
+    source:
+    - name: ard/eh22/EH22_MS111.bin
+- name: remastered/msn/jp/EH22_MS111.bar/JP_EH22_MS111_bar0.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/jp/EH22_MS111.bar/JP_EH22_MS111_bar0.png
+    type: internal
+- name: remastered/msn/us/EH22_MS111.bar/US_EH22_MS111_bar0.png
+  multi:
+  - name: remastered/msn/fr/EH22_MS111.bar/FR_EH22_MS111_bar0.png
+  - name: remastered/msn/gr/EH22_MS111.bar/GR_EH22_MS111_bar0.png
+  - name: remastered/msn/it/EH22_MS111.bar/IT_EH22_MS111_bar0.png
+  - name: remastered/msn/sp/EH22_MS111.bar/SP_EH22_MS111_bar0.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/us/EH22_MS111.bar/US_EH22_MS111_bar0.png
+    type: internal
+- name: msn/jp/EH23_MS112.bar #Armor Xemnas II
+  method: binarc
+  source:
+  - name: EH23
+    type: list
+    method: copy
+    source:
+    - name: ard/eh23/EH23_MS112.bin
+- name: msn/us/EH23_MS112.bar
+  multi:
+  - name: msn/fr/EH23_MS112.bar
+  - name: msn/gr/EH23_MS112.bar
+  - name: msn/it/EH23_MS112.bar
+  - name: msn/sp/EH23_MS112.bar
+  platform: pc
+  method: binarc
+  source:
+  - name: EH23
+    type: list
+    method: copy
+    source:
+    - name: ard/eh23/EH23_MS112.bin
+- name: msn/jp/EH20_MS113.bar #Xemnas II
+  method: binarc
+  source:
+  - name: EH20
+    type: list
+    method: copy
+    source:
+    - name: ard/eh20/EH20_MS113.bin
+- name: msn/us/EH20_MS113.bar
+  multi:
+  - name: msn/fr/EH20_MS113.bar
+  - name: msn/gr/EH20_MS113.bar
+  - name: msn/it/EH20_MS113.bar
+  - name: msn/sp/EH20_MS113.bar
+  platform: pc
+  method: binarc
+  source:
+  - name: EH20
+    type: list
+    method: copy
+    source:
+    - name: ard/eh20/EH20_MS113.bin
+
+- name: msn/jp/HB24_CONFINE_2.bar #Mineshaft Heartless II
+  method: binarc
+  source:
+  - name: HB24
+    type: list
+    method: copy
+    source:
+    - name: ard/hb24/HB24_CONFINE_2.bin
+- name: msn/us/HB24_CONFINE_2.bar
+  multi:
+  - name: msn/fr/HB24_CONFINE_2.bar
+  - name: msn/gr/HB24_CONFINE_2.bar
+  - name: msn/it/HB24_CONFINE_2.bar
+  - name: msn/sp/HB24_CONFINE_2.bar
+  platform: pc
+  method: binarc
+  source:
+  - name: HB24
+    type: list
+    method: copy
+    source:
+    - name: ard/hb24/HB24_CONFINE_2.bin
+- name: msn/jp/HB25_CONFINE_1.bar #Transport to Remembrance Nobodies II
+  method: binarc
+  source:
+  - name: HB25
+    type: list
+    method: copy
+    source:
+    - name: ard/hb25/HB25_CONFINE_1.bin
+- name: msn/us/HB25_CONFINE_1.bar
+  multi:
+  - name: msn/fr/HB25_CONFINE_1.bar
+  - name: msn/gr/HB25_CONFINE_1.bar
+  - name: msn/it/HB25_CONFINE_1.bar
+  - name: msn/sp/HB25_CONFINE_1.bar
+  platform: pc
+  method: binarc
+  source:
+  - name: HB25
+    type: list
+    method: copy
+    source:
+    - name: ard/hb25/HB25_CONFINE_1.bin
+- name: msn/jp/HB25_CONFINE_2.bar #Transport to Remembrance Nobodies II
+  method: binarc
+  source:
+  - name: HB25
+    type: list
+    method: copy
+    source:
+    - name: ard/hb25/HB25_CONFINE_2.bin
+- name: msn/us/HB25_CONFINE_2.bar
+  multi:
+  - name: msn/fr/HB25_CONFINE_2.bar
+  - name: msn/gr/HB25_CONFINE_2.bar
+  - name: msn/it/HB25_CONFINE_2.bar
+  - name: msn/sp/HB25_CONFINE_2.bar
+  platform: pc
+  method: binarc
+  source:
+  - name: HB25
+    type: list
+    method: copy
+    source:
+    - name: ard/hb25/HB25_CONFINE_2.bin
+- name: msn/jp/HB25_CONFINE_3.bar #Transport to Remembrance Nobodies II
+  method: binarc
+  source:
+  - name: HB25
+    type: list
+    method: copy
+    source:
+    - name: ard/hb25/HB25_CONFINE_3.bin
+- name: msn/us/HB25_CONFINE_3.bar
+  multi:
+  - name: msn/fr/HB25_CONFINE_3.bar
+  - name: msn/gr/HB25_CONFINE_3.bar
+  - name: msn/it/HB25_CONFINE_3.bar
+  - name: msn/sp/HB25_CONFINE_3.bar
+  platform: pc
+  method: binarc
+  source:
+  - name: HB25
+    type: list
+    method: copy
+    source:
+    - name: ard/hb25/HB25_CONFINE_3.bin
+#Dance Call Experiment crash fix
+- name: limit/fm/jack.bar
+  method: binarc
+  source:
+  - name: limi
+    type: bdx
+    method: bdscript
+    source:
+    - name: jack.bdscript
+- name: limit/us/jack.bar
+  multi:
+  - name: limit/fr/jack.bar
+  - name: limit/gr/jack.bar
+  - name: limit/it/jack.bar
+  - name: limit/sp/jack.bar
+  platform: pc
+  method: binarc
+  source:
+  - name: limi
+    type: bdx
+    method: bdscript
+    source:
+    - name: jack.bdscript
+- name: remastered/limit/fm/jack.bar/FM_jack_bar0.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/limit/fm/jack.bar/FM_jack_bar0.dds
+    type: internal
+- name: remastered/limit/fm/jack.bar/FM_jack_bar1.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/limit/fm/jack.bar/FM_jack_bar1.dds
+    type: internal
+- name: remastered/limit/fm/jack.bar/FM_jack_bar2.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/limit/fm/jack.bar/FM_jack_bar2.dds
+    type: internal
+- name: remastered/limit/fm/jack.bar/FM_jack_bar3.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/limit/fm/jack.bar/FM_jack_bar3.dds
+    type: internal
+- name: remastered/limit/fm/jack.bar/FM_jack_bar4.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/limit/fm/jack.bar/FM_jack_bar4.dds
+    type: internal
+- name: remastered/limit/fm/jack.bar/FM_jack_bar5.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/limit/fm/jack.bar/FM_jack_bar5.dds
+    type: internal
+- name: remastered/limit/fm/jack.bar/FM_jack_bar6.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/limit/fm/jack.bar/FM_jack_bar6.dds
+    type: internal
+- name: remastered/limit/fm/jack.bar/FM_jack_bar7.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/limit/fm/jack.bar/FM_jack_bar7.dds
+    type: internal
+- name: remastered/limit/fm/jack.bar/FM_jack_bar8.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/limit/fm/jack.bar/FM_jack_bar8.dds
+    type: internal
+- name: remastered/limit/fm/jack.bar/FM_jack_bar9.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/limit/fm/jack.bar/FM_jack_bar9.dds
+    type: internal
+- name: remastered/limit/fm/jack.bar/FM_jack_bar10.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/limit/fm/jack.bar/FM_jack_bar10.dds
+    type: internal
+- name: remastered/limit/fm/jack.bar/FM_jack_bar11.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/limit/fm/jack.bar/FM_jack_bar11.dds
+    type: internal
+- name: remastered/limit/fm/jack.bar/FM_jack_bar12.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/limit/fm/jack.bar/FM_jack_bar12.dds
+    type: internal
+- name: remastered/limit/fm/jack.bar/FM_jack_bar13.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/limit/fm/jack.bar/FM_jack_bar13.dds
+    type: internal
+- name: remastered/limit/fm/jack.bar/FM_jack_bar14.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/limit/fm/jack.bar/FM_jack_bar14.dds
+    type: internal
+- name: remastered/limit/fm/jack.bar/se/limit/se407
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/limit/fm/jack.bar/se/limit/se407
+    type: internal
+- name: remastered/limit/us/jack.bar/-0.dds
+  multi:
+  - name: remastered/limit/fr/jack.bar/FR_jack_bar0.dds
+  - name: remastered/limit/gr/jack.bar/GR_jack_bar0.dds
+  - name: remastered/limit/it/jack.bar/IT_jack_bar0.dds
+  - name: remastered/limit/sp/jack.bar/SP_jack_bar0.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/limit/us/jack.bar/US_jack_bar0.dds
+    type: internal
+- name: remastered/limit/us/jack.bar/-1.dds
+  multi:
+  - name: remastered/limit/fr/jack.bar/FR_jack_bar1.dds
+  - name: remastered/limit/gr/jack.bar/GR_jack_bar1.dds
+  - name: remastered/limit/it/jack.bar/IT_jack_bar1.dds
+  - name: remastered/limit/sp/jack.bar/SP_jack_bar1.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/limit/us/jack.bar/US_jack_bar2.dds
+    type: internal
+- name: remastered/limit/us/jack.bar/-2.dds
+  multi:
+  - name: remastered/limit/fr/jack.bar/FR_jack_bar2.dds
+  - name: remastered/limit/gr/jack.bar/GR_jack_bar2.dds
+  - name: remastered/limit/it/jack.bar/IT_jack_bar2.dds
+  - name: remastered/limit/sp/jack.bar/SP_jack_bar2.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/limit/us/jack.bar/US_jack_bar3.dds
+    type: internal
+- name: remastered/limit/us/jack.bar/-3.dds
+  multi:
+  - name: remastered/limit/fr/jack.bar/FR_jack_bar3.dds
+  - name: remastered/limit/gr/jack.bar/GR_jack_bar3.dds
+  - name: remastered/limit/it/jack.bar/IT_jack_bar3.dds
+  - name: remastered/limit/sp/jack.bar/SP_jack_bar3.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/limit/us/jack.bar/US_jack_bar1.dds
+    type: internal
+- name: remastered/limit/us/jack.bar/-4.dds
+  multi:
+  - name: remastered/limit/fr/jack.bar/FR_jack_bar4.dds
+  - name: remastered/limit/gr/jack.bar/GR_jack_bar4.dds
+  - name: remastered/limit/it/jack.bar/IT_jack_bar4.dds
+  - name: remastered/limit/sp/jack.bar/SP_jack_bar4.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/limit/us/jack.bar/US_jack_bar4.dds
+    type: internal
+- name: remastered/limit/us/jack.bar/-5.dds
+  multi:
+  - name: remastered/limit/fr/jack.bar/FR_jack_bar5.dds
+  - name: remastered/limit/gr/jack.bar/GR_jack_bar5.dds
+  - name: remastered/limit/it/jack.bar/IT_jack_bar5.dds
+  - name: remastered/limit/sp/jack.bar/SP_jack_bar5.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/limit/us/jack.bar/US_jack_bar6.dds
+    type: internal
+- name: remastered/limit/us/jack.bar/-6.dds
+  multi:
+  - name: remastered/limit/fr/jack.bar/FR_jack_bar6.dds
+  - name: remastered/limit/gr/jack.bar/GR_jack_bar6.dds
+  - name: remastered/limit/it/jack.bar/IT_jack_bar6.dds
+  - name: remastered/limit/sp/jack.bar/SP_jack_bar6.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/limit/us/jack.bar/US_jack_bar5.dds
+    type: internal
+- name: remastered/limit/us/jack.bar/-7.dds
+  multi:
+  - name: remastered/limit/fr/jack.bar/FR_jack_bar7.dds
+  - name: remastered/limit/gr/jack.bar/GR_jack_bar7.dds
+  - name: remastered/limit/it/jack.bar/IT_jack_bar7.dds
+  - name: remastered/limit/sp/jack.bar/SP_jack_bar7.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/limit/us/jack.bar/US_jack_bar7.dds
+    type: internal
+- name: remastered/limit/us/jack.bar/-8.dds
+  multi:
+  - name: remastered/limit/fr/jack.bar/FR_jack_bar8.dds
+  - name: remastered/limit/gr/jack.bar/GR_jack_bar8.dds
+  - name: remastered/limit/it/jack.bar/IT_jack_bar8.dds
+  - name: remastered/limit/sp/jack.bar/SP_jack_bar8.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/limit/us/jack.bar/US_jack_bar9.dds
+    type: internal
+- name: remastered/limit/us/jack.bar/-9.dds
+  multi:
+  - name: remastered/limit/fr/jack.bar/FR_jack_bar9.dds
+  - name: remastered/limit/gr/jack.bar/GR_jack_bar9.dds
+  - name: remastered/limit/it/jack.bar/IT_jack_bar9.dds
+  - name: remastered/limit/sp/jack.bar/SP_jack_bar9.dds
+  platform: pc
+  method: copy
+  source:
+  - name: -9.dds
+- name: remastered/limit/us/jack.bar/-10.dds
+  multi:
+  - name: remastered/limit/fr/jack.bar/FR_jack_bar10.dds
+  - name: remastered/limit/gr/jack.bar/GR_jack_bar10.dds
+  - name: remastered/limit/it/jack.bar/IT_jack_bar10.dds
+  - name: remastered/limit/sp/jack.bar/SP_jack_bar10.dds
+  platform: pc
+  method: copy
+  source:
+  - name: -10.dds
+- name: remastered/limit/us/jack.bar/-11.dds
+  multi:
+  - name: remastered/limit/fr/jack.bar/FR_jack_bar11.dds
+  - name: remastered/limit/gr/jack.bar/GR_jack_bar11.dds
+  - name: remastered/limit/it/jack.bar/IT_jack_bar11.dds
+  - name: remastered/limit/sp/jack.bar/SP_jack_bar11.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/limit/us/jack.bar/US_jack_bar11.dds
+    type: internal
+- name: remastered/limit/us/jack.bar/-12.dds
+  multi:
+  - name: remastered/limit/fr/jack.bar/FR_jack_bar12.dds
+  - name: remastered/limit/gr/jack.bar/GR_jack_bar12.dds
+  - name: remastered/limit/it/jack.bar/IT_jack_bar12.dds
+  - name: remastered/limit/sp/jack.bar/SP_jack_bar12.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/limit/us/jack.bar/US_jack_bar12.dds
+    type: internal
+- name: remastered/limit/us/jack.bar/-13.dds
+  multi:
+  - name: remastered/limit/fr/jack.bar/FR_jack_bar13.dds
+  - name: remastered/limit/gr/jack.bar/GR_jack_bar13.dds
+  - name: remastered/limit/it/jack.bar/IT_jack_bar13.dds
+  - name: remastered/limit/sp/jack.bar/SP_jack_bar13.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/limit/us/jack.bar/US_jack_bar13.dds
+    type: internal
+- name: remastered/limit/us/jack.bar/-14.dds
+  multi:
+  - name: remastered/limit/fr/jack.bar/FR_jack_bar14.dds
+  - name: remastered/limit/gr/jack.bar/GR_jack_bar14.dds
+  - name: remastered/limit/it/jack.bar/IT_jack_bar14.dds
+  - name: remastered/limit/sp/jack.bar/SP_jack_bar14.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/limit/us/jack.bar/US_jack_bar14.dds
+    type: internal
+- name: remastered/limit/us/jack.bar/se/limit/se407
+  multi:
+  - name: remastered/limit/fr/jack.bar/se/limit/se407
+  - name: remastered/limit/gr/jack.bar/se/limit/se407
+  - name: remastered/limit/it/jack.bar/se/limit/se407
+  - name: remastered/limit/sp/jack.bar/se/limit/se407
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/limit/us/jack.bar/se/limit/se407
+    type: internal
+#PS2 (Balanced) Duck Flare
+- name: limit/us/donald2.bar
+  platform: pc
+  method: copy
+  source:
+  - name: limit/fm/donald2.bar
+    type: internal
+- name: limit/us/donald2_wi.bar
+  platform: pc
+  method: copy
+  source:
+  - name: limit/fm/donald2_wi.bar
+    type: internal
+- name: remastered/limit/us/donald2.bar/US_donald2_bar0.dds
+  multi:
+  - name: remastered/limit/fr/donald2.bar/FR_donald2_bar0.dds
+  - name: remastered/limit/gr/donald2.bar/GR_donald2_bar0.dds
+  - name: remastered/limit/it/donald2.bar/IT_donald2_bar0.dds
+  - name: remastered/limit/sp/donald2.bar/SP_donald2_bar0.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/limit/us/donald2.bar/US_donald2_bar0.dds
+    type: internal
+- name: remastered/limit/us/donald2.bar/US_donald2_bar1.dds
+  multi:
+  - name: remastered/limit/fr/donald2.bar/FR_donald2_bar1.dds
+  - name: remastered/limit/gr/donald2.bar/GR_donald2_bar1.dds
+  - name: remastered/limit/it/donald2.bar/IT_donald2_bar1.dds
+  - name: remastered/limit/sp/donald2.bar/SP_donald2_bar1.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/limit/us/donald2.bar/US_donald2_bar1.dds
+    type: internal
+- name: remastered/limit/us/donald2.bar/US_donald2_bar2.dds
+  multi:
+  - name: remastered/limit/fr/donald2.bar/FR_donald2_bar2.dds
+  - name: remastered/limit/gr/donald2.bar/GR_donald2_bar2.dds
+  - name: remastered/limit/it/donald2.bar/IT_donald2_bar2.dds
+  - name: remastered/limit/sp/donald2.bar/SP_donald2_bar2.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/limit/us/donald2.bar/US_donald2_bar2.dds
+    type: internal
+- name: remastered/limit/us/donald2.bar/US_donald2_bar3.dds
+  multi:
+  - name: remastered/limit/fr/donald2.bar/FR_donald2_bar3.dds
+  - name: remastered/limit/gr/donald2.bar/GR_donald2_bar3.dds
+  - name: remastered/limit/it/donald2.bar/IT_donald2_bar3.dds
+  - name: remastered/limit/sp/donald2.bar/SP_donald2_bar3.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/limit/us/donald2.bar/US_donald2_bar3.dds
+    type: internal
+- name: remastered/limit/us/donald2.bar/US_donald2_bar4.dds
+  multi:
+  - name: remastered/limit/fr/donald2.bar/FR_donald2_bar4.dds
+  - name: remastered/limit/gr/donald2.bar/GR_donald2_bar4.dds
+  - name: remastered/limit/it/donald2.bar/IT_donald2_bar4.dds
+  - name: remastered/limit/sp/donald2.bar/SP_donald2_bar4.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/limit/us/donald2.bar/US_donald2_bar4.dds
+    type: internal
+- name: remastered/limit/us/donald2.bar/US_donald2_bar5.dds
+  multi:
+  - name: remastered/limit/fr/donald2.bar/FR_donald2_bar5.dds
+  - name: remastered/limit/gr/donald2.bar/GR_donald2_bar5.dds
+  - name: remastered/limit/it/donald2.bar/IT_donald2_bar5.dds
+  - name: remastered/limit/sp/donald2.bar/SP_donald2_bar5.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/limit/us/donald2.bar/US_donald2_bar5.dds
+    type: internal
+- name: remastered/limit/us/donald2.bar/US_donald2_bar6.dds
+  multi:
+  - name: remastered/limit/fr/donald2.bar/FR_donald2_bar6.dds
+  - name: remastered/limit/gr/donald2.bar/GR_donald2_bar6.dds
+  - name: remastered/limit/it/donald2.bar/IT_donald2_bar6.dds
+  - name: remastered/limit/sp/donald2.bar/SP_donald2_bar6.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/limit/us/donald2.bar/US_donald2_bar6.dds
+    type: internal
+- name: remastered/limit/us/donald2.bar/US_donald2_bar7.dds
+  multi:
+  - name: remastered/limit/fr/donald2.bar/FR_donald2_bar7.dds
+  - name: remastered/limit/gr/donald2.bar/GR_donald2_bar7.dds
+  - name: remastered/limit/it/donald2.bar/IT_donald2_bar7.dds
+  - name: remastered/limit/sp/donald2.bar/SP_donald2_bar7.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/limit/us/donald2.bar/US_donald2_bar7.dds
+    type: internal
+- name: remastered/limit/us/donald2_wi.bar/US_donald2_wi_bar0.dds
+  multi:
+  - name: remastered/limit/fr/donald2_wi.bar/FR_donald2_wi_bar0.dds
+  - name: remastered/limit/gr/donald2_wi.bar/GR_donald2_wi_bar0.dds
+  - name: remastered/limit/it/donald2_wi.bar/IT_donald2_wi_bar0.dds
+  - name: remastered/limit/sp/donald2_wi.bar/SP_donald2_wi_bar0.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/limit/us/donald2_wi.bar/US_donald2_wi_bar0.dds
+    type: internal
+- name: remastered/limit/us/donald2_wi.bar/US_donald2_wi_bar1.dds
+  multi:
+  - name: remastered/limit/fr/donald2_wi.bar/FR_donald2_wi_bar1.dds
+  - name: remastered/limit/gr/donald2_wi.bar/GR_donald2_wi_bar1.dds
+  - name: remastered/limit/it/donald2_wi.bar/IT_donald2_wi_bar1.dds
+  - name: remastered/limit/sp/donald2_wi.bar/SP_donald2_wi_bar1.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/limit/us/donald2_wi.bar/US_donald2_wi_bar1.dds
+    type: internal
+- name: remastered/limit/us/donald2_wi.bar/US_donald2_wi_bar2.dds
+  multi:
+  - name: remastered/limit/fr/donald2_wi.bar/FR_donald2_wi_bar2.dds
+  - name: remastered/limit/gr/donald2_wi.bar/GR_donald2_wi_bar2.dds
+  - name: remastered/limit/it/donald2_wi.bar/IT_donald2_wi_bar2.dds
+  - name: remastered/limit/sp/donald2_wi.bar/SP_donald2_wi_bar2.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/limit/us/donald2_wi.bar/US_donald2_wi_bar2.dds
+    type: internal
+- name: remastered/limit/us/donald2_wi.bar/US_donald2_wi_bar3.dds
+  multi:
+  - name: remastered/limit/fr/donald2_wi.bar/FR_donald2_wi_bar3.dds
+  - name: remastered/limit/gr/donald2_wi.bar/GR_donald2_wi_bar3.dds
+  - name: remastered/limit/it/donald2_wi.bar/IT_donald2_wi_bar3.dds
+  - name: remastered/limit/sp/donald2_wi.bar/SP_donald2_wi_bar3.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/limit/us/donald2_wi.bar/US_donald2_wi_bar3.dds
+    type: internal
+- name: remastered/limit/us/donald2_wi.bar/US_donald2_wi_bar4.dds
+  multi:
+  - name: remastered/limit/fr/donald2_wi.bar/FR_donald2_wi_bar4.dds
+  - name: remastered/limit/gr/donald2_wi.bar/GR_donald2_wi_bar4.dds
+  - name: remastered/limit/it/donald2_wi.bar/IT_donald2_wi_bar4.dds
+  - name: remastered/limit/sp/donald2_wi.bar/SP_donald2_wi_bar4.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/limit/us/donald2_wi.bar/US_donald2_wi_bar4.dds
+    type: internal
+- name: remastered/limit/us/donald2_wi.bar/US_donald2_wi_bar5.dds
+  multi:
+  - name: remastered/limit/fr/donald2_wi.bar/FR_donald2_wi_bar5.dds
+  - name: remastered/limit/gr/donald2_wi.bar/GR_donald2_wi_bar5.dds
+  - name: remastered/limit/it/donald2_wi.bar/IT_donald2_wi_bar5.dds
+  - name: remastered/limit/sp/donald2_wi.bar/SP_donald2_wi_bar5.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/limit/us/donald2_wi.bar/US_donald2_wi_bar5.dds
+    type: internal
+- name: remastered/limit/us/donald2_wi.bar/US_donald2_wi_bar6.dds
+  multi:
+  - name: remastered/limit/fr/donald2_wi.bar/FR_donald2_wi_bar6.dds
+  - name: remastered/limit/gr/donald2_wi.bar/GR_donald2_wi_bar6.dds
+  - name: remastered/limit/it/donald2_wi.bar/IT_donald2_wi_bar6.dds
+  - name: remastered/limit/sp/donald2_wi.bar/SP_donald2_wi_bar6.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/limit/us/donald2_wi.bar/US_donald2_wi_bar6.dds
+    type: internal
+- name: remastered/limit/us/donald2_wi.bar/US_donald2_wi_bar7.dds
+  multi:
+  - name: remastered/limit/fr/donald2_wi.bar/FR_donald2_wi_bar7.dds
+  - name: remastered/limit/gr/donald2_wi.bar/GR_donald2_wi_bar7.dds
+  - name: remastered/limit/it/donald2_wi.bar/IT_donald2_wi_bar7.dds
+  - name: remastered/limit/sp/donald2_wi.bar/SP_donald2_wi_bar7.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/limit/us/donald2_wi.bar/US_donald2_wi_bar7.dds
+    type: internal

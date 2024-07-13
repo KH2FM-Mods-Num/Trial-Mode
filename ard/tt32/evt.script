@@ -1,16 +1,966 @@
-Program 0x02
+Program 0x9A
+Bgm 51 51
+BattleLevel 3
+AreaSettings 15 -1
+	SetProgressFlag 0x803
+	SetUnk05 0x3
+	SetJump Type 1 World TT Area 32 Entrance 50 LocalSet 0 FadeType 1
+	SetPartyMenu 0
+
+Program 0x00
+MapScript 11
+AreaSettings 9 -1
+	SetEvent "311a" Type 129
+	SetPartyMenu 0
+
+AreaSettings 10 -1
+	SetEvent "311b" Type 129
+	SetPartyMenu 0
+
+AreaSettings 11 -1
+	SetEvent "311c" Type 129
+	SetPartyMenu 0
+
+AreaSettings 76 -1
+	SetProgressFlag 0x801
+	SetJump Type 1 World TT Area 32 Entrance 50 LocalSet 0 FadeType 1
+	SetPartyMenu 0
+
+Spawn "e_50"
+Spawn "830_"
+
+Program 0x01
+Party NO_FRIEND
 AreaSettings 1 -1
-	SetJump Type 2 World TT Area 0 Entrance 0 LocalSet 157 FadeType 1
+	SetJump Type 2 World TT Area 0 Entrance 0 LocalSet 76 FadeType 1
 	SetPartyMenu 0
 
 Spawn "e_50"
 
-Program 0x9A
-Bgm 51 51
-BattleLevel 2
-AreaSettings 15 -1
-	SetProgressFlag 0x84A
-	SetMenuFlag 0x71
-	SetUnk05 0x3
-	SetJump Type 1 World TT Area 32 Entrance 50 LocalSet 0 FadeType 1
+Program 0x02
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World TT Area 0 Entrance 0 LocalSet 154 FadeType 1
 	SetPartyMenu 0
+
+Program 0x03
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World TT Area 0 Entrance 0 LocalSet 157 FadeType 1
+	SetPartyMenu 0
+
+Program 0x04
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World TT Area 0 Entrance 0 LocalSet 84 FadeType 1
+	SetPartyMenu 0
+
+Program 0x05
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World TT Area 0 Entrance 0 LocalSet 85 FadeType 1
+	SetPartyMenu 0
+
+Program 0x06
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World TT Area 0 Entrance 0 LocalSet 86 FadeType 1
+	SetPartyMenu 0
+
+Program 0x07
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World TT Area 0 Entrance 0 LocalSet 87 FadeType 1
+	SetPartyMenu 0
+
+Program 0x08
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World TT Area 0 Entrance 0 LocalSet 88 FadeType 1
+	SetPartyMenu 0
+
+Program 0x09
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World TT Area 0 Entrance 0 LocalSet 121 FadeType 1
+	SetInventory 389 390 434
+	SetPartyMenu 0
+
+Program 0x0A
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World TT Area 0 Entrance 0 LocalSet 159 FadeType 1
+	SetPartyMenu 0
+
+Program 0x0B
+Party NO_FRIEND
+AreaSettings 1 -1
+	SetJump Type 2 World TT Area 0 Entrance 0 LocalSet 73 FadeType 1
+	SetPartyMenu 0
+
+Spawn "e_50"
+
+Program 0x0C
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World TT Area 0 Entrance 0 LocalSet 134 FadeType 1
+	SetInventory 455
+	SetPartyMenu 0
+
+Program 0x0D
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World TT Area 0 Entrance 0 LocalSet 137 FadeType 1
+	SetPartyMenu 0
+
+Program 0x0E
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 1 World TT Area 25 Entrance 0 LocalSet 0 FadeType 1
+	SetPartyMenu 0
+
+Program 0x0F
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World TT Area 0 Entrance 0 LocalSet 152 FadeType 1
+	SetPartyMenu 0
+
+Program 0x10
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World TT Area 0 Entrance 0 LocalSet 153 FadeType 1
+	SetPartyMenu 0
+
+Program 0x11
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World HB Area 0 Entrance 0 LocalSet 51 FadeType 1
+	SetInventory 304 286
+	SetPartyMenu 0
+
+Program 0x12
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World HB Area 0 Entrance 0 LocalSet 52 FadeType 1
+	SetInventory 292
+	SetPartyMenu 0
+
+Program 0x13
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 1 World MU Area 1 Entrance 0 LocalSet 0 FadeType 1
+	SetPartyMenu 0
+
+Program 0x14
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World MU Area 0 Entrance 0 LocalSet 69 FadeType 1
+	SetPartyMenu 0
+
+Program 0x15
+Party DEFAULT
+AreaSettings 1 -1
+	SetJump Type 2 World MU Area 0 Entrance 0 LocalSet 70 FadeType 1
+	SetPartyMenu 0
+
+Spawn "e_50"
+
+Program 0x16
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World MU Area 0 Entrance 0 LocalSet 80 FadeType 1
+	SetPartyMenu 0
+
+Program 0x17
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World MU Area 0 Entrance 0 LocalSet 71 FadeType 1
+	SetPartyMenu 0
+
+Program 0x18
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World MU Area 0 Entrance 0 LocalSet 72 FadeType 1
+	SetPartyMenu 0
+
+Program 0x19
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World MU Area 0 Entrance 0 LocalSet 73 FadeType 1
+	SetPartyMenu 0
+
+Program 0x1A
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World MU Area 0 Entrance 0 LocalSet 74 FadeType 1
+	SetPartyMenu 0
+
+Program 0x1B
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World MU Area 0 Entrance 0 LocalSet 75 FadeType 1
+	SetPartyMenu 0
+
+Program 0x1C
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World BB Area 0 Entrance 0 LocalSet 72 FadeType 1
+	SetInventory 257
+	SetPartyMenu 0
+
+Program 0x1D
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World BB Area 0 Entrance 0 LocalSet 69 FadeType 1
+	SetPartyMenu 0
+
+Program 0x1E
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 1 World BB Area 5 Entrance 0 LocalSet 0 FadeType 1
+	SetPartyMenu 0
+
+Program 0x1F
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World BB Area 0 Entrance 0 LocalSet 79 FadeType 1
+	SetPartyMenu 0
+
+Program 0x20
+Party DEFAULT
+AreaSettings 1 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World HB Area 0 Entrance 0 LocalSet 58 FadeType 1
+	SetInventory 299
+	SetPartyMenu 0
+
+Spawn "e_50"
+
+Program 0x21
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 1 World HE Area 5 Entrance 0 LocalSet 0 FadeType 1
+	SetInventory 258
+	SetPartyMenu 0
+
+Program 0x22
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World HE Area 0 Entrance 0 LocalSet 114 FadeType 1
+	SetPartyMenu 0
+
+Program 0x23
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World HE Area 0 Entrance 0 LocalSet 116 FadeType 1
+	SetPartyMenu 0
+
+Program 0x24
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World HE Area 0 Entrance 0 LocalSet 171 FadeType 1
+	SetPartyMenu 0
+
+Program 0x25
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World DC Area 0 Entrance 0 LocalSet 51 FadeType 1
+	SetInventory 260
+	SetPartyMenu 0
+
+Program 0x26
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World WI Area 0 Entrance 0 LocalSet 58 FadeType 1
+	SetPartyMenu 0
+
+Program 0x27
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World WI Area 0 Entrance 0 LocalSet 54 FadeType 1
+	SetPartyMenu 0
+
+Program 0x28
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World WI Area 0 Entrance 0 LocalSet 55 FadeType 1
+	SetPartyMenu 0
+
+Program 0x29
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World WI Area 0 Entrance 0 LocalSet 56 FadeType 1
+	SetPartyMenu 0
+
+Program 0x2A
+Party DEFAULT
+AreaSettings 1 -1
+	SetJump Type 2 World WI Area 0 Entrance 0 LocalSet 57 FadeType 1
+	SetPartyMenu 0
+
+Spawn "e_50"
+
+Program 0x2B
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World WI Area 0 Entrance 0 LocalSet 52 FadeType 1
+	SetPartyMenu 0
+
+Program 0x2C
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World WI Area 0 Entrance 0 LocalSet 53 FadeType 1
+	SetPartyMenu 0
+
+Program 0x2D
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World CA Area 0 Entrance 0 LocalSet 52 FadeType 1
+	SetInventory 261 262 513
+	SetPartyMenu 0
+
+Program 0x2E
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World CA Area 0 Entrance 0 LocalSet 55 FadeType 1
+	SetPartyMenu 0
+
+Program 0x2F
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World CA Area 0 Entrance 0 LocalSet 59 FadeType 1
+	SetPartyMenu 0
+
+Program 0x30
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World CA Area 0 Entrance 0 LocalSet 58 FadeType 1
+	SetPartyMenu 0
+
+Program 0x31
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 1 World CA Area 3 Entrance 0 LocalSet 0 FadeType 1
+	SetPartyMenu 0
+
+Program 0x32
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World CA Area 0 Entrance 0 LocalSet 60 FadeType 1
+	SetPartyMenu 0
+
+Program 0x33
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 1 World AL Area 13 Entrance 0 LocalSet 0 FadeType 1
+	SetInventory 263 136
+	SetPartyMenu 0
+
+Program 0x34
+Party DEFAULT
+AreaSettings 1 -1
+	SetJump Type 2 World AL Area 0 Entrance 0 LocalSet 58 FadeType 1
+	SetPartyMenu 0
+
+Spawn "e_50"
+
+Program 0x35
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World AL Area 0 Entrance 0 LocalSet 59 FadeType 1
+	SetPartyMenu 0
+
+Program 0x36
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 1 World NM Area 0 Entrance 0 LocalSet 0 FadeType 1
+	SetInventory 300
+	SetPartyMenu 0
+
+Program 0x37
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World NM Area 0 Entrance 0 LocalSet 53 FadeType 1
+	SetPartyMenu 0
+
+Program 0x38
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World NM Area 0 Entrance 0 LocalSet 52 FadeType 1
+	SetPartyMenu 0
+
+Program 0x39
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World NM Area 0 Entrance 0 LocalSet 55 FadeType 1
+	SetPartyMenu 0
+
+Program 0x3A
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World HB Area 0 Entrance 0 LocalSet 124 FadeType 1
+	SetInventory 301
+	SetPartyMenu 0
+
+Program 0x3B
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World LK Area 0 Entrance 0 LocalSet 56 FadeType 1
+	SetInventory 530
+	SetPartyMenu 0
+
+Program 0x3C
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World LK Area 0 Entrance 0 LocalSet 51 FadeType 1
+	SetInventory 264 523 524
+	SetPartyMenu 0
+
+Program 0x3D
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 1 World LK Area 14 Entrance 0 LocalSet 0 FadeType 1
+	SetInventory 314
+	SetPartyMenu 0
+
+Program 0x3E
+Party DEFAULT
+AreaSettings 1 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World TT Area 0 Entrance 0 LocalSet 80 FadeType 1
+	SetInventory 302 515
+	SetPartyMenu 0
+
+Spawn "e_50"
+
+Program 0x3F
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 1 World TR Area 3 Entrance 0 LocalSet 0 FadeType 1
+	SetInventory 265 543 266 183
+	SetPartyMenu 0
+
+Program 0x40
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 1 World TR Area 4 Entrance 0 LocalSet 0 FadeType 1
+	SetInventory 499
+	SetPartyMenu 0
+
+Program 0x41
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World HB Area 0 Entrance 0 LocalSet 86 FadeType 1
+	SetInventory 267
+	SetPartyMenu 0
+
+Program 0x42
+Bgm 153 153
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World HB Area 0 Entrance 0 LocalSet 73 FadeType 1
+	SetPartyMenu 0
+
+Program 0x43
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World HB Area 0 Entrance 0 LocalSet 55 FadeType 1
+	SetPartyMenu 0
+
+Program 0x44
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World HB Area 0 Entrance 0 LocalSet 62 FadeType 1
+	SetPartyMenu 0
+
+Program 0x45
+Bgm 145 145
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World HB Area 0 Entrance 0 LocalSet 63 FadeType 1
+	SetPartyMenu 0
+
+Program 0x46
+Bgm 145 145
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World HB Area 0 Entrance 0 LocalSet 64 FadeType 1
+	SetPartyMenu 0
+
+Program 0x47
+Bgm 145 145
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World HB Area 0 Entrance 0 LocalSet 65 FadeType 1
+	SetPartyMenu 0
+
+Program 0x48
+Party DEFAULT
+AreaSettings 1 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World HB Area 0 Entrance 0 LocalSet 66 FadeType 1
+	SetInventory 361
+	SetPartyMenu 0
+
+Spawn "e_50"
+
+Program 0x49
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World HB Area 0 Entrance 0 LocalSet 128 FadeType 1
+	SetInventory 491
+	SetPartyMenu 0
+
+Program 0x4A
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World MU Area 0 Entrance 0 LocalSet 76 FadeType 1
+	SetPartyMenu 0
+
+Program 0x4B
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World MU Area 0 Entrance 0 LocalSet 81 FadeType 1
+	SetPartyMenu 0
+
+Program 0x4C
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World MU Area 0 Entrance 0 LocalSet 78 FadeType 1
+	SetPartyMenu 0
+
+Program 0x4D
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World MU Area 0 Entrance 0 LocalSet 79 FadeType 1
+	SetInventory 129 284
+	SetPartyMenu 0
+
+Program 0x4E
+Bgm Default Default
+AreaSettings 0 -1
+	SetProgressFlag 0x10A3
+	SetEvent "0000" Type 2
+	SetJump Type 1 World HB Area 24 Entrance 0 LocalSet 0 FadeType 1
+	SetPartyMenu 0
+
+Program 0x4F
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World BB Area 0 Entrance 0 LocalSet 74 FadeType 1
+	SetPartyMenu 0
+
+Program 0x50
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World BB Area 0 Entrance 0 LocalSet 75 FadeType 1
+	SetInventory 527
+	SetPartyMenu 0
+
+Program 0x51
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World BB Area 0 Entrance 0 LocalSet 82 FadeType 1
+	SetPartyMenu 0
+
+Program 0x52
+Party DEFAULT
+AreaSettings 1 -1
+	SetJump Type 2 World CA Area 0 Entrance 0 LocalSet 53 FadeType 1
+	SetInventory 270
+	SetPartyMenu 0
+
+Spawn "e_50"
+
+Program 0x53
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World CA Area 0 Entrance 0 LocalSet 85 FadeType 1
+	SetPartyMenu 0
+
+Program 0x54
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World CA Area 0 Entrance 0 LocalSet 54 FadeType 1
+	SetInventory 252 372 534
+	SetPartyMenu 0
+
+Program 0x55
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World HE Area 0 Entrance 0 LocalSet 124 FadeType 1
+	SetInventory 287
+	SetPartyMenu 0
+
+Program 0x56
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World HE Area 0 Entrance 0 LocalSet 125 FadeType 1
+	SetPartyMenu 0
+
+Program 0x57
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World HE Area 0 Entrance 0 LocalSet 126 FadeType 1
+	SetPartyMenu 0
+
+Program 0x58
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World HE Area 0 Entrance 0 LocalSet 202 FadeType 1
+	SetPartyMenu 0
+
+Program 0x59
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World AL Area 0 Entrance 0 LocalSet 86 FadeType 1
+	SetInventory 272 514 541
+	SetPartyMenu 0
+
+Program 0x5A
+Bgm 128 128
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World AL Area 0 Entrance 0 LocalSet 87 FadeType 1
+	SetPartyMenu 0
+
+Program 0x5B
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World AL Area 0 Entrance 0 LocalSet 62 FadeType 1
+	SetInventory 312 285
+	SetPartyMenu 0
+
+Program 0x5C
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World HB Area 0 Entrance 0 LocalSet 122 FadeType 1
+	SetInventory 303
+	SetPartyMenu 0
+
+Program 0x5D
+Party DEFAULT
+AreaSettings 1 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World NM Area 0 Entrance 0 LocalSet 62 FadeType 1
+	SetInventory 529
+	SetPartyMenu 0
+
+Spawn "e_50"
+
+Program 0x5E
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World NM Area 0 Entrance 0 LocalSet 60 FadeType 1
+	SetPartyMenu 0
+
+Program 0x5F
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World NM Area 0 Entrance 0 LocalSet 64 FadeType 1
+	SetPartyMenu 0
+
+Program 0x60
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World LK Area 0 Entrance 0 LocalSet 59 FadeType 1
+	SetInventory 275
+	SetPartyMenu 0
+
+Program 0x61
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World HB Area 0 Entrance 0 LocalSet 72 FadeType 1
+	SetInventory 279
+	SetPartyMenu 0
+
+Program 0x62
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World TR Area 0 Entrance 0 LocalSet 53 FadeType 1
+	SetInventory 276 311
+	SetPartyMenu 0
+
+Program 0x63
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World TR Area 0 Entrance 0 LocalSet 56 FadeType 1
+	SetPartyMenu 0
+
+Program 0x64
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World TR Area 0 Entrance 0 LocalSet 57 FadeType 1
+	SetPartyMenu 0
+
+Program 0x65
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World TR Area 0 Entrance 0 LocalSet 58 FadeType 1
+	SetInventory 51
+	SetPartyMenu 0
+
+Program 0x66
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World TR Area 0 Entrance 0 LocalSet 59 FadeType 1
+	SetPartyMenu 0
+
+Program 0x67
+Party DEFAULT
+AreaSettings 1 -1
+	SetJump Type 2 World TT Area 0 Entrance 0 LocalSet 186 FadeType 1
+	SetPartyMenu 0
+
+Spawn "e_50"
+
+Program 0x68
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World TT Area 0 Entrance 0 LocalSet 160 FadeType 1
+	SetPartyMenu 0
+
+Program 0x69
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World TT Area 0 Entrance 0 LocalSet 161 FadeType 1
+	SetPartyMenu 0
+
+Program 0x6A
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World EH Area 0 Entrance 0 LocalSet 65 FadeType 1
+	SetInventory 317
+	SetPartyMenu 0
+
+Program 0x6B
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World EH Area 0 Entrance 0 LocalSet 57 FadeType 1
+	SetInventory 277 532 531 336
+	SetPartyMenu 0
+
+Program 0x6C
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World EH Area 0 Entrance 0 LocalSet 58 FadeType 1
+	SetInventory 278
+	SetPartyMenu 0
+
+Program 0x6D
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World EH Area 0 Entrance 0 LocalSet 56 FadeType 1
+	SetPartyMenu 0
+
+Program 0x6E
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World EH Area 0 Entrance 0 LocalSet 59 FadeType 1
+	SetPartyMenu 0
+
+Program 0x6F
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 1 World EH Area 25 Entrance 0 LocalSet 0 FadeType 1
+	SetInventory 536 537 516 517
+	SetPartyMenu 0
+
+Program 0x70
+Bgm 59 59
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World EH Area 0 Entrance 0 LocalSet 71 FadeType 1
+	SetPartyMenu 0
+
+Program 0x71
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World EH Area 0 Entrance 0 LocalSet 72 FadeType 1
+	SetPartyMenu 0
+
+Program 0x72
+Party DEFAULT
+AreaSettings 1 -1
+	SetUnk05 0x4
+	SetJump Type 2 World EH Area 0 Entrance 0 LocalSet 73 FadeType 1
+	SetPartyMenu 0
+
+Spawn "e_50"
+
+Program 0x73
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World EH Area 0 Entrance 0 LocalSet 74 FadeType 1
+	SetPartyMenu 0
+
+Program 0x74
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World HB Area 0 Entrance 0 LocalSet 120 FadeType 1
+	SetInventory 588 526 533
+	SetPartyMenu 0
+
+Program 0x75
+Bgm Default Default
+AreaSettings 0 -1
+	SetProgressFlag 0x10A5
+	SetEvent "0000" Type 2
+	SetJump Type 1 World HB Area 24 Entrance 3 LocalSet 0 FadeType 1
+	SetInventory 528
+	SetPartyMenu 0
+
+Program 0x76
+Bgm 68 69
+AreaSettings 0 -1
+	SetProgressFlag 0x10A8
+	SetEvent "0000" Type 2
+	SetJump Type 1 World HB Area 25 Entrance 0 LocalSet 0 FadeType 1
+	SetInventory 538 539
+	SetPartyMenu 0
+
+Program 0x77
+Bgm 68 69
+AreaSettings 0 -1
+	SetProgressFlag 0x10AA
+	SetEvent "0000" Type 2
+	SetJump Type 1 World HB Area 25 Entrance 21 LocalSet 0 FadeType 1
+	SetPartyMenu 0
+
+Program 0x78
+Bgm 68 69
+AreaSettings 0 -1
+	SetProgressFlag 0x10AB
+	SetEvent "0000" Type 2
+	SetJump Type 1 World HB Area 25 Entrance 22 LocalSet 0 FadeType 1
+	SetPartyMenu 0
+
+Program 0x79
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World HB Area 0 Entrance 0 LocalSet 145 FadeType 1
+	SetPartyMenu 0
+
+Program 0x7A
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World HB Area 0 Entrance 0 LocalSet 126 FadeType 1
+	SetInventory 535
+	SetPartyMenu 0
+
+Program 0x7B
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "0000" Type 2
+	SetJump Type 2 World DC Area 0 Entrance 0 LocalSet 68 FadeType 1
+	SetInventory 282
+	SetPartyMenu 0
+
+Program 0x7C
+Party DEFAULT
+AreaSettings 1 -1
+	SetEvent "0000" Type 2
+	SetJump Type 5 World ES Area 0 Entrance 0 LocalSet 0 FadeType 1
+	SetInventory 136 311
+	SetPartyMenu 0
+
+Spawn "e_50"

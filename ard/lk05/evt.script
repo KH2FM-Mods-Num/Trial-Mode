@@ -1,15 +1,9 @@
 Program 0x38
+Party DEFAULT
 Bgm 187 187
 BattleLevel 26
 AreaSettings 7 -1
+	SetProgressFlag 0x83E
 	SetUnk05 0x3
-	SetJump Type 2 World LK Area 0 Entrance 0 LocalSet 51 FadeType 1
-	SetPartyMenu 0
-
-Program 0x39
-Bgm 117 117
-BattleLevel 43
-AreaSettings 7 -1
-	SetUnk05 0x3
-	SetJump Type 2 World LK Area 0 Entrance 0 LocalSet 59 FadeType 1
+	SetJump Type 1 World TT Area 32 Entrance 50 LocalSet 0 FadeType 1
 	SetPartyMenu 0

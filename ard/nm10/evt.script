@@ -3,6 +3,7 @@ Party W_FRIEND
 Bgm 117 117
 BattleLevel 41
 AreaSettings 7 -1
-	SetUnk05 0x3
-	SetJump Type 2 World NM Area 0 Entrance 0 LocalSet 60 FadeType 1
+	SetProgressFlag 0x860
+	SetUnk05 0x1
+	SetJump Type 1 World TT Area 32 Entrance 50 LocalSet 0 FadeType 1
 	SetPartyMenu 0

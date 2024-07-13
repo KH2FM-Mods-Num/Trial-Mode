@@ -1,11 +1,8 @@
 Program 0xAB
 Bgm 121 121
 BattleLevel 16
-MapScript 5
 AreaSettings 16 -1
-	SetProgressFlag 0x3004
+	SetProgressFlag 0x826
 	SetUnk05 0x1
-	SetEvent "0000" Type 18
-	SetJump Type 1 World DC Area 1 Entrance 50 LocalSet 0 FadeType 1
-	SetInventory 260 258
+	SetJump Type 1 World TT Area 32 Entrance 50 LocalSet 0 FadeType 1
 	SetPartyMenu 0

@@ -1,0 +1,76 @@
+Items:
+- Id: 4 #Elixir
+  Type: Consumable
+  Flag0: 0
+  Flag1: 255
+  Rank: C
+  StatEntry: 4
+  Name: 33534
+  Description: 33535
+  ShopBuy: 0
+  ShopSell: 179
+  Command: 22
+  Slot: 3
+  Picture: 7
+  Icon1: 11
+  Icon2: 0
+- Id: 5 #Mega-Potion
+  Type: Consumable
+  Flag0: 2
+  Flag1: 40
+  Rank: C
+  StatEntry: 1
+  Name: 33536
+  Description: 33537
+  ShopBuy: 120
+  ShopSell: 30
+  Command: 242
+  Slot: 4
+  Picture: 3
+  Icon1: 10
+  Icon2: 0
+- Id: 6 #Mega-Ether
+  Type: Consumable
+  Flag0: 2
+  Flag1: 100
+  Rank: C
+  StatEntry: 3
+  Name: 33538
+  Description: 33539
+  ShopBuy: 160
+  ShopSell: 40
+  Command: 243
+  Slot: 5
+  Picture: 6
+  Icon1: 10
+  Icon2: 0
+- Id: 7 #Megalixir
+  Type: Consumable
+  Flag0: 2
+  Flag1: 255
+  Rank: C
+  StatEntry: 4
+  Name: 33540
+  Description: 33541
+  ShopBuy: 0
+  ShopSell: 5000
+  Command: 244
+  Slot: 6
+  Picture: 8
+  Icon1: 11
+  Icon2: 0
+- Id: 275 #High Drive Recovery
+  Type: Boost
+  Flag0: 0
+  Flag1: 9
+  Rank: C
+  StatEntry: 0
+  Name: 47579
+  Description: 47580
+  ShopBuy: 160
+  ShopSell: 40
+  Command: 0
+  Slot: 229
+  Picture: 10
+  Icon1: 4
+  Icon2: 1

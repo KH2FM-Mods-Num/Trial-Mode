@@ -2,8 +2,9 @@ Program 0x48
 Bgm 131 131
 BattleLevel 13
 AreaSettings 16 -1
+	SetProgressFlag 0x81E
 	SetUnk05 0x3
-	SetJump Type 2 World BB Area 0 Entrance 0 LocalSet 69 FadeType 1
+	SetJump Type 1 World TT Area 32 Entrance 50 LocalSet 0 FadeType 1
 	SetPartyMenu 0
 
 Spawn "e_02"

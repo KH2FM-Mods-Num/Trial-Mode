@@ -1,0 +1,552 @@
+#Popups (change from chest)
+434: #Ability Ring (Sunset Terrace STT)
+  Id: 434
+  ItemId: 8
+  Type: Event
+  World: 2
+  Room: 10
+  RoomChestIndex: 0
+  EventId: 2048
+  OverallChestIndex: 307
+455: #Elven Bandanna (Dining Room STT)
+  Id: 455
+  ItemId: 67
+  Type: Event
+  World: 2
+  Room: 16
+  RoomChestIndex: 0
+  EventId: 2048
+  OverallChestIndex: 328
+136: #Skill Ring (Palace Walls)
+  Id: 136
+  ItemId: 38
+  Type: Event
+  World: 7
+  Room: 6
+  RoomChestIndex: 100
+  EventId: 7203
+  OverallChestIndex: 38
+314: #Draw Ring (Rabbit's House)
+  Id: 314
+  ItemId: 65
+  Type: Event
+  World: 9
+  Room: 3
+  RoomChestIndex: 100
+  EventId: 9279
+  OverallChestIndex: 240
+183: #Ukulele Charm (Ansem's Study)
+  Id: 183
+  ItemId: 25
+  Type: Event
+  World: 4
+  Room: 5
+  RoomChestIndex: 100
+  EventId: 4115
+  OverallChestIndex: 198
+499: #Gaia Belt (Communications Room)
+  Id: 499
+  ItemId: 79
+  Type: Event
+  World: 17
+  Room: 5
+  RoomChestIndex: 101
+  EventId: 17409
+  OverallChestIndex: 369
+491: #Gull Wing (Postern)
+  Id: 491
+  ItemId: 489
+  Type: Event
+  World: 4
+  Room: 6
+  RoomChestIndex: 101
+  EventId: 4219
+  OverallChestIndex: 363
+129: #Ogre Shield (Throne Room)
+  Id: 129
+  ItemId: 141
+  Type: Event
+  World: 8
+  Room: 11
+  RoomChestIndex: 3
+  EventId: 8256
+  OverallChestIndex: 24
+252: #Feather Charm (Interceptor's Hold)
+  Id: 252
+  ItemId: 160
+  Type: Event
+  World: 16
+  Room: 11
+  RoomChestIndex: 100
+  EventId: 16415
+  OverallChestIndex: 187
+372: #Meteor Staff (Seadrift Keep)
+  Id: 372
+  ItemId: 150
+  Type: Event
+  World: 16
+  Room: 14
+  RoomChestIndex: 2
+  EventId: 16415
+  OverallChestIndex: 250
+312: #Cosmic Ring (Starry Hill)
+  Id: 312
+  ItemId: 52
+  Type: Event
+  World: 9
+  Room: 1
+  RoomChestIndex: 100
+  EventId: 9287
+  OverallChestIndex: 238
+311: #Cosmic Chain (Heartless Manufactory)
+  Id: 311
+  ItemId: 308
+  Type: Event
+  World: 4
+  Room: 12
+  RoomChestIndex: 100
+  EventId: 4195
+  OverallChestIndex: 237
+51: #Cosmic Arts (Central Computer Core)
+  Id: 51
+  ItemId: 56
+  Type: Event
+  World: 17
+  Room: 8
+  RoomChestIndex: 100
+  EventId: 17429
+  OverallChestIndex: 158
+336: #Cosmic Belt (Twilight's View)
+  Id: 336
+  ItemId: 111
+  Type: Event
+  World: 18
+  Room: 9
+  RoomChestIndex: 100
+  EventId: 18437
+  OverallChestIndex: 246
+517: #Ultima Weapon (from Goddess of Fate Orichalcum+)
+  Id: 517
+  ItemId: 0x1F4
+  Type: Event
+  World: 6
+  Room: 0
+  RoomChestIndex: 0
+  EventId: 6185
+  OverallChestIndex: 0
+#Chests
+315: #Station of Serenity
+  Id: 315
+  ItemId: 7
+  Type: Chest
+  World: 2
+  Room: 32
+  RoomChestIndex: 0
+  EventId: 2048
+  OverallChestIndex: 241
+465: #The Tower
+  Id: 465
+  ItemId: 4
+  Type: Chest
+  World: 2
+  Room: 25
+  RoomChestIndex: 10
+  EventId: 2210
+  OverallChestIndex: 338
+466:
+  Id: 466
+  ItemId: 4
+  Type: Chest
+  World: 2
+  Room: 25
+  RoomChestIndex: 11
+  EventId: 2210
+  OverallChestIndex: 339
+522:
+  Id: 522
+  ItemId: 4
+  Type: Chest
+  World: 2
+  Room: 25
+  RoomChestIndex: 12
+  EventId: 2210
+  OverallChestIndex: 383
+21: #Checkpoint
+  Id: 21
+  ItemId: 4
+  Type: Chest
+  World: 8
+  Room: 2
+  RoomChestIndex: 0
+  EventId: 8228
+  OverallChestIndex: 9
+121:
+  Id: 121
+  ItemId: 4
+  Type: Chest
+  World: 8
+  Room: 2
+  RoomChestIndex: 1
+  EventId: 8228
+  OverallChestIndex: 10
+22: #Mountain Trail
+  Id: 22
+  ItemId: 4
+  Type: Chest
+  World: 8
+  Room: 3
+  RoomChestIndex: 0
+  EventId: 8228
+  OverallChestIndex: 11
+23:
+  Id: 23
+  ItemId: 4
+  Type: Chest
+  World: 8
+  Room: 3
+  RoomChestIndex: 1
+  EventId: 8228
+  OverallChestIndex: 12
+122:
+  Id: 122
+  ItemId: 4
+  Type: Chest
+  World: 8
+  Room: 3
+  RoomChestIndex: 2
+  EventId: 8228
+  OverallChestIndex: 13
+123:
+  Id: 123
+  ItemId: 4
+  Type: Chest
+  World: 8
+  Room: 3
+  RoomChestIndex: 3
+  EventId: 8228
+  OverallChestIndex: 14
+81: #Pier
+  Id: 81
+  ItemId: 4
+  Type: Chest
+  World: 13
+  Room: 1
+  RoomChestIndex: 0
+  EventId: 13313
+  OverallChestIndex: 51
+82:
+  Id: 82
+  ItemId: 4
+  Type: Chest
+  World: 13
+  Room: 1
+  RoomChestIndex: 1
+  EventId: 13313
+  OverallChestIndex: 52
+83: #Waterway
+  Id: 83
+  ItemId: 4
+  Type: Chest
+  World: 13
+  Room: 2
+  RoomChestIndex: 0
+  EventId: 13313
+  OverallChestIndex: 53
+84:
+  Id: 84
+  ItemId: 4
+  Type: Chest
+  World: 13
+  Room: 2
+  RoomChestIndex: 1
+  EventId: 13313
+  OverallChestIndex: 54
+85:
+  Id: 85
+  ItemId: 4
+  Type: Chest
+  World: 13
+  Room: 2
+  RoomChestIndex: 2
+  EventId: 13313
+  OverallChestIndex: 55
+74: #Cave Mouth
+  Id: 74
+  ItemId: 4
+  Type: Chest
+  World: 16
+  Room: 9
+  RoomChestIndex: 0
+  EventId: 16388
+  OverallChestIndex: 185
+223:
+  Id: 223
+  ItemId: 4
+  Type: Chest
+  World: 16
+  Room: 9
+  RoomChestIndex: 1
+  EventId: 16388
+  OverallChestIndex: 186
+209: #Halloween Town Square
+  Id: 209
+  ItemId: 4
+  Type: Chest
+  World: 14
+  Room: 0
+  RoomChestIndex: 0
+  EventId: 14364
+  OverallChestIndex: 159
+210:
+  Id: 210
+  ItemId: 4
+  Type: Chest
+  World: 14
+  Room: 0
+  RoomChestIndex: 1
+  EventId: 14364
+  OverallChestIndex: 160
+55: #Candy Cane Lane
+  Id: 55
+  ItemId: 4
+  Type: Chest
+  World: 14
+  Room: 6
+  RoomChestIndex: 0
+  EventId: 14364
+  OverallChestIndex: 168
+56:
+  Id: 56
+  ItemId: 4
+  Type: Chest
+  World: 14
+  Room: 6
+  RoomChestIndex: 1
+  EventId: 14364
+  OverallChestIndex: 169
+216:
+  Id: 216
+  ItemId: 4
+  Type: Chest
+  World: 14
+  Room: 6
+  RoomChestIndex: 2
+  EventId: 14364
+  OverallChestIndex: 170
+217:
+  Id: 217
+  ItemId: 4
+  Type: Chest
+  World: 14
+  Room: 6
+  RoomChestIndex: 3
+  EventId: 14364
+  OverallChestIndex: 171
+578: #Mineshaft (Lower Level)
+  Id: 578
+  ItemId: 4
+  Type: Chest
+  World: 4
+  Room: 24
+  RoomChestIndex: 0
+  EventId: 4126
+  OverallChestIndex: 402
+580:
+  Id: 580
+  ItemId: 4
+  Type: Chest
+  World: 4
+  Room: 24
+  RoomChestIndex: 100
+  EventId: 4126
+  OverallChestIndex: 404
+581: #Mineshaft (Middle Level)
+  Id: 581
+  ItemId: 4
+  Type: Chest
+  World: 4
+  Room: 24
+  RoomChestIndex: 101
+  EventId: 4126
+  OverallChestIndex: 405
+579: #Mineshaft (Upper Level)
+  Id: 579
+  ItemId: 7
+  Type: Chest
+  World: 4
+  Room: 24
+  RoomChestIndex: 1
+  EventId: 4126
+  OverallChestIndex: 403
+582:
+  Id: 582
+  ItemId: 7
+  Type: Chest
+  World: 4
+  Room: 24
+  RoomChestIndex: 102
+  EventId: 4126
+  OverallChestIndex: 406
+#Other Rewards
+523: #Shaman's Relic
+  Id: 523
+  ItemId: 0x9C
+  Type: Event
+  World: 18
+  Room: 3
+  RoomChestIndex: 1
+  EventId: 18437
+  OverallChestIndex: 384
+524: #Akashic Record
+  Id: 524
+  ItemId: 0x92
+  Type: Event
+  World: 18
+  Room: 3
+  RoomChestIndex: 2
+  EventId: 18437
+  OverallChestIndex: 385
+525: #Report 1 -> 
+  Id: 525
+  ItemId: 226
+  Type: Event
+  World: 4
+  Room: 0
+  RoomChestIndex: 0
+  EventId: 0
+  OverallChestIndex: 0
+526: #Report 2 -> Premium Mushroom
+  Id: 526
+  ItemId: 0x227
+  Type: Event
+  World: 2
+  Room: 0
+  RoomChestIndex: 0
+  EventId: 0
+  OverallChestIndex: 0
+527: #Report 3 -> Nobody Lance
+  Id: 527
+  ItemId: 0x9B
+  Type: Event
+  World: 18
+  Room: 0
+  RoomChestIndex: 0
+  EventId: 0
+  OverallChestIndex: 0
+528: #Report 4 -> Frozen Pride+
+  Id: 528
+  ItemId: 0x229
+  Type: Event
+  World: 16
+  Room: 0
+  RoomChestIndex: 0
+  EventId: 0
+  OverallChestIndex: 0
+529: #Report 5 -> Centurion+
+  Id: 529
+  ItemId: 0x222
+  Type: Event
+  World: 6
+  Room: 0
+  RoomChestIndex: 0
+  EventId: 0
+  OverallChestIndex: 0
+530: #Report 6 -> Shadow Archive+
+  Id: 530
+  ItemId: 0x3A
+  Type: Event
+  World: 5
+  Room: 0
+  RoomChestIndex: 0
+  EventId: 0
+  OverallChestIndex: 0
+531: #Report 7 -> Save the King
+  Id: 531
+  ItemId: 0x1E3
+  Type: Event
+  World: 4
+  Room: 0
+  RoomChestIndex: 0
+  EventId: 0
+  OverallChestIndex: 0
+532: #Report 8 -> Save the Queen
+  Id: 532
+  ItemId: 0x1E2
+  Type: Event
+  World: 18
+  Room: 0
+  RoomChestIndex: 0
+  EventId: 0
+  OverallChestIndex: 0
+533: #Report 9 -> Ultimate Mushroom
+  Id: 533
+  ItemId: 0x22E
+  Type: Event
+  World: 18
+  Room: 0
+  RoomChestIndex: 0
+  EventId: 0
+  OverallChestIndex: 0
+534: #Report 10 -> Nobody Guard
+  Id: 534
+  ItemId: 0x93
+  Type: Event
+  World: 2
+  Room: 0
+  RoomChestIndex: 0
+  EventId: 0
+  OverallChestIndex: 0
+535: #Report 11 -> Full Bloom+
+  Id: 535
+  ItemId: 0x42
+  Type: Event
+  World: 18
+  Room: 0
+  RoomChestIndex: 0
+  EventId: 0
+  OverallChestIndex: 0
+536: #Report 12 -> Grand Ribbon
+  Id: 536
+  ItemId: 0x9D
+  Type: Event
+  World: 18
+  Room: 0
+  RoomChestIndex: 0
+  EventId: 0
+  OverallChestIndex: 0
+537: #Report 13 -> Executive's Ring
+  Id: 537
+  ItemId: 0x257
+  Type: Event
+  World: 18
+  Room: 0
+  RoomChestIndex: 0
+  EventId: 0
+  OverallChestIndex: 0
+538: #Shaman's Relic+
+  Id: 538
+  ItemId: 0x258
+  Type: Event
+  World: 11
+  Room: 0
+  RoomChestIndex: 0
+  EventId: 11296
+  OverallChestIndex: 0
+539: #Akashic Record+
+  Id: 539
+  ItemId: 0x259
+  Type: Event
+  World: 9
+  Room: 0
+  RoomChestIndex: 0
+  EventId: 9261
+  OverallChestIndex: 0
+540: #
+  Id: 540
+  ItemId: 359
+  Type: Event
+  World: 6
+  Room: 0
+  RoomChestIndex: 0
+  EventId: 6185
+  OverallChestIndex: 0
