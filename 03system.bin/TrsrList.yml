@@ -225,6 +225,15 @@
   RoomChestIndex: 3
   EventId: 8228
   OverallChestIndex: 14
+196: #Borough
+  Id: 196
+  ItemId: 4
+  Type: Chest
+  World: 4
+  Room: 9
+  RoomChestIndex: 2
+  EventId: 4097
+  OverallChestIndex: 211
 81: #Pier
   Id: 81
   ItemId: 4
