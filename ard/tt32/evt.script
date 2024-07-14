@@ -936,14 +936,14 @@ Program 0x79
 Bgm Default Default
 AreaSettings 0 -1
 	SetEvent "0000" Type 2
-	SetJump Type 2 World HB Area 0 Entrance 0 LocalSet 145 FadeType 1
+	SetJump Type 2 World HB Area 0 Entrance 0 LocalSet 126 FadeType 1
 	SetPartyMenu 0
 
 Program 0x7A
 Bgm Default Default
 AreaSettings 0 -1
 	SetEvent "0000" Type 2
-	SetJump Type 2 World HB Area 0 Entrance 0 LocalSet 126 FadeType 1
+	SetJump Type 2 World HB Area 0 Entrance 0 LocalSet 75 FadeType 1
 	SetInventory 535
 	SetPartyMenu 0
 
