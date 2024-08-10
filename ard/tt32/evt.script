@@ -960,7 +960,6 @@ Party DEFAULT
 AreaSettings 1 -1
 	SetEvent "0000" Type 2
 	SetJump Type 5 World ES Area 0 Entrance 0 LocalSet 0 FadeType 1
-	SetInventory 136 311
 	SetPartyMenu 0
 
 Spawn "e_50"
