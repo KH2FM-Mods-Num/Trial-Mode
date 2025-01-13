@@ -369,6 +369,24 @@
   RoomChestIndex: 100
   EventId: 4126
   OverallChestIndex: 404
+49: #I/O Tower: Hallway
+  Id: 49
+  ItemId: 4
+  Type: Chest
+  World: 17
+  Room: 4
+  RoomChestIndex: 0
+  EventId: 17409
+  OverallChestIndex: 148
+50:
+  Id: 50
+  ItemId: 4
+  Type: Chest
+  World: 17
+  Room: 4
+  RoomChestIndex: 1
+  EventId: 17409
+  OverallChestIndex: 149
 581: #Mineshaft (Middle Level)
   Id: 581
   ItemId: 4
@@ -550,7 +568,7 @@
   RoomChestIndex: 0
   EventId: 9261
   OverallChestIndex: 0
-540: #
+540: #[unused]
   Id: 540
   ItemId: 359
   Type: Event
