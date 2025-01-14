@@ -2823,6 +2823,51 @@ assets:
   source:
   - name: remastered/obj/B_EX170_LAST.mdlx/-5.dds
     type: internal
+#Death wail restoration
+- name: obj/N_CM040_BTL.mdlx
+  method: binarc
+  source:
+  - name: n_cm
+    type: bdx
+    method: bdscript
+    source:
+    - name: obj/N_CM040_BTL.bdscript
+- name: remastered/obj/N_CM040_BTL.mdlx/-0.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/obj/N_CM040_BTL.mdlx/-0.dds
+    type: internal
+- name: remastered/obj/N_CM040_BTL.mdlx/-1.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/obj/N_CM040_BTL.mdlx/-1.dds
+    type: internal
+- name: remastered/obj/N_CM040_BTL.mdlx/-2.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/obj/N_CM040_BTL.mdlx/-2.dds
+    type: internal
+- name: remastered/obj/N_CM040_BTL.mdlx/-3.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/obj/N_CM040_BTL.mdlx/-5.dds
+    type: internal
+- name: remastered/obj/N_CM040_BTL.mdlx/-4.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/obj/N_CM040_BTL.mdlx/-3.dds
+    type: internal
+- name: remastered/obj/N_CM040_BTL.mdlx/-5.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/obj/N_CM040_BTL.mdlx/-4.dds
+    type: internal
 #PS2 (Balanced) Duck Flare
 - name: limit/us/donald2.bar
   platform: pc
